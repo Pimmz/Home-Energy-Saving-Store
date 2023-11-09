@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ivz7u#hn2*acjc9%vpq0wo(=m9r)+h700&@m$)gm43)r+0)m1z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-pimmz-home-energy-saving-lp68nf13lm.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['8000-pimmz-home-energy-saving-iafj18lgrc.us2.codeanyapp.com']
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +60,10 @@ ROOT_URLCONF = 'home_energy_saving_store.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
