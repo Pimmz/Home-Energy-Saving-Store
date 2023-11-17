@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ivz7u#hn2*acjc9%vpq0wo(=m9r)+h700&@m$)gm43)r+0)m1z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-pimmz-home-energy-saving-vfkzjjtzgc.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['8000-pimmz-home-energy-saving-vfkzjjtzgc.us2.codeanyapp.com', '8001-pimmz-home-energy-saving-vfkzjjtzgc.us2.codeanyapp.com']
 
 
 # Application definition
@@ -177,6 +177,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Stripe
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
-STRIPE_CURRENCY = 'gbp'
+STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
