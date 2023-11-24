@@ -1,1 +1,1 @@
-web: gunicorn home_energy_saving_store.wsgi:application
+web: gunicorn home_energy_saving_store.wsgi
