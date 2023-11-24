@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://home-energy-saving-store-be6e9d82e03c.herokuapp.com', 'localhost', '8000-pimmz-home-energy-saving-vfkzjjtzgc.us2.codeanyapp.com', '8001-pimmz-home-energy-saving-vfkzjjtzgc.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['home-energy-saving-store-be6e9d82e03c.herokuapp.com', 'localhost', '8000-pimmz-home-energy-saving-vfkzjjtzgc.us2.codeanyapp.com', '8001-pimmz-home-energy-saving-vfkzjjtzgc.us2.codeanyapp.com']
 
 
 # Application definition
