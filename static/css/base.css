@@ -10,6 +10,21 @@ body {
     font-family: 'Lato';
 }
 
+
+@keyframes moveText {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+#delivery-banner {
+    
+    animation: moveText 8s infinite linear;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -21,6 +36,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px -1px 0 white, 1px -1px 0 white;
 }
 
 .main-logo-link {
