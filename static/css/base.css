@@ -1,15 +1,35 @@
-html {
+html, body {
     height: 100%;
+    margin: 0;
 }
 
 body {
     background: url(https://res.cloudinary.com/dtqjcm9e6/image/upload/v1701776336/HESS/home-page_edwtul.jpg) no-repeat center center;
     background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    
 }
 
+.container-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    min-height: 60px;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    background-color: #f8f9fa;
+    overflow: auto;
+}
 
 @keyframes moveText {
     0% {

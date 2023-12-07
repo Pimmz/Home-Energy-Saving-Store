@@ -116,32 +116,18 @@
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
-        <div id="delivery-banner1" class="row text-center">
-            <div class="col bg-black text-white">
-                <div class="container quotes-container content-container">
-                    <section class="subscribe"> 
-                    <div class="row">
-                        <div class="col-12 col-md-4 order-md-1 d-flex align-items-center">
-                        <h6 class="mb-0"><strong>Following Us On</strong></h6>
-                        <a href="https://www.facebook.com/profile.php?id=61554298768912" target="_blank" class="ml-3"><i class="fab fa-facebook-square"></i><strong>Facebook!</strong></a>
-                        <h6 class="mb-0 ml-3"><strong>To get Exculsive Offers!!</strong></h6>
-                    </div>
-                    <div class="col-12 col-md-4 order-md-2"></div>
-                    <div class="col-12 col-md-4 order-md-3 d-flex align-items-center">
-                        <h4 class="mb-0"><strong>Subscribe!</strong></h5>
-                        <h6 class="mb-0 ml-3">Get exclusive offers and discounts by subscribing</h6>
-                    </div>
-                    </section>
-                </div>          
-            </div>            
-        </div>
+        
         <div id="delivery-banner" class="row text-left">
-            <div class="col text-black">
+            <div class="col-md-6 text-black">
+                <h2 class="logo-font my-1"><strong>Subscribe below to get Exculsive Offers!</strong></h2>                
+            </div>   
+            <div class="col-md-6 text-black">
                 <h2 class="logo-font my-1"><strong>Free delivery on orders over ${{ free_delivery_threshold }}!</strong></h2>                
-            </div>            
+            </div>          
         </div>
        
     </header>
+    
 
     {% if messages %}
         <div class="message-container">
@@ -168,14 +154,8 @@
     {% endblock %}
 
     {% block postloadjs %}
-    <script type="text/javascript">
-        $('.toast').toast('show');
-    </script>
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
 
-    {% endblock %}
-
- <!-- Footer -->
+    <!-- Footer -->
  <footer class="container-wrapper">
     <div class="container quotes-container content-container">
         <section class="footer">
@@ -211,13 +191,25 @@
                             </div>
                         </div>   
                     </form>
-                </div>            
+                    <div class="col-12">
+                        <a href="https://www.termsfeed.com/live/b09bd1f6-0168-431f-907b-3555f6891163" target="_blank">Privacy Policy</a>
+                    </div>  
+                </div>  
+                       
             </div>
         </div>
         </section>
    </div>
  </footer>
 <!-- /.footer -->
+    <script type="text/javascript">
+        $('.toast').toast('show');
+    </script>
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+
+    {% endblock %}
+
+ 
 
 </body>
  
