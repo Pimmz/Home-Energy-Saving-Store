@@ -7,4 +7,4 @@ assignees: Pimmz
 
 ---
 
-As a **role** I can **do** so that **benefit**
+As a **role** I can **do** so that I can  **benefit**
