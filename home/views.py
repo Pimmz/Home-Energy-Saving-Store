@@ -28,4 +28,3 @@ class PageNotFoundView(View):
 class ServerErrorView(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'home/500.html', status=500)
-
