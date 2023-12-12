@@ -1,11 +1,16 @@
 {% extends 'base.html' %}
+{% load static %}
 
-{% block content %}
 {% load crispy_forms_tags %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'home/error.css' %}">
+{%endblock%}
 
 <!--Catches any 400 error bad requests-->
 
-<div class="container">
+{% block content %}
+<div class="container-400">
     <p class="page-title text-center mt-5">Error 400 "Bad Request"</p>
     <hr class="rehome">
     <br>
