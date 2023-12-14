@@ -117,13 +117,13 @@
             </nav>
         </div>
         <div id="delivery-banner" class="row text-center">
-            <div class="col-md-6 bg-white text-black">
+            <div class="col-md-6 bg-black text-white">
                 <h5 class="logo-font my-1">
-                    <a class="logo-font my-1" href="{% url 'contact' %}" id="home-link"><strong>Subscribe to get Exculsive Offers!</strong></a>
+                    <a class="logo-font my-1 text-white" href="{% url 'contact' %}" id="home-link"><strong>Subscribe to get Exculsive Offers!</strong></a>
                 </h5>               
             </div>   
-            <div class="col-md-6 bg-white text-black">
-                <h5 class="logo-font my-1"><strong>Free delivery on orders over ${{ free_delivery_threshold }}!</strong></h5>                
+            <div class="col-md-6 bg-black text-white">
+                <h5 class="logo-font my-1"><strong>Free delivery on orders over £{{ free_delivery_threshold }}!</strong></h5>                
             </div>          
         </div>
     </header>
@@ -164,9 +164,11 @@
             <div class="col-lg-6 col-md-12 mb-4">
             <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">footer content</h5>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-                voluptatem veniam, est atque cumque eum delectus sint!
+                Home Energy Saving Store <br> 
+                Were passionate about energy saving products to save you money <br> 
+                We'll help save you money on your energy bills, give you tips and <br>
+                tricks to save you money and we sell products for you to purchase <br> 
+                to save money on your energy bills, 
             </p>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
@@ -179,10 +181,10 @@
                 <a href="https://www.facebook.com/profile.php?id=61554298768912" style="color: #4f4f4f;">Facebook</a>
                 </li>
                 <li class="mb-1">
-                <a href="#!" style="color: #4f4f4f;">Pricing</a>
+                <a href="{% url 'contact' %}" style="color: #4f4f4f;">Contact Us</a>
                 </li>
                 <li>
-                <a href="#!" style="color: #4f4f4f;">Where we deliver?</a>
+                <a href="#!" style="color: #4f4f4f;">Tips and Tricks</a>
                 </li>
             </ul>
             </div>

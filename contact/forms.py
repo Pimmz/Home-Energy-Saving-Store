@@ -12,4 +12,11 @@ class ContactForm(forms.Form):
     name = forms.CharField(label='Your Name')
     email = forms.CharField(label='Your email')
     order_number = forms.CharField(label='Order Number')
-    reason_for_contact = forms.ChoiceField(choices=SUBJECT_CHOICES, label='Reason for contact')
+    contact_reason = forms.ChoiceField(
+        choices=SUBJECT_CHOICES, 
+        label='Contact Reason'
+        )
+    reason_for_contact = forms.CharField(
+        widget=forms.Textarea(attrs={'rows':3}), 
+        label='Reason for Contact'
+        )
