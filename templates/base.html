@@ -46,7 +46,7 @@
     <title>HESS {% block extra_title %}{% endblock %}</title>
 </head>
 <body>
-    <header class="container-fluid fixed-top">
+    <header class="container-fluid">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
@@ -184,7 +184,7 @@
                 <a href="{% url 'contact' %}" style="color: #4f4f4f;">Contact Us</a>
                 </li>
                 <li>
-                <a href="#!" style="color: #4f4f4f;">Tips and Tricks</a>
+                <a href="{% url 'tips_and_tricks' %}" style="color: #4f4f4f;">Tips and Tricks</a>
                 </li>
             </ul>
             </div>

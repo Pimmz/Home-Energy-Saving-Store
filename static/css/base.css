@@ -5,6 +5,7 @@ html, body {
 
  
 body {
+
     background: url(https://res.cloudinary.com/dtqjcm9e6/image/upload/v1701776336/HESS/home-page_edwtul.jpg) no-repeat center center;
     background-size: cover;
     font-family: 'Lato', sans-serif;
@@ -298,20 +299,6 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-
-    .header-container {
-        padding-top: 164px;
-    }
-}
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
