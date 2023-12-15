@@ -13,14 +13,11 @@ body {
     
 }
 
-.container-contact {
-    background-color: beige;
-}
-
+.container-contact,
+.container-tips,
 .container-faq {
     background-color: beige;
 }
-
 
 .container-wrapper {
     display: flex;
