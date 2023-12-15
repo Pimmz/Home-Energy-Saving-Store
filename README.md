@@ -2,6 +2,8 @@ Facebook link https://www.facebook.com/profile.php?id=61554298768912
 
 Deployed site link - https://home-energy-saving-store-be6e9d82e03c.herokuapp.com/
 
+mailchimp newsletter - https://us21.admin.mailchimp.com/reports/clickmap?id=12670381
+
 fix merge error 
 
 

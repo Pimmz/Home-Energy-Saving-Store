@@ -17,6 +17,10 @@ body {
     background-color: beige;
 }
 
+.container-faq {
+    background-color: beige;
+}
+
 
 .container-wrapper {
     display: flex;
