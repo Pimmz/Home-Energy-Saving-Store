@@ -2,19 +2,27 @@ from django.contrib import messages
 from django.views import View
 from django.shortcuts import render, redirect
 from .models import TipsAndTricks
-from .forms import PostCreateForm
+from .forms import PostForm
 
 
 class TipsAndTricksView(View):
-    def get(self, request, *args, **kwargs):
-        form = PostCreateForm()
-        return render(request, 'tips.html', {'form': form})
+    def get(self, request):
+        posts = TipsAndTricks.objects.filter(is_approved=True)
+        return render(request, 'tips_and_tricks.html', {'posts': posts})
 
-    def post(self, request, *args, **kwargs):
-        form = PostCreateForm(request.POST)
+    def post(self, request):
+        if not request.user.is_authenticated:
+            messages.error(request, 'You must be logged in to add a post.')
+            return redirect('login')
+
+        form = PostForm(request.POST)     
         if form.is_valid():
-            messages.success(request, 'Your Post has been successful')
-            return redirect('tips_and_tricks')
+            post = form.save(commit=False)
+            post.author = request.user
+            post.save()
+            messages.success(request, 'Post added successfully. Waiting for Approval.')
+            return redirect('tips_and_tricks')      
         else:
-            messages.error(request, 'There was an error with your post')
-            return render(request, 'tips.html', {'form': form})
+            messages.error(request, 'Error adding post. Please check the form.')
+
+        return render(request, 'add_post.html', {'form': form})

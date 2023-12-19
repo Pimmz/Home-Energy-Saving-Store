@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+
+<div class="container-contact col-12">
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <h1 class="mt-5">Add Your Tip Or Trick</h1>
+            <hr class="mt-0 mb-4">
+            <form method="post" action="{% url 'add_post' %}">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+            <a href="{% url 'tips_and_tricks' %}">Back to Tips and Tricks</a>
+        </div>
+    </div>
+</div>
+
+{%endblock%}
