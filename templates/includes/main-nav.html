@@ -23,10 +23,10 @@
                 Radiators
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=activewear,essentials" class="dropdown-item">Fans</a>
-                <a href="{% url 'products' %}?category=jeans" class="dropdown-item">Shelves</a>
-                <a href="{% url 'products' %}?category=shirts" class="dropdown-item">Thermostats</a>
-                <a href="{% url 'products' %}?category=activewear,essentials,jeans,shirts" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?category=fans" class="dropdown-item">Fans</a>
+                <a href="{% url 'products' %}?category=shelves" class="dropdown-item">Shelves</a>
+                <a href="{% url 'products' %}?category=thermostats" class="dropdown-item">Thermostats</a>
+                <a href="{% url 'products' %}?category=fans,shelves,thermostats" class="dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -35,9 +35,9 @@
                 light bulbs
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'products' %}?category=bed_bath" class="dropdown-item">Bulb 1</a>
-                <a href="{% url 'products' %}?category=kitchen_dining" class="dropdown-item">Bulb 2</a>
-                <a href="{% url 'products' %}?category=bed_bath,kitchen_dining" class="dropdown-item">All Light bulbs</a>
+                <a href="{% url 'products' %}?category=indoor lights" class="dropdown-item">Indoor</a>
+                <a href="{% url 'products' %}?category=outdoor lights" class="dropdown-item">Outdoor</a>
+                <a href="{% url 'products' %}?category=indoor lights, outdoor lights" class="dropdown-item">All Light bulbs</a>
             </div>
         </li>
 
@@ -46,11 +46,9 @@
                 Insulation
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'products' %}?category=bed_bath" class="dropdown-item">Walls</a>
-                <a href="{% url 'products' %}?category=kitchen_dining" class="dropdown-item">Loft</a>
-                <a href="{% url 'products' %}?category=kitchen_dining" class="dropdown-item">Doors</a>
-                <a href="{% url 'products' %}?category=kitchen_dining" class="dropdown-item">Windows</a>
-                <a href="{% url 'products' %}?category=bed_bath,kitchen_dining" class="dropdown-item">All Insulation</a>
+                <a href="{% url 'products' %}?category=loft" class="dropdown-item">Loft</a>
+                <a href="{% url 'products' %}?category=doors & windows" class="dropdown-item">Doors & Windows</a>
+                <a href="{% url 'products' %}?category=loft, doors & windows" class="dropdown-item">All Insulation</a>
             </div>
         </li>
         <li class="nav-item 1">
