@@ -5,6 +5,7 @@ from .models import TipsAndTricks
 from .forms import PostForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.paginator import Paginator
+from django.utils.text import slugify
 
 
 class TipsAndTricksView(View):
@@ -34,6 +35,7 @@ class AddPostView(LoginRequiredMixin, View):
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
+            post.slug = slugify(post.title)
             post.save()
             messages.success(request, 'Post added successfully. Waiting for Approval.')
             return redirect('tips_and_tricks')     

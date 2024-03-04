@@ -14,6 +14,12 @@ class TipsAndTricks(models.Model):
     content = models.TextField('Content')
     is_approved = models.BooleanField(default=False)
     created_at = models.DateTimeField(default=timezone.now)
+    slug = models.SlugField(unique=True, blank=True, null=True)
+
+    def save(self, *args, **kwargs):
+        if not self.slug:   
+            self.slug = slugify(self.title)
+        super().save(*args, **kwargs)
 
 
 class ApprovalStatus(models.Model):

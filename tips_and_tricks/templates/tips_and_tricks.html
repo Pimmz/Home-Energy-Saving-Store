@@ -1,24 +1,48 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 {% load crispy_forms_tags %}
 
-
 {% block content %}
-
-
-
 <div class="container-contact col-12">
     <div class="row justify-content-center">
-        <div class="col-4">
+        <div class="col-8">
             <h1 class="mt-5">Tips and Tricks</h1>
             <hr class="mt-0 mb-4">
-            <div class="col-3 justify-content-center">
-            <form method="post" novalidate>
-                {% csrf_token %}
-                {{ form|crispy }}
-                <button type="submit" class="btn btn-success">Add Your Tip or Trick</button>
-            </form>   
+            
+            <div class="col-3 justify-content-center mb-3">
+                <a href="{% url 'add_post' %}" class="btn btn-success">Add Your Tip or Trick</a>
+            </div>
+           
+            {% for post in page_obj %}
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5>{{ post.title }}</h5>
+                        <p>Author: {{ post.author }}</p>
+                    </div>
+                    <div class="card-body">
+                        <p>{{ post.content }}</p>
+                       
+                        {% if post.featured_image %}
+                            <img src="{{ post.featured_image.url }}" alt="{{ post.title }}" class="img-fluid">
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+         
+            <div class="pagination justify-content-center">
+                {% if page_obj.has_previous %}
+                    <a href="?page=1" class="page-link">&laquo; First</a>
+                    <a href="?page={{ page_obj.previous_page_number }}" class="page-link">Previous</a>
+                {% endif %}
+                <span class="page-link">
+                    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+                </span>
+                {% if page_obj.has_next %}
+                    <a href="?page={{ page_obj.next_page_number }}" class="page-link">Next</a>
+                    <a href="?page={{ page_obj.paginator.num_pages }}" class="page-link">Last &raquo;</a>
+                {% endif %}
+            </div>
         </div>
     </div>
-</div>   
+</div>
+{% endblock %}
 
-{%endblock%}
