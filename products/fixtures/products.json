@@ -9,7 +9,7 @@
       "price": 49.99,
       "category": 1,
       "rating": 4.6,
-      "image_url": "https://asset.cloudinary.com/dtqjcm9e6/fe124e398ee4ec3f38ad2954d6d54b4a",
+      "image_url": "https://res.cloudinary.com/dtqjcm9e6/image/upload/v1709632452/static/images/fan_joe26e.png",
       "image": "fan"
     }
   },
@@ -23,7 +23,7 @@
       "price": 99.95,
       "category": 1,
       "rating": 4.6,
-      "image_url": "https://res.cloudinary.com/dtqjcm9e6/image/upload/v1706719272/media/fan_mtec0o.png",
+      "src_url": "{% static/images/fan_joe26e.png' %}",
       "image": "fan2"
     }
   },
@@ -37,7 +37,7 @@
       "price": 24.95,
       "category": 1,
       "rating": 4.7,
-      "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP1230201417013175M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+      "image_url": "https://res.cloudinary.com/dtqjcm9e6/image/upload/v1709632444/static/images/fan3_spunoq.png",
       "image": "fan3"
     }
   },
