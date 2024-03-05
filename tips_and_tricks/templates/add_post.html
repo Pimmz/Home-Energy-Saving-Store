@@ -8,15 +8,18 @@
 
 <div class="container-contact col-12">
     <div class="row justify-content-center">
-        <div class="col-4">
+        <div class="col-md-10 text-center">
             <h1 class="mt-5">Tips and Tricks</h1>
             <hr class="mt-0 mb-4">
-            <div class="col-3 justify-content-center">
-            <form method="post" novalidate>
-                {% csrf_token %}
-                {{ form|crispy }}
-                <button type="submit" class="btn btn-success">Add Your Tip or Trick</button>
-            </form>   
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 justify-content-center">
+                <form method="post" novalidate>
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>   
+            </div>
         </div>
     </div>
 </div>   
