@@ -23,7 +23,7 @@ class TipsAndTricksView(View):
             return render(request, 'tips_and_tricks.html', {'page_obj': page_obj})
         else:
             messages.error(request, 'You must be logged in to view this page.')
-            return redirect('login')
+            return redirect('account_login')
 
 class AddPostView(LoginRequiredMixin, View):
     def get(self, request):
