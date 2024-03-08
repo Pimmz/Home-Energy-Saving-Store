@@ -15,5 +15,7 @@ urlpatterns = [
     path('', include('contact.urls')),
     path('', include('tips_and_tricks.urls')),
     path('', include('faq.urls')),
+    path('error', include('error_pages.urls')),
   
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
