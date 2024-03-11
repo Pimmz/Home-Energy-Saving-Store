@@ -1,20 +1,35 @@
 from django.contrib import messages
 from django.views import View
 from django.shortcuts import render, redirect
+from django.urls import reverse_lazy
 from .models import TipsAndTricks
 from .forms import PostForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.paginator import Paginator
 from django.utils.text import slugify
+from django.views.generic.edit import UpdateView, DeleteView
+
+
+
+class UpdatePostView(LoginRequiredMixin, UpdateView):
+    model = TipsAndTricks
+    formm_class = PostForm
+    template_name = 'update_post.html'
+    success_url = reverse_lazy('tips_and_tricks')
+    fields = ['title', 'content', 'featured_image']
+
+class DeletePostView(LoginRequiredMixin, DeleteView):
+    model = TipsAndTricks
+    success_url = reverse_lazy('tips_and_tricks')
 
 
 class TipsAndTricksView(View):
     def get(self, request):
         if request.user.is_authenticated:
             if request.user.is_superuser:
-                posts = TipsAndTricks.objects.all()
+                posts = TipsAndTricks.objects.all().order_by('-created_at')
             else:
-                posts = TipsAndTricks.objects.filter(is_approved=True)
+                posts = TipsAndTricks.objects.filter(is_approved=True).order_by('-created_at')
 
             paginator = Paginator(posts, 6)
             page_number = request.GET.get('page')
