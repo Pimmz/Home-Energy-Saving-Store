@@ -3,10 +3,6 @@
 
 {% load crispy_forms_tags %}
 
-{% block extra_css %}
-    <link rel="stylesheet" href="{% static 'home/error.css' %}">
-{%endblock%}
-
 <!--Catches any 400 error bad requests-->
 
 {% block content %}
@@ -20,6 +16,6 @@
     <img src="" alt="bye">
 </div>
 <div class="text-center mt-5">
-    <a class="btn btn-outline-secondary m-2" href="{% url 'error:bad_request' %}">Cancel</a>
+    <a class="btn btn-outline-secondary m-2" href="{% url 'home' %}">Cancel</a>
 </div>
 {%endblock%}
