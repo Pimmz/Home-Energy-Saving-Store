@@ -21,5 +21,12 @@
         </div>
     </div>
 </div>   
-
+<!-- Checks and displays a success message when submitted-->
+{% if messages %}
+<div id="msg" class="alert alert-success" role="alert">
+    {% for message in messages %}
+    {{ message }}
+    {% endfor %}
+</div>
+{% endif %}
 {%endblock%}

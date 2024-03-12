@@ -9,6 +9,13 @@
         <div class="col-4">
             <h1 class="mt-5">Contact Us</h1>
             <hr class="mt-0 mb-4">
+             {% if messages %}
+            <div id="msg" class="alert alert-success mt-3" role="alert">
+                {% for message in messages %}
+                {{ message }}
+                {% endfor %}
+                </div>
+            {% endif %}
             <form method="post" novalidate>
                 {% csrf_token %}
                 {{ form|crispy }}
@@ -17,7 +24,7 @@
             
             <div id="mc_embed_signup">
                 <form action="https://herokuapp.us21.list-manage.com/subscribe/post?u=126199efcf9eb80dc266678bf&amp;id=e6a6cc1c28&amp;f_id=00ebefe6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                    <div id="mc_embed_signup_scroll"><h2>Subscribe</h2>
+                    <div id="mc_embed_signup_scroll"><h2>Subscribe To Get Exculsives Offers and News From Us</h2>
                         <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
                         <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
                         <div id="mce-responses" class="clear foot">

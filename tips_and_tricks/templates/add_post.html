@@ -12,6 +12,13 @@
             <h1 class="mt-5">Tips and Tricks</h1>
             <hr class="mt-0 mb-4">
         </div>
+        {% if messages %}
+        <div id="msg" class="alert alert-success" role="alert">
+            {% for message in messages %}
+            {{ message }}
+            {% endfor %}
+        </div>
+        {% endif %}
         <div class="row justify-content-center">
             <div class="col-12 justify-content-center">
                 <form method="post" novalidate enctype="multipart/form-data">
@@ -24,4 +31,11 @@
     </div>
 </div>   
 
+{% if messages %}
+    <div id="msg" class="alert alert-success" role="alert">
+        {% for message in messages %}
+        {{ message }}
+        {% endfor %}
+    </div>
+{% endif %}
 {%endblock%}

@@ -2,6 +2,7 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+
 <div class="container-contact col-12">
     <div class="row justify-content-center">
         <div class="col-8">
@@ -11,13 +12,19 @@
                     <hr class="mt-0 mb-4">
                 </div>
             </div>
-
+           
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
                     <a href="{% url 'add_post' %}" class="btn btn-success">Add Your Tip or Trick</a>
                 </div>
             </div>
-
+             {% if messages %}
+            <div id="msg" class="alert alert-success mt-3" role="alert">
+                {% for message in messages %}
+                {{ message }}
+                {% endfor %}
+                </div>
+            {% endif %}
             <div class="row mt-5">
                 {% for post in page_obj %}
                     {% if post.author == request.user %}
@@ -62,6 +69,8 @@
         </div>
     </div>
 </div>
+
+
 
 <script>
 function confirmDelete(postId) {
