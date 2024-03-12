@@ -5,16 +5,15 @@
 
 <!--Catches any 403 Forbidden Requests-->
 
-<div class="container">
-    <p class="page-title text-center mt-5">Error 403 "Forbidden Request"</p>
-    <hr class="rehome">
-    <br>
-    <h2 class="text-center mt-3">Sorry thats a Forbidden request.</h2>
-</div>
-<div class="gif text-center mt-5">
-    <img src="" alt="bye">
+<div class="container-fluid">
+    <div class="container-403">
+        <p class="page-title text-center mt-5">Error 403 "Forbidden Request"</p>
+        <hr class="rehome">
+        <br>
+        <h2 class="text-center mt-3">Sorry! thats a Forbidden request.</h2>
+    </div>
 </div>
 <div class="dog text-center mt-5">
-    <a class="btn btn-outline-secondary m-2" href="{% url 'home' %}">Cancel</a>
+    <a class="btn btn-outline-secondary m-2" href="{% url 'home' %}">Return To The Home Page</a>
 </div>
 {%endblock%}

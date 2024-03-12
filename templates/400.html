@@ -6,16 +6,15 @@
 <!--Catches any 400 error bad requests-->
 
 {% block content %}
-<div class="container-400">
-    <p class="page-title text-center mt-5">Error 400 "Bad Request"</p>
-    <hr class="rehome">
-    <br>
-    <h2 class="text-center mt-3">Oh No! Looks like you made a bad request</h2>
-</div>
-<div class="gif text-center mt-5">
-    <img src="" alt="bye">
+<div class="container-fluid">
+    <div class="container-400">
+        <p class="page-title text-center mt-5">Error 400 "Bad Request"</p>
+        <hr class="rehome">
+        <br>
+        <h2 class="text-center mt-3">Oh No! Looks like you made a bad request</h2>
+    </div>
 </div>
 <div class="text-center mt-5">
-    <a class="btn btn-outline-secondary m-2" href="{% url 'home' %}">Cancel</a>
+    <a class="btn btn-outline-secondary m-2" href="{% url 'home' %}">Return To The Home Page</a>
 </div>
 {%endblock%}

@@ -16,7 +16,11 @@ body {
 
 .container-contact,
 .container-tips,
-.container-faq {
+.container-faq,
+.container-400,
+.container-403,
+.container-404,
+.container-500 {
     background-color: beige;
 }
 
