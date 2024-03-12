@@ -1,8 +1,9 @@
 from django.views import View
 from django.shortcuts import render, redirect
 from .models import FAQ
+from django.contrib.auth.mixins import LoginRequiredMixin
 
-class FAQView(View):
+class FAQView(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
         
         return render(request, 'faq.html')
