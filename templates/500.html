@@ -7,13 +7,14 @@
 
 <div class="container-fluid">
     <div class="container-500">
-        <p class="page-title text-center mt-5">Error 500 "Internal Server Error"</p>
+        <p class="page-title text-center">Error 500 "Internal Server Error"</p>
         <hr class="rehome">
         <br>
         <h2 class="text-center mt-3">Oh No! Dont worry its me! Not you!</h2>
+        <div class="text-center">
+            <a class="btn btn-success outline-secondary m-5" href="{% url 'home' %}">Return To The Home Page</a>
+        </div>
     </div>
 </div>
-<div class="dog text-center mt-5">
-    <a class="btn btn-outline-secondary m-2" href="{% url 'home' %}">Return To The Home Page</a>
-</div>
+
 {%endblock%}
