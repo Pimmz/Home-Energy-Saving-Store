@@ -12,32 +12,29 @@ The Home Energy Saving Store was designed to help and raise awareness of the man
 
 Here is a link to my project -[HOME ENERGY SAVING STORE](https://home-energy-saving-store-be6e9d82e03c.herokuapp.com)
 
-![Am I Responsive](documentation/readme_images/ami.png)
+![Am I Responsive](documentation/readme_images/iam.png)
 
-Here's your deployed site as an example:
-https://ui.dev/amiresponsive?url=https://home-energy-saving-store-be6e9d82e03c.herokuapp.com
+## User Experience (UX)
 
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
+When I started the design of the Home Energy Saving Store I wanted to ensure the site was Useful, Useable and Valuable so that it makes the user experience informative and enjoyable. To do this I looked at the five key fundamentals;
 
-![screenshot](documentation/mockup.png)
+Strategy - So the user can discover, Learn, enjoy, interact and get assistance with all things to do with saving energy at home.
 
-Note: Markdown files (.md) should not contain HTML elements like `img`, `br`, `div`, `a`, etc, only Markdown formatting.
-Find out more about using Markdown elements here:
-https://pandao.github.io/editor.md/en.html
+Scope - Based on the information from the strategy, the features included emotive images. A Contact us section so that the users can contact the store about returning a product and item not being delivered ot anything else. Plus you have the ability to subcribe to the sight to get exculsives offers and news from the store. The Tips and Tricks page enables the user to post a picture of their ideas and suggestions on how to save money from ingenuitive ideas. The FAQ page or Frequesntly asked questions is another area designed to help the users of the site to understand whether certain tasks around the home are beneficial or not.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+Structure - This was designed around the user. After speaking with a number of energy saving people, to be about to contact the store. To be able to post their own ideas on how to save money with out having to pay for it. Plus an area to read the basics on saving energy for the newer users visting the site.
 
-## UX
+Skeleton - As before this was designed around the user which was gained from information supplied by a number of energy saving people. This dictated that it would be laid out simply. So that it can be used quickly and efficiently while delivering the most amount of information and receiving help depending on the user's needs.
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+Surface - I wanted the look of the Home Energy Saving Store to be informative, clear, and concise, with consistent typography and corresponding colours to help them stand out, to easily navigate with emotive pictures that helped to raise awareness about reducing pollution and greenhouse gases to help the environment and save the user money.
 
-In this section, you will briefly explain your design processes.
+Then I sat down and roughly sketched out onto paper what the screens would look like on a mobile, tablet and desktop, This then gave me the basis to start creating the Home Energy Saving Store in Codeanywhere.
+<details>
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+<summary>Rough Sketch</summary>
+
+![Home Page](documentation/readme_images/sketch.jpg)
+</details>
 
 ### Colour Scheme
 
