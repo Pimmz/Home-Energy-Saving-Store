@@ -2,6 +2,7 @@ html,
 body {
     height: 100%;
     margin: 0;
+    overflow-x:hidden;
 }
 
 
@@ -363,7 +364,6 @@ input[name='q']::placeholder {
 /* mailchimp */
 #mc_embed_signup {
     background: #fff;
-    false;
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
     width: 600px;

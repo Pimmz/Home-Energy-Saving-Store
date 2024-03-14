@@ -6,20 +6,14 @@ mailchimp newsletter - https://us21.admin.mailchimp.com/reports/clickmap?id=1267
 
 fix merge error 
 
+HOME ENERGY SAVING STORE
 
-# [HOME ENERGY SAVING STORE](https://home-energy-saving-store-be6e9d82e03c.herokuapp.com)
+The Home Energy Saving Store was designed to help and raise awareness of the many ways for people to save energy around their homes not only so they can reduce their bills but also for them to do their small but effective part at reducing pollution and greenhouse gases to help the environment.
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+Here is a link to my project -[HOME ENERGY SAVING STORE](https://home-energy-saving-store-be6e9d82e03c.herokuapp.com)
 
-In this section, you will include a few paragraphs providing an overview of your project.
-Essentially, this part is your "sales pitch".
+![Am I Responsive](documentation/readme_images/ami.png)
 
-At this stage, you should have a name for your project so use it!
-Don't introduce the project as a "portfolio project" for the diploma.
-
-In this section, describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
-
-Consider adding a mockup image using the "Am I Responsive" website.
 Here's your deployed site as an example:
 https://ui.dev/amiresponsive?url=https://home-energy-saving-store-be6e9d82e03c.herokuapp.com
 
