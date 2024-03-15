@@ -42,6 +42,8 @@ The website primarily features a slick black `#000000` and white `#ffffff` colou
 
 To enhance readability and use experience on error pages, contact us, tips and tricks and faq. I've opted for a subtle beige background `#f5f5dc` background paired with crisp black text `#000000` this deliberate contrast not only improves legibility but also contributes to a visual appealing design.
 
+I've used [colorcodes](https://htmlcolorcodes.com) To source my colours.
+
 ### Typography
 
 I looked for fonts on Google Fonts, to help me decide as it gave a better visual aid for me to see how they all looked in their different weights. After many hours trying the fonts out, I decided to use Lato all the way through to ensure a good balance, with a consistent look and feel. As a backup, I used sans-serif as it has a great look and then my third choice was serif as a fallback in case the other two weren't available.
@@ -197,126 +199,91 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
 ![screenshot](documentation/feature03.png)
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
-Repeat as necessary for as many features as your site contains.
-
-Hint: the more, the merrier!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ### Future Features
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+The following user stories were scoped out of the project due to time constraints and labelled as "Nice to Have" on the project board in Github and put into the "No time to complete" column. It is intended that these user stories will be implemented at a later date.
 
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
+- As a user, I can receive confirmation that my adoption or rehome request has been successful via an email sent to me.
+- As a user, I can search and filter posts so that I can target posts I wish to view instead of scrolling through posts.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+Other potential features include:
 
-- Title for future feature #1
-    - Any additional notes about this feature.
-- Title for future feature #2
-    - Any additional notes about this feature.
-- Title for future feature #3
-    - Any additional notes about this feature.
+- Adding training techniques and videos from users to benefit the whole group.
+- Having an Illness diagnoses page so the user can put in the symptoms and their diagnosis with a link to a vet to confirm and assist with the issue.
+
 
 ## Tools & Technologies Used
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-In this section, you should explain the various tools and technologies used to develop the project.
-Make sure to put a link (where applicable) to the source, and explain what each was used for.
-Some examples have been provided, but this is just a sample only, your project might've used others.
-Feel free to delete any unused items below as necessary.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
-- [CSS :root variables](https://www.w3schools.com/css/css3_variables.asp) used for reusable styles throughout the site.
 - [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for an enhanced responsive layout.
-- [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
 - [JavaScript](https://www.javascript.com) used for user interaction on the site.
-- [Python](https://www.python.org) used as the back-end programming language.
+- [Python](https://www.python.org) is used as the back-end programming language.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
-- [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
-- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
-- [Codeanywhere](https://codeanywhere.com) used as a cloud-based IDE for development.
-- [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [Materialize](https://materializecss.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [Flask](https://flask.palletsprojects.com) used as the Python framework for the site.
+- [codeanywhere](https://app.codeanywhere.com/) used as a cloud-based IDE for development.
+- [Bootstrap](https://getbootstrap.com) is used as the front-end CSS framework for modern responsiveness and pre-built components.
 - [Django](https://www.djangoproject.com) used as the Python framework for the site.
-- [MongoDB](https://www.mongodb.com) used as the non-relational database management with Flask.
-- [SQLAlchemy](https://www.sqlalchemy.org) used as the relational database management with Flask.
-- [PostgreSQL](https://www.postgresql.org) used as the relational database management.
+- [Django-allauth](https://django-allauth.readthedocs.io/en/latest/installation.html): authentication library used to create the user accounts
 - [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
-- [Cloudinary](https://cloudinary.com) used for online static file storage.
-- [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
-- [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
+- [Cloudinary](https://cloudinary.com) is used for online static file storage.
+- [Balsamiq](https://balsamiq.com/) - Used to generate Wireframe images.
+- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for overall development and tweaking, including testing responsiveness and performance.
+- [Font Awesome](https://fontawesome.com/) - Used for icons in the information bar.
+- [Google Fonts](https://fonts.google.com/) - Used to import and alter fonts on the page.
+- [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
+- [Jshint](https://jshint.com/) - used to validate javascript
+- [colorcodes](https://htmlcolorcodes.com)
+- [Favicon](https://favicon.io/) - Used to create the favicon.
+- [Lucidchart](https://lucid.app/documents#/dashboard) - used to create the database schema design
+- [Grammerly](https://app.grammarly.com/) - used to proofread the README.md
+- [Summernote](https://summernote.org/): A WYSIWYG editor to allow users to edit their posts
+- [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) used to manage Django Forms
 
 ## Database Design
 
-Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
-Understanding the relationships between different tables can save time later in the project.
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Using your defined models (one example below), create an ERD with the relationships identified.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- I used principles of Object-Oriented Programming throughout this project and Django’s Class-Based Generic Views.
+- Below is an example of the model I used for my Tips and Tricks page
 
 ```python
-class Product(models.Model):
-    category = models.ForeignKey(
-        "Category", null=True, blank=True, on_delete=models.SET_NULL)
-    sku = models.CharField(max_length=254, null=True, blank=True)
-    name = models.CharField(max_length=254)
-    description = models.TextField()
-    has_sizes = models.BooleanField(default=False, null=True, blank=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True)
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
+class TipsAndTricks(models.Model):
 
-    def __str__(self):
-        return self.name
+    title = models.CharField(max_length=200, unique=True, default='')
+    author = models.ForeignKey(User, on_delete=models.CASCADE, default='')
+    featured_image = CloudinaryField('image', default='placeholder')
+    content = models.TextField('Content')
+    is_approved = models.BooleanField(default=False)
+    created_at = models.DateTimeField(default=timezone.now)
+    slug = models.SlugField(unique=True, blank=True, null=True)
+
+    def save(self, *args, **kwargs):
+        if not self.slug:   
+            self.slug = slugify(self.title)
+        super().save(*args, **kwargs)
 ```
+- Using Markdown formatting to represent an ERD table the Tips and model above would look like this:
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- Table: **Tips and Tricks**
 
-A couple recommendations for building free ERDs:
-- [Draw.io](https://draw.io)
-- [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-![screenshot](documentation/erd.png)
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Using Markdown formatting to represent an example ERD table using the Product model above:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- Table: **Product**
-
-    | **PK** | **id** (unique) | Type | Notes |
+    | **PK** | **Attribute** | Type | Notes |
     | --- | --- | --- | --- |
-    | **FK** | category | ForeignKey | FK to **Category** model |
-    | | sku | CharField | |
-    | | name | CharField | |
-    | | description | TextField | |
-    | | has_sizes | BooleanField | |
-    | | price | DecimalField | |
-    | | rating | DecimalField | |
-    | | image_url | URLField | |
-    | | image | ImageField | |
+    | **PK** | id | Integer | Primary Key |
+	| **FK** | title| CharField | unique title of the tip |
+    | **PK** | author_id | Foreignkey | Foreign key to user model |
+    | **PK** | featured_image| CloudianryField | Image field |
+    | **PK** | content | TextField | Content of the tip or trick |
+    | **PK** | is_approved | BooleanField | Approval status|
+    | **PK** | created_at | DateTimeField | Creation Timestamp |
+    | **PK** | slug | SlugField | Uniques slug for url |
+    
+🛑🛑🛑🛑🛑 AM I OK WITH JUST ONE MODEL ? 🛑🛑🛑🛑🛑
+
+- To help organise the remaining models required I used [Lucidchart](https://lucid.app/lucidchart/0a00742c-aa55-4964-8626-cff679e4ba5b/edit?viewport_loc=-476%2C20%2C3384%2C1572%2C0_0&invitationId=inv_85e6fc15-610f-42fe-b2bf-59e51136a95c)
+
+![screenshot](documentation/readme_images/erd.png)
 
 ## Agile Development Process
 
