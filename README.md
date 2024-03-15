@@ -99,63 +99,63 @@ category by name
 
 <summary>Home Page</summary>
 
-![Home Page](documentation/wireframes/homepage.png)
+![Home Page](documentation/wireframes/home.png)
 </details>
 
 <details>
 
 <summary>All Products Page</summary>
 
-![All Products Page](documentation/wireframes/aboutpage.png)
+![All Products Page](documentation/wireframes/products.png)
 </details>
 
 <details>
 
 <summary>Individual Categories Page</summary>
 
-![Individual Categories Page](documentation/wireframes/adoption.png)
+![Individual Categories Page](documentation/wireframes/categories.png)
 </details>
 
 <details>
 
 <summary>Contact Us Page</summary>
 
-![Contact Us Page](documentation/wireframes/rehome.png)
+![Contact Us Page](documentation/wireframes/contact.png)
 </details>
 
 <details>
 
 <summary>Tips and Tricks Page</summary>
 
-![Tips and Tricks Page](documentation/wireframes/adoptdetails.png)
+![Tips and Tricks Page](documentation/wireframes/tips.png)
 </details>
 
 <details>
 
 <summary>FAQ Page</summary>
 
-![FAQ Page](documentation/wireframes/rehome.png)
+![FAQ Page](documentation/wireframes/faq.png)
 </details>
 
 <details>
 
 <summary>Shopping Basket Page</summary>
 
-![Shopping Basket Page](documentation/wireframes/rehome.png)
+![Shopping Basket Page](documentation/wireframes/basket.png)
 </details>
 
 <details>
 
 <summary>Checkout Page</summary>
 
-![Checkout Page](documentation/wireframes/rehome.png)
+![Checkout Page](documentation/wireframes/checkout.png)
 </details>
 
 <details>
 
 <summary>Product Management Page</summary>
 
-![Product Management Page](documentation/wireframes/rehome.png)
+![Product Management Page](documentation/wireframes/products.png)
 </details>
 
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
