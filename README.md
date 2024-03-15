@@ -52,118 +52,113 @@ I looked for fonts on Google Fonts, to help me decide as it gave a better visual
 
 ## User Stories
 
-### New Site Users
+#### EPIC | Viewing and Navigation
 
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
+- As a shopper I can contact the store so that I can make a query about something or return a product
+- As a shopper I can view frequently asked questions so that I can quickly learn and answer energy saving questions that I may have
+- As a Shopper I can view tips and tricks so that I can learn from other user what they have done to save money on my heating and electricity costs
+- As a Shopper I can find the store on Facebook so that I can easily find it and trust its authenticity
+- As a Shopper I can easily view the total of my purchases at any time so that I can avoid spending too much
+- As a Shopper I can view individual products details so that I can identify the price, description, product rating, product image and available sizes
+- As a Shopper I can view a specific category of products so that I can quickly find products I'm interested in without having to search through all the products
+- As a shopper I can view a list of products so that I can select some to purchase
 
-### Returning Site Users
+#### EPIC | Registration and User Accounts
+- As a Site user I can have a personalised user profile so that I can view my personal order history and order confirmations and save my payment information
+- As a Shopper I can Subscribe to to get exclusive offers and News so that I can stay upto date with new and exciting energy saving products as well as exclusive offers and discounts
+- As a Site user I can receive an email confirmation after registering so that I can verify that my account registration was successful
+- As a Shopper I can Easily recover my password in case I forget it so that I can recover access to my account
+- As a Site User easily login or log out do so that I can access my personal account information
+- As a Site user I can easily registered for an account so that I can have a personal account and be able to view my profile
 
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
+#### EPIC | Sorting and Searching
+- As a Shopper I can Search for a product by name or description so that I can find a specific product I'd like to purchase
+- As a Shopper I can sort multiple categories of products simultaneously so that I can find the best price or best rated products across a broad categories
+- As a Shopper I can sort a specific category of product so that I can find the best priced or best rated product in a specific category or sort the product in that 	 
+category by name
+- As a Shopper I can sort the list of available products so that I can easily identify the best rated best priced and categorically sorted products
 
-### Site Admin
+#### EPIC | Purchasing and Checkout
+- As a Shopper I can receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my record
+- As a Shopper I can view an order confirmation after checkout so that I can verify that I haven't made any mistakes
+- As a Shopper I can Feel my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase
+- As a Shopper I can easily enter my payment information so that I can check out quickly and with no hassles
+- As a Shopper I can Adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before checkout
+- As a Shopper I can view items in my bag to be purchased so that I can identify the total cost of my purchase and all items I will receive
+- As a Shopper I can easily select the size and quantity of a product when purchasing it so that I can ensure I don't accidentally select the wrong product quantity or size
 
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
+#### EPIC | Admin and Store Management
+- As a Store Owner I can delete a product so that I can remove items that are no longer for sale
+- As a Store Owner I can edit/ update a product so that I can change product prices descriptions images and other product criteria
+- As a Store Owner I can add a product so that I can add new items to my store
+
 
 ## Wireframes
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+<details>
 
-In this section, display your wireframe screenshots using a Markdown `table`.
-Instructions on how to do Markdown `tables` start on line #213 on this site: https://pandao.github.io/editor.md/en.html
+<summary>Home Page</summary>
 
-Alternatively, dropdowns are a way to condense several wireframes into a collapsible menu to save space.
-Dropdowns in Markdown are considered some of the only acceptable HTML components that are allowed for assessment purposes.
+![Home Page](documentation/wireframes/homepage.png)
+</details>
 
-**IMPORTANT**! **IMPORTANT**! **IMPORTANT**!
-The example below uses the `details` and `summary` code elements.
-However, for these scripts to work, I've had to add spaces within the `< >` elements.
+<details>
 
-You MUST remove these spaces for it to work properly on your own README/TESTING files.
-Remove the spaces within the `< >` brackets for the `details` and `summary` code elements,
-for the Mobile, Tablet, and Desktop wireframes.
+<summary>All Products Page</summary>
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+![All Products Page](documentation/wireframes/aboutpage.png)
+</details>
 
-To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
+<details>
+
+<summary>Individual Categories Page</summary>
+
+![Individual Categories Page](documentation/wireframes/adoption.png)
+</details>
+
+<details>
+
+<summary>Contact Us Page</summary>
+
+![Contact Us Page](documentation/wireframes/rehome.png)
+</details>
+
+<details>
+
+<summary>Tips and Tricks Page</summary>
+
+![Tips and Tricks Page](documentation/wireframes/adoptdetails.png)
+</details>
+
+<details>
+
+<summary>FAQ Page</summary>
+
+![FAQ Page](documentation/wireframes/rehome.png)
+</details>
+
+<details>
+
+<summary>Shopping Basket Page</summary>
+
+![Shopping Basket Page](documentation/wireframes/rehome.png)
+</details>
+
+<details>
+
+<summary>Checkout Page</summary>
+
+![Checkout Page](documentation/wireframes/rehome.png)
+</details>
+
+<details>
+
+<summary>Product Management Page</summary>
+
+![Product Management Page](documentation/wireframes/rehome.png)
+</details>
+
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
-
-### Mobile Wireframes
-
-< details >
-< summary > Click here to see the Mobile Wireframes < / summary >
-
-Home
-  - ![screenshot](documentation/wireframes/mobile-home.png)
-
-About
-  - ![screenshot](documentation/wireframes/mobile-about.png)
-
-Contact
-  - ![screenshot](documentation/wireframes/mobile-contact.png)
-
-Gallery
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
-
-etc.
-  - repeat for any remaining mobile wireframes
-
-< / details >
-
-### Tablet Wireframes
-
-< details >
-< summary > Click here to see the Tablet Wireframes < / summary >
-
-Home
-  - ![screenshot](documentation/wireframes/tablet-home.png)
-
-About
-  - ![screenshot](documentation/wireframes/tablet-about.png)
-
-Contact
-  - ![screenshot](documentation/wireframes/tablet-contact.png)
-
-Gallery
-  - ![screenshot](documentation/wireframes/tablet-gallery.png)
-
-etc.
-  - repeat for any remaining tablet wireframes
-
-< / details >
-
-### Desktop Wireframes
-
-< details >
-< summary > Click here to see the Desktop Wireframes < / summary >
-
-Home
-  - ![screenshot](documentation/wireframes/desktop-home.png)
-
-About
-  - ![screenshot](documentation/wireframes/desktop-about.png)
-
-Contact
-  - ![screenshot](documentation/wireframes/desktop-contact.png)
-
-Gallery
-  - ![screenshot](documentation/wireframes/desktop-gallery.png)
-
-etc.
-  - repeat for any remaining desktop wireframes
-
-< / details >
 
 ## Features
 
