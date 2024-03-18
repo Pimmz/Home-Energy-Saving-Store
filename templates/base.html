@@ -175,7 +175,8 @@
             <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">links</h5>
             <ul class="list-unstyled mb-0">
                 <li class="mb-1">
-                <a href="{% url 'faq' %}" style="color: #4f4f4f;">Frequently Asked Questions</a>
+                <a href="{% if request.user.is_authenticated %}{% url 'faq' %}{% else %}{% url 'account_login' %}{% endif %}" id="home-link"{% if not request.user.is_authenticated %}onclick="alert('You can only view this page if you are signed in');"{% endif %} style="color: #4f4f4f;">
+                Frequently Asked Questions</a>  
                 </li>
                 <li class="mb-1">
                 <a href="https://www.facebook.com/profile.php?id=61554298768912" style="color: #4f4f4f;">Facebook</a>
@@ -184,7 +185,8 @@
                 <a href="{% url 'contact' %}" style="color: #4f4f4f;">Contact Us</a>
                 </li>
                 <li>
-                <a href="{% url 'tips_and_tricks' %}" style="color: #4f4f4f;">Tips and Tricks</a>
+                <a href="{% if request.user.is_authenticated %}{% url 'tips_and_tricks' %}{% else %}{% url 'account_login' %}{% endif %}" id="home-link"{% if not request.user.is_authenticated %}onclick="alert('You can only view this page if you are signed in');"{% endif %} style="color: #4f4f4f;">
+                Tips and Tricks</a> 
                 </li>
             </ul>
             </div>

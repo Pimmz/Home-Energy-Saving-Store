@@ -164,40 +164,213 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 ## Features
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### Existing Features
 
-- **Title for feature #1**
+- **Header**
+![Header](documentation/readme_images/header.png)
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+- Title of the website to ensure users know exactly where they are.
+- Search facility so the user can find the products quickly that are sold on the site
+- My account section so the user can find their details, log out and if authorised, manage products.
+- The basket link so the user can see the amount they have put in their basket at a glance of a eye. Plus when clicked it opend up the basket with more detail.
 
-![screenshot](documentation/feature01.png)
+- **Navigation Bar**
+![Navigation bar](documentation/readme_images/nav.png)
 
-- **Title for feature #2**
+- The navigation bar is present at the top of every page and includes all links to the various other pages.
+- The Tips and Tricks page as well as the FAQ will only open if you are signed in. If you are not a sign in message comes up asking you to sign in. 
+![Navigation bar](documentation/readme_images/nav.png)
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+- **Footer**
+![Footer](documentation/readme_images/footer.png)
 
-![screenshot](documentation/feature02.png)
+- The location of the Fox Terriers Owners Club so users are aware, of where it is located in the world.
+- The footer section includes links to Facebook, Instagram, Twitter and YouTube.
+- Clicking the links in the footer opens a separate browser tab to avoid pulling the user away from the site.
 
-- **Title for feature #3**
+- **Home Page**
+![Home Page](documentation/readme_images/homepage1.png)
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+- Description of our website and what we're about so users can decide if it's for them.
+- Fontawesome icons are used to help draw the eye to the three key sections.
+- Three key sections enlarged to show the additional added features of the website.
+- Two images clearly showing the different types of Fox Terrier.
+- Update!!! After some consideration I added a call to action to Register. To make it more user friendly.
+![Call to action](documentation/readme_images/register.png)
 
-![screenshot](documentation/feature03.png)
+- **About Page**
+![About Page](documentation/readme_images/about.png)
+
+- Clear title explaining the section
+- Two images clearly showing the different types of Fox Terrier.
+- A in depth look at the background of the two types of Fox Terriers.
+- To provide even more of a detailed look into Fox Terriers, a Wikipedia link is available if the user wants to know more.
+  
+- **Adoption Page**
+![Adoption Page](documentation/readme_images/adoptionpage.png)
+
+- With a scary statistic that only 10% of dogs born will find a permanent home. Our aim is to find owners for our amazing dogs.
+- Specific questions targeted to potential adoptees to greater under more about them.
+- Error message if the user doesn't fill in the required text
+![Empty](documentation/readme_images/empty.png)
+- Submit button to send the application form onwards
+- Cancel button to redirect the user back if they have changed their mind.
+- Confirmation message that the form has been successfully submitted.
+![Confirmation](documentation/readme_images/confirmation1.png)
+- You are then taken to the Adoption detail page
+- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome page so it was easier to use and cleaner to look at.
+![Adoption Page](documentation/readme_images/updateadoption.png)
+
+- **Adoption Details Page**
+![Adoption Details Page](documentation/readme_images/adoptdetail.png)
+
+- Details of the form you have just filled in are presented on the screen so the user can ensure they are correct.
+- Update button to allow the user to change any of the information they have just put in.
+- Delete button to allow the user to delete the adoption form they have just filled in if they change their mind.
+- Cancel button to redirect the user if they have changed their mind.
+- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome details page so it was easier to use and cleaner to look at.
+![Adoption Details Page](documentation/readme_images/updateadoptdetails.png)
+
+- **No Adoption Details Page**
+![No Adoption Details Page](documentation/readme_images/noadoptdetails.png)
+
+- When there aren't any rehoming requests a screen informs the user that there aren't any details at the moment.
+- Cancel button to redirect the user back to the home page.
+- UPDATE!!! After some consideration I decided to amalgamate the No Adoption and Rehome details page so it was easier to use and cleaner to look at.
+![No Adoption Details Page](documentation/readme_images/updatenoadopt.png)
+
+- **Adoption Update Page**
+![Adoption update Page](documentation/readme_images/adoptupdate.png)
+
+- The facility to update the specific questions targeted in the original adoption form
+- Submit button to send the application form onwards
+- Cancel button to redirect the user back if they have changed their mind.
+- Confirmation message that the form has been successfully submitted.
+![Confirmation](documentation/readme_images/updateconfirm.png)
+- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome update page so it was easier to use and cleaner to look at.
+![Adoption update page](documentation/readme_images/updateadoptrehome.png)
+
+- **Adoption Delete Page**
+![Adoption delete Page](documentation/readme_images/updatedelete.png)
+
+- This page gives the user the opportunity to change their mind and delete their request.
+- Bright red button to highlight the danger of the task
+- Emotive animated fox terrier from giphy.com to ensure they are doing the right thing.
+- Cancel button to redirect the user back if they have changed their mind.
+- Confirmation message that the form has been successfully submitted.
+![Confirmation](documentation/readme_images/deleteconfirm.png)
+- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome delete page so it was easier to use and cleaner to look at.
+![Adoption delete page](documentation/readme_images/updatedeleteadopt.png)
+
+- **Rehome Page**
+![Rehome Page](documentation/readme_images/rehomepage.png)
+
+- With a worrying 73% rise in dogs being abandoned in the UK. We offer the opportunity to rehome any Fox Terrier rather than it be left on the streets.
+- Specific questions targeted to owners looking to rehome their Fox Terrier
+- Error message if the user doesn't fill in the required text
+![Empty](documentation/readme_images/empty2.png)
+- Submit button to send the application form onwards
+- Cancel button to redirect the user back if they have changed their mind
+- Confirmation message that the form has been successfully submitted.
+![Confirmation](documentation/readme_images/confirmation2.png)
+- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome page so it was easier to use and cleaner to look at.
+![Rehome Page](documentation/readme_images/updateadoption.png)
+
+- **Rehome Details Page**
+![Rehome Details Page](documentation/readme_images/rehomedetail.png)
+
+- Details of the form you have just filled in are presented on the screen so the user can ensure they are correct.
+- Update button to allow the user to change any of the information they have just put in.
+- Delete button to allow the user to delete the adoption form they have just filled in if they change their mind.
+- Cancel button to redirect the user back if they have changed their mind.
+- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome details page so it was easier to use and cleaner to look at.
+![Rehome details page](documentation/readme_images/updateadoptdetails.png)
+
+- **No Rehome Details Page**
+![No Rehome Details Page](documentation/readme_images/norehome.png)
+
+- When there aren't any rehoming requests a screen informs the user that there aren't any details at the moment.
+- Cancel button to redirect the user back to the home page.
+- UPDATE!!! After some consideration I decided to amalgamate the No Adoption and Rehome details page so it was easier to use and cleaner to look at.
+![No Rehome Details Page](documentation/readme_images/updatenoadopt.png)
+
+- **Rehome update Page**
+![Rehome update Page](documentation/readme_images/updaterehome.png)
+
+- The facility to update the specific questions targeted in the original rehome form
+- Submit button to send the application form onwards
+- Cancel button to redirect the user back if they have changed their mind.
+- Confirmation message that the form has been successfully submitted.
+![Confirmation](documentation/readme_images/updateconfirm.png)
+- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome update page so it was easier to use and cleaner to look at.
+![Rehome update page](documentation/readme_images/updateadoptrehome.png)
+
+- **Rehome deletion Page**
+![Rehome deletion Page](documentation/readme_images/deleterehome.png)
+
+- This page gives the user the opportunity to change their mind and delete their request.
+- Bright red button to highlight the danger of the task.
+- Emotive animated fox terrier from giphy.com to ensure they are doing the right thing.
+- Cancel button to redirect the user back if they have changed their mind.
+- Confirmation message that the form has been successfully submitted.
+![Confirmation](documentation/readme_images/deleteconfirm.png)
+- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome delete page so it was easier to use and cleaner to look at.
+![Rehome deletion page](documentation/readme_images/updatedeleteadopt.png)
+
+- **Post Room**
+![Post Room](documentation/readme_images/postroom.png)
+
+- Welcoming message and clear explanation as to what you can do.
+- Area for users to post. With title, content and image upload facility.
+- Button to submit the user's post.
+- Confirmation message that the post has been successfully submitted.
+![Confirmation](documentation/readme_images/confirmation.png)
+- Posts go up to a total of six on the page and then automatically go to the next page. Next button for the user to scroll through.
+![Next Button](documentation/readme_images/next.png)
+- Security function to only be able to delete the user's own posts and no others
+![User option](documentation/readme_images/useroption.png)
+
+- **Post update Page**
+![Post update Page](documentation/readme_images/updatepost.png)
+
+- The facility to update the specific questions targeted in the original post form
+- Submit button to send the application form onwards
+- Cancel button to redirect the user back if they have changed their mind.
+- Confirmation message that the form has been successfully submitted.
+![Confirmation](documentation/readme_images/updateconfirm.png)
+
+- **Post deletion Page**
+![Post deletion Page](documentation/readme_images/deletepost.png)
+
+- This page gives the user the opportunity to change their mind and delete their request.
+- Bright red button to highlight the danger of the task.
+- Emotive animated fox terrier from giphy.com to ensure they are doing the right thing.
+- Cancel button to redirect the user back if they have changed their mind.
+- Confirmation message that the form has been successfully submitted.
+![Confirmation](documentation/readme_images/deleteconfirm.png)
+
+- **Comment Room**
+![Comment Room](documentation/readme_images/comment.png)
+
+- Picture and title of the selected post the user wishes to comment on.
+- The comment left by the user that posted.
+- The signed-in user's name, the date and time they posted it.
+- The options to like the post and unlike the post with a love heart icon.
+- The number of comments added about the post.
+- Comments left by other users including their name, the date and time they left it.
+- Submit button to send the comment onwards to be approved
+![Confirmation](documentation/readme_images/commentconfirm.png)
+
+### Error Pages
+
+Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
+
+![Error](documentation/readme_images/error404.png)
+
+- 400 Bad Request - Oh No! Looks like you made a bad request.
+- 403 Page Forbidden - Sorry thats a Forbidden request.
+- 404 Page Not Found - Yikes! that page is Not Found.
+- 500 Server Error - Oh No! Dont worry its me! not you!
 
 
 

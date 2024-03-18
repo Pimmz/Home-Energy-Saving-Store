@@ -57,12 +57,12 @@
             </a>  
         </li>
         <li class="nav-item 1">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'tips_and_tricks' %}" id="home-link">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% if request.user.is_authenticated %}{% url 'tips_and_tricks' %}{% else %}{% url 'account_login' %}{% endif %}" id="home-link"{% if not request.user.is_authenticated %}onclick="alert('You can only view this page if you are signed in');"{% endif %}>
                 Tips and Tricks
             </a>  
         </li>
         <li class="nav-item 2">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'faq' %}" id="home-link">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% if request.user.is_authenticated %}{% url 'faq' %}{% else %}{% url 'account_login' %}{% endif %}" id="home-link"{% if not request.user.is_authenticated %}onclick="alert('You can only view this page if you are signed in');"{% endif %}>
                 FAQ
             </a>  
         </li>
