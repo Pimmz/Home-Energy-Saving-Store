@@ -8,7 +8,7 @@ fix merge error
 
 HOME ENERGY SAVING STORE
 
-The Home Energy Saving Store was designed to help and raise awareness of the many ways for people to save energy around their homes not only so they can reduce their bills but also for them to do their small but effective part at reducing pollution and greenhouse gases to help the environment.
+Welcome to the Home Energy Saving Store! The website was designed to help homeowners save energy,  reduce bills,  and combat pollution.  Targeting all eco-conscious individuals, we offer practical solutions for sustainable living. Join us in our commitment to a greener future while also positioning our business as a leader in sustainability, attracting a loyal customer base and fostering long-term profitability.
 
 Here is a link to my project -[HOME ENERGY SAVING STORE](https://home-energy-saving-store-be6e9d82e03c.herokuapp.com)
 
@@ -294,13 +294,7 @@ It isn't a specialized tool, but with the right tags and project creation/issue 
 
 Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Consider adding a basic screenshot of your Projects Board.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-![screenshot](documentation/gh-projects.png)
+![screenshot](documentation/readme_images/agile.png)
 
 ### GitHub Issues
 
@@ -309,19 +303,13 @@ There, I used my own **User Story Template** to manage user stories.
 
 It also helped with milestone iterations on a weekly basis.
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Consider adding a screenshot of your Open and Closed Issues.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 - [Open Issues](https://github.com/Pimmz/Home-Energy-Saving-Store/issues)
 
-    ![screenshot](documentation/gh-issues-open.png)
+    ![screenshot](documentation/readme_images/open.png)
 
 - [Closed Issues](https://github.com/Pimmz/Home-Energy-Saving-Store/issues?q=is%3Aissue+is%3Aclosed)
 
-    ![screenshot](documentation/gh-issues-closed.png)
+    ![screenshot](documentation/readme_images/closed.png)
 
 ### MoSCoW Prioritization
 
