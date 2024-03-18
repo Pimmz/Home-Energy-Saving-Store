@@ -1,4 +1,4 @@
-Facebook link https://www.facebook.com/profile.php?id=61554298768912
+Facebook link 
 
 Deployed site link - https://home-energy-saving-store-be6e9d82e03c.herokuapp.com/
 
@@ -236,7 +236,7 @@ Other potential features include:
 - [Google Fonts](https://fonts.google.com/) - Used to import and alter fonts on the page.
 - [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
 - [Jshint](https://jshint.com/) - used to validate javascript
-- [colorcodes](https://htmlcolorcodes.com)
+- [Colorcodes](https://htmlcolorcodes.com) - used for the colours in the site.
 - [Favicon](https://favicon.io/) - Used to create the favicon.
 - [Lucidchart](https://lucid.app/documents#/dashboard) - used to create the database schema design
 - [Grammerly](https://app.grammarly.com/) - used to proofread the README.md
@@ -396,7 +396,9 @@ I've created a mockup Facebook business account using the
 [Balsamiq template](https://code-institute-org.github.io/5P-Assessments-Handbook/files/Facebook_Mockups.zip)
 provided by Code Institute.
 
-![screenshot](documentation/mockup-facebook.png)
+Ive created my Facebook Business Page. Here is the link link - [Facebook](https://www.facebook.com/profile.php?id=61554298768912) 
+
+Ive alkso included a screenshot in case Facebook take down my business page![Facebook](documentation/readme_images/facebook.png)
 
 ### Newsletter Marketing
 
@@ -429,21 +431,38 @@ Option 2 (Django):
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
+## Security Features and Defensive Design
+
+### User Authentication
+
+- Django's @method_decorator is used to make sure that any requests to access secure pages by non-authenticated users are redirected to the signup page.
+- I have also used Django's LoginRequiredMixin to highlight the use of both for class based views. Which is used to make sure that any requests to access secure pages by non-authenticated users are redirected to the signup page.
+- Django's conditional statement {% if user.is_authenticated %} was also used to ensure certain pages were only accessible to logged-in users.
+
+### Form Validation
+
+- If incorrect or empty data is added to a form, the form won't submit and a warning will appear to the user informing them what field raised the error.
+
+### Database Security
+
+- The database URL and secret key are stored in the env.py file to prevent unwanted connections to the database and this was set up before the first push to
+  Github.
+- Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this site.
+
+### Custom Error Pages
+
+- Custom Error Pages were created to give the user more information on the error and to provide them with buttons to guide them back to the site.
+
+- 400 Bad Request - Error 400 "Bad Request" Oh No! Looks like you made a bad request.
+- 403 Page Forbidden - Error 403 "Forbidden Request" Sorry thats a Forbidden request.
+- 404 Page Not Found - Error 404 "Not Found" Yikes! that page is Not Found.
+- 500 Server Error - Error 500 "Internal Server Error" Oh No! Dont worry its me! not you!
+
 ## Testing
 
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Deployment
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-**IMPORTANT:**
-
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 The live deployed application can be found deployed on [Heroku](https://home-energy-saving-store-be6e9d82e03c.herokuapp.com).
 
@@ -460,9 +479,20 @@ To obtain your own Postgres Database, sign-up with your GitHub account, then fol
 - Select the **Region** and **Data Center** closest to you.
 - Once created, click on the new database name, where you can view the database URL and Password.
 
+### Cloudinary API
+
+This project uses the [Cloudinary API](https://cloudinary.com) to store media assets online, due to the fact that Heroku doesn't persist this type of data.
+
+To obtain your own Cloudinary API key, create an account and log in.
+
+- For *Primary interest*, you can choose *Programmable Media for image and video API*.
+- Optional: *edit your assigned cloud name to something more memorable*.
+- On your Cloudinary Dashboard, you can copy your **API Environment Variable**.
+- Be sure to remove the `CLOUDINARY_URL=` as part of the API **value**; this is the **key**.
+
 ### Amazon AWS
 
-This project uses [AWS](https://aws.amazon.com) to store media and static files online, due to the fact that Heroku doesn't persist this type of data.
+This project isnt using AWS but if it did you could uses it at [AWS](https://aws.amazon.com) to store media and static files online, due to the fact that Heroku doesn't persist this type of data.
 
 Once you've created an AWS account and logged-in, follow these series of steps to get your project connected.
 Make sure you're on the **AWS Management Console** page.
@@ -641,6 +671,8 @@ Deployment steps are as follows, after account setup:
 
 | Key | Value |
 | --- | --- |
+| `CLOUDINARY_URL` | user's own value |
+| `DATABASE_URL` | user's own value |
 | `AWS_ACCESS_KEY_ID` | user's own value |
 | `AWS_SECRET_ACCESS_KEY` | user's own value |
 | `DATABASE_URL` | user's own value |
@@ -702,6 +734,7 @@ Sample `env.py` file:
 ```python
 import os
 
+os.environ.setdefault("CLOUDINARY_URL", "user's own value")
 os.environ.setdefault("AWS_ACCESS_KEY_ID", "user's own value")
 os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "user's own value")
 os.environ.setdefault("DATABASE_URL", "user's own value")
@@ -762,87 +795,41 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-## Credits
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-In this section you need to reference where you got your content, media, and extra help from.
-It is common practice to use code from other repositories and tutorials,
-however, it is important to be very specific about these sources to avoid plagiarism.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+When I first deployed the site there was a difference between the local and the deployed site. The issue was the CSS wasn't coming through to the live site. Then I realised that I had committed with Debug set to true. Changing this over to false soon allowed the issue to be rectified
 
 ### Content
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Use this space to provide attribution links to any borrowed code snippets, elements, or resources.
-A few examples have been provided below to give you some ideas.
-
-Ideally, you should provide an actual link to every resource used, not just a generic link to the main site!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
 | [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
 | [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
-| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | contact page | interactive pop-up (modal) |
+| [W3Schools](https://www.w3schools.com/django/django_slug_field.php) | contact page | To assist the contact form to make it easier to read|
 | [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | entire site | how to use CSS :root variables |
 | [Flexbox Froggy](https://flexboxfroggy.com/) | entire site | modern responsive layouts |
 | [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
-| [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
-| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc) | leaderboard | using `localStorage()` in JS for high scores |
-| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y) | PP3 terminal | tutorial for adding color to the Python terminal |
-| [strftime](https://strftime.org) | CRUD functionality | helpful tool to format date/time from string |
-| [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
+| [Stackoverflow](https://stackoverflow.com/questions/31633259/django-how-to-use-decorator-in-class-based-view-methods) | None logged into pages | To stop users changing urls to access pages when not logged in|
+| [Stackoverflow](https://stackoverflow.com/questions/24345046/responsive-media-query-not-working-in-google-chrome) | Readme | So that ami responsive will work with Chrome|
+| [YouTube](https://youtu.be/3SKjPppM_DU?si=sNmCDE9oTEe-ecSQ) | Error Pages | custom error pages for django |
+| [Code Institute - I think therefore I blog](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/) | entire site | General advice for all of project |
+| [Code Institute - Boutique ado](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+EA101+2021_T1/courseware/eb05f06e62c64ac89823cc956fcd8191/3adff2bf4a78469db72c5330b1afa836/)| entire site | General advice for all of project |
+
 
 ### Media
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Use this space to provide attribution links to any images, videos, or audio files borrowed from online.
-A few examples have been provided below to give you some ideas.
-
-If you're the owner (or a close acquaintance) of all media files, then make sure to specify this.
-Let the assessors know that you have explicit rights to use the media files within your project.
-
-Ideally, you should provide an actual link to every media file used, not just a generic link to the main site!
-The list below is by no means exhaustive. Within the Code Institute Slack community, you can find more "free media" links
-by sending yourself the following command: `!freemedia`.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
 | [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
-| [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
-| [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
-| [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
-| [Wallhere](https://wallhere.com) | footer | image | background wallpaper image in the footer |
-| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images |
-| [Audio Micro](https://www.audiomicro.com/free-sound-effects) | game page | audio | free audio files to generate the game sounds |
-| [Videvo](https://www.videvo.net/) | home page | video | background video on the hero section |
+| [Pxhere](https://pxhere.com) | entire site | image | sample of fake products  |
+| [Unsplash](https://unsplash.com) | entire site | image | sample of fake products |
+| [Pixabay](https://pixabay.com) | entire site | image | group of photos for gallery |
 | [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
 
 ### Acknowledgements
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Use this space to provide attribution to any supports that helped, encouraged, or supported you throughout the development stages of this project.
-A few examples have been provided below to give you some ideas.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.
+- I would like to thank my Code Institute mentor, Tim Nelson for their support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
-- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
-- I would like to thank my partner (John/Jane), for believing in me, and allowing me to make this transition into software development.
-- I would like to thank my employer, for supporting me in my career development change towards becoming a software developer.
+- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of - - 
+  self-doubt and imposter syndrome.
+- I would like to thank my partner, Hilda, for believing in me and allowing me to make this transition into software development.
+- I would like to thank my family for believing in me and allowing me to make this transition into software development.

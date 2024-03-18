@@ -29,7 +29,7 @@ class DeletePostView(LoginRequiredMixin, DeleteView):
         messages.success(self.request, 'Post Deleted Successfully!')
         return super().delete(request, *args, **kwargs)
 
-class TipsAndTricksView(View):
+class TipsAndTricksView(LoginRequiredMixin, View):
     def get(self, request):
         if request.user.is_authenticated:
             posts = TipsAndTricks.objects.filter(is_approved=True).order_by('-created_at')

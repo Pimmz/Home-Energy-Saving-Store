@@ -12,12 +12,15 @@ from products.models import Product
 from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
 from bag.contexts import bag_contents
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 import stripe
 import json
 
 
 @require_POST
+@method_decorator(login_required, name='dispatch')
 def cache_checkout_data(request):
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
@@ -147,7 +150,7 @@ def checkout(request):
 
     return render(request, template, context)
 
-
+@method_decorator(login_required, name='dispatch')
 def checkout_success(request, order_number):
     """
     Handle successful checkouts

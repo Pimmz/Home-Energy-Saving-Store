@@ -4,14 +4,17 @@ from django.shortcuts import (
 from django.contrib import messages
 
 from products.models import Product
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
-
+@method_decorator(login_required, name='dispatch')
 def view_bag(request):
     """ A view that renders the bag contents page """
 
     return render(request, 'bag/bag.html')
 
 
+@method_decorator(login_required, name='dispatch')
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
 
@@ -55,6 +58,7 @@ def add_to_bag(request, item_id):
     return redirect(redirect_url)
 
 
+@method_decorator(login_required, name='dispatch')
 def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
 
@@ -95,6 +99,7 @@ def adjust_bag(request, item_id):
     return redirect(reverse('view_bag'))
 
 
+@method_decorator(login_required, name='dispatch')
 def remove_from_bag(request, item_id):
     """Remove the item from the shopping bag"""
 
