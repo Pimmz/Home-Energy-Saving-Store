@@ -184,60 +184,57 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - **Footer**
 ![Footer](documentation/readme_images/footer.png)
 
-- The location of the Fox Terriers Owners Club so users are aware, of where it is located in the world.
-- The footer section includes links to Facebook, Instagram, Twitter and YouTube.
+- The about section to explain abit about Hess and why we operate
+- The footer section includes links to our Facebook page, FAQ, Tips and tricks and the contact page.
 - Clicking the links in the footer opens a separate browser tab to avoid pulling the user away from the site.
 
 - **Home Page**
-![Home Page](documentation/readme_images/homepage1.png)
+![Home Page](documentation/readme_images/home.png)
 
 - Description of our website and what we're about so users can decide if it's for them.
-- Fontawesome icons are used to help draw the eye to the three key sections.
-- Three key sections enlarged to show the additional added features of the website.
-- Two images clearly showing the different types of Fox Terrier.
-- Update!!! After some consideration I added a call to action to Register. To make it more user friendly.
-![Call to action](documentation/readme_images/register.png)
+- Eye catching background image to display a green eco friendly money saving theme.
+- Big Text displaying exciting message about New products with a shop now button to get the users to explore our products for sale.
+- Banner to draw attention for users to subscribe and get exculsive offers and a reminder that the the delivery fee is free for orders over £50
 
-- **About Page**
-![About Page](documentation/readme_images/about.png)
+- **All Products Page**
+![All Products](documentation/readme_images/all.png)
 
 - Clear title explaining the section
-- Two images clearly showing the different types of Fox Terrier.
-- A in depth look at the background of the two types of Fox Terriers.
-- To provide even more of a detailed look into Fox Terriers, a Wikipedia link is available if the user wants to know more.
+- All the products displayed for the user to look at and dedcide if they wish to buy it.
+- A sort facility so the user can sort how they look at the product.
+- A number count in the top left hand part of the screen to show how many products are for sale.
   
-- **Adoption Page**
-![Adoption Page](documentation/readme_images/adoptionpage.png)
+- **Individual Category Pages**
+![Category pages](documentation/readme_images/products.png)
 
-- With a scary statistic that only 10% of dogs born will find a permanent home. Our aim is to find owners for our amazing dogs.
-- Specific questions targeted to potential adoptees to greater under more about them.
-- Error message if the user doesn't fill in the required text
-![Empty](documentation/readme_images/empty.png)
+- Clear title explaining the section
+- Clear category title explaining the section
+- All the products displayed for the user to look at and dedcide if they wish to buy it.
+- A sort facility so the user can sort how they look at the product.
+- A number count in the top left hand part of the screen to show how many products are for sale.
+
+- **Contact Pages**
+![Contact Page](documentation/readme_images/contact.png)
+
+- Form to fill in so the user can enquire about a return, item not delivered or something else.
 - Submit button to send the application form onwards
 - Cancel button to redirect the user back if they have changed their mind.
 - Confirmation message that the form has been successfully submitted.
-![Confirmation](documentation/readme_images/confirmation1.png)
-- You are then taken to the Adoption detail page
-- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome page so it was easier to use and cleaner to look at.
-![Adoption Page](documentation/readme_images/updateadoption.png)
 
-- **Adoption Details Page**
-![Adoption Details Page](documentation/readme_images/adoptdetail.png)
+- **Tips and Tricks Page**
+![Tips and Tricks Page](documentation/readme_images/tips.png)
 
-- Details of the form you have just filled in are presented on the screen so the user can ensure they are correct.
-- Update button to allow the user to change any of the information they have just put in.
-- Delete button to allow the user to delete the adoption form they have just filled in if they change their mind.
-- Cancel button to redirect the user if they have changed their mind.
-- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome details page so it was easier to use and cleaner to look at.
-![Adoption Details Page](documentation/readme_images/updateadoptdetails.png)
+- Clear title explaining the section with a big button for you to add your tip or trick
+- Delete button to allow the registered user to delete the tip or trick they have submitted in case they change their mind.
+- Edit button to allow the registered user to edit the tip or trick they have submitted in case they change their mind.
+- Page number at the bottom so the user knows which page they are currently on.
+- Next and previous button so the user can navigate between pages when there are more than six tips or tricks per page.
 
-- **No Adoption Details Page**
-![No Adoption Details Page](documentation/readme_images/noadoptdetails.png)
+- **Frequently Asked Questions Page**
+![FAQ Page](documentation/readme_images/faq.png)
 
-- When there aren't any rehoming requests a screen informs the user that there aren't any details at the moment.
-- Cancel button to redirect the user back to the home page.
-- UPDATE!!! After some consideration I decided to amalgamate the No Adoption and Rehome details page so it was easier to use and cleaner to look at.
-![No Adoption Details Page](documentation/readme_images/updatenoadopt.png)
+- Clear title explaining the section
+- Questions arranged in numerical order answering the most commonly raised questions in regard to saving energy
 
 - **Adoption Update Page**
 ![Adoption update Page](documentation/readme_images/adoptupdate.png)

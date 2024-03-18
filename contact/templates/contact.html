@@ -20,6 +20,7 @@
                 {% csrf_token %}
                 {{ form|crispy }}
                 <button type="submit" class="btn btn-success">Submit</button>
+                <a class="btn btn-outline-secondary m-2" href="{% url 'home' %}">Cancel</a>
             </form>
            
             <div id="mc_embed_signup">
