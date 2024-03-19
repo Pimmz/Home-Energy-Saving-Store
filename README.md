@@ -179,7 +179,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 - The navigation bar is present at the top of every page and includes all links to the various other pages.
 - The Tips and Tricks page as well as the FAQ will only open if you are signed in. If you are not a sign in message comes up asking you to sign in. 
-![Navigation bar](documentation/readme_images/nav.png)
 
 - **Footer**
 ![Footer](documentation/readme_images/footer.png)
@@ -236,18 +235,16 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Clear title explaining the section
 - Questions arranged in numerical order answering the most commonly raised questions in regard to saving energy
 
-- **Adoption Update Page**
+- **Basket Page**
 ![Adoption update Page](documentation/readme_images/adoptupdate.png)
 
 - The facility to update the specific questions targeted in the original adoption form
 - Submit button to send the application form onwards
 - Cancel button to redirect the user back if they have changed their mind.
 - Confirmation message that the form has been successfully submitted.
-![Confirmation](documentation/readme_images/updateconfirm.png)
-- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome update page so it was easier to use and cleaner to look at.
-![Adoption update page](documentation/readme_images/updateadoptrehome.png)
+ 
 
-- **Adoption Delete Page**
+- **Checkout Page**
 ![Adoption delete Page](documentation/readme_images/updatedelete.png)
 
 - This page gives the user the opportunity to change their mind and delete their request.
@@ -259,7 +256,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome delete page so it was easier to use and cleaner to look at.
 ![Adoption delete page](documentation/readme_images/updatedeleteadopt.png)
 
-- **Rehome Page**
+- **Product management Page**
 ![Rehome Page](documentation/readme_images/rehomepage.png)
 
 - With a worrying 73% rise in dogs being abandoned in the UK. We offer the opportunity to rehome any Fox Terrier rather than it be left on the streets.
