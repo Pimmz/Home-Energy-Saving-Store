@@ -236,149 +236,54 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Questions arranged in numerical order answering the most commonly raised questions in regard to saving energy
 
 - **Basket Page**
-![Adoption update Page](documentation/readme_images/adoptupdate.png)
+![Basket Page](documentation/readme_images/basket.png)
 
-- The facility to update the specific questions targeted in the original adoption form
-- Submit button to send the application form onwards
-- Cancel button to redirect the user back if they have changed their mind.
-- Confirmation message that the form has been successfully submitted.
+- Clear concise area to show what the user has put in their basket and how much it would cost.
+- Qty button to change the amount the user has requested if they want to.
+- Update button to update the basket total if the qty is changed.
+- Remove button to remove the items in the basket.
+- Keep shopping button so the user can continue their shopping.
+- Secure checkout button when they are ready to pay for their goods.
  
-
 - **Checkout Page**
-![Adoption delete Page](documentation/readme_images/updatedelete.png)
+![Checkout Page](documentation/readme_images/checkout.png)
 
-- This page gives the user the opportunity to change their mind and delete their request.
-- Bright red button to highlight the danger of the task
-- Emotive animated fox terrier from giphy.com to ensure they are doing the right thing.
-- Cancel button to redirect the user back if they have changed their mind.
-- Confirmation message that the form has been successfully submitted.
-![Confirmation](documentation/readme_images/deleteconfirm.png)
-- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome delete page so it was easier to use and cleaner to look at.
-![Adoption delete page](documentation/readme_images/updatedeleteadopt.png)
+- Clear concise area to show what the user is purchasing and how much it would cost.
+- A clear form for the user to fill in for their name, address and card details.
+- Adjust bag button to update the basket total if there is a need for change.
+- Complate Order button when they are ready to pay for their goods.
 
 - **Product management Page**
-![Rehome Page](documentation/readme_images/rehomepage.png)
+![Product management Page](documentation/readme_images/manage.png)
 
-- With a worrying 73% rise in dogs being abandoned in the UK. We offer the opportunity to rehome any Fox Terrier rather than it be left on the streets.
-- Specific questions targeted to owners looking to rehome their Fox Terrier
-- Error message if the user doesn't fill in the required text
-![Empty](documentation/readme_images/empty2.png)
-- Submit button to send the application form onwards
-- Cancel button to redirect the user back if they have changed their mind
-- Confirmation message that the form has been successfully submitted.
-![Confirmation](documentation/readme_images/confirmation2.png)
-- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome page so it was easier to use and cleaner to look at.
-![Rehome Page](documentation/readme_images/updateadoption.png)
+- Area for the administrators to add additional products to their website.
+- A clear form to fill in for the prodcts details.
+- Cancel button to redirect them back if they have changed their mind.
+- Add product button when they are ready to add it to their website.
 
-- **Rehome Details Page**
-![Rehome Details Page](documentation/readme_images/rehomedetail.png)
+- **My Profile Page**
+![My Profile Page](documentation/readme_images/profile.png)
 
-- Details of the form you have just filled in are presented on the screen so the user can ensure they are correct.
-- Update button to allow the user to change any of the information they have just put in.
-- Delete button to allow the user to delete the adoption form they have just filled in if they change their mind.
-- Cancel button to redirect the user back if they have changed their mind.
-- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome details page so it was easier to use and cleaner to look at.
-![Rehome details page](documentation/readme_images/updateadoptdetails.png)
+- A clear form for the user to check and fill in for their name, address if its has changed.
+- Update information if they wish to change there information
 
-- **No Rehome Details Page**
-![No Rehome Details Page](documentation/readme_images/norehome.png)
-
-- When there aren't any rehoming requests a screen informs the user that there aren't any details at the moment.
-- Cancel button to redirect the user back to the home page.
-- UPDATE!!! After some consideration I decided to amalgamate the No Adoption and Rehome details page so it was easier to use and cleaner to look at.
-![No Rehome Details Page](documentation/readme_images/updatenoadopt.png)
-
-- **Rehome update Page**
-![Rehome update Page](documentation/readme_images/updaterehome.png)
-
-- The facility to update the specific questions targeted in the original rehome form
-- Submit button to send the application form onwards
-- Cancel button to redirect the user back if they have changed their mind.
-- Confirmation message that the form has been successfully submitted.
-![Confirmation](documentation/readme_images/updateconfirm.png)
-- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome update page so it was easier to use and cleaner to look at.
-![Rehome update page](documentation/readme_images/updateadoptrehome.png)
-
-- **Rehome deletion Page**
-![Rehome deletion Page](documentation/readme_images/deleterehome.png)
-
-- This page gives the user the opportunity to change their mind and delete their request.
-- Bright red button to highlight the danger of the task.
-- Emotive animated fox terrier from giphy.com to ensure they are doing the right thing.
-- Cancel button to redirect the user back if they have changed their mind.
-- Confirmation message that the form has been successfully submitted.
-![Confirmation](documentation/readme_images/deleteconfirm.png)
-- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome delete page so it was easier to use and cleaner to look at.
-![Rehome deletion page](documentation/readme_images/updatedeleteadopt.png)
-
-- **Post Room**
-![Post Room](documentation/readme_images/postroom.png)
-
-- Welcoming message and clear explanation as to what you can do.
-- Area for users to post. With title, content and image upload facility.
-- Button to submit the user's post.
-- Confirmation message that the post has been successfully submitted.
-![Confirmation](documentation/readme_images/confirmation.png)
-- Posts go up to a total of six on the page and then automatically go to the next page. Next button for the user to scroll through.
-![Next Button](documentation/readme_images/next.png)
-- Security function to only be able to delete the user's own posts and no others
-![User option](documentation/readme_images/useroption.png)
-
-- **Post update Page**
-![Post update Page](documentation/readme_images/updatepost.png)
-
-- The facility to update the specific questions targeted in the original post form
-- Submit button to send the application form onwards
-- Cancel button to redirect the user back if they have changed their mind.
-- Confirmation message that the form has been successfully submitted.
-![Confirmation](documentation/readme_images/updateconfirm.png)
-
-- **Post deletion Page**
-![Post deletion Page](documentation/readme_images/deletepost.png)
-
-- This page gives the user the opportunity to change their mind and delete their request.
-- Bright red button to highlight the danger of the task.
-- Emotive animated fox terrier from giphy.com to ensure they are doing the right thing.
-- Cancel button to redirect the user back if they have changed their mind.
-- Confirmation message that the form has been successfully submitted.
-![Confirmation](documentation/readme_images/deleteconfirm.png)
-
-- **Comment Room**
-![Comment Room](documentation/readme_images/comment.png)
-
-- Picture and title of the selected post the user wishes to comment on.
-- The comment left by the user that posted.
-- The signed-in user's name, the date and time they posted it.
-- The options to like the post and unlike the post with a love heart icon.
-- The number of comments added about the post.
-- Comments left by other users including their name, the date and time they left it.
-- Submit button to send the comment onwards to be approved
-![Confirmation](documentation/readme_images/commentconfirm.png)
 
 ### Error Pages
 
 Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
 
-![Error](documentation/readme_images/error404.png)
+![Error](documentation/readme_images/error.png)
 
 - 400 Bad Request - Oh No! Looks like you made a bad request.
 - 403 Page Forbidden - Sorry thats a Forbidden request.
-- 404 Page Not Found - Yikes! that page is Not Found.
-- 500 Server Error - Oh No! Dont worry its me! not you!
-
-
+- 404 Page Not Found - Sorry! that page is Not Found.
+- 500 Server Error - Oh No! Sorry theres a Server Error
 
 ### Future Features
 
-The following user stories were scoped out of the project due to time constraints and labelled as "Nice to Have" on the project board in Github and put into the "No time to complete" column. It is intended that these user stories will be implemented at a later date.
+The following user stories were scoped out of the project due to skill level It is intended that these user stories will be implemented at a later date when I have the suficiant skills to complete them.
 
-- As a user, I can receive confirmation that my adoption or rehome request has been successful via an email sent to me.
-- As a user, I can search and filter posts so that I can target posts I wish to view instead of scrolling through posts.
-
-Other potential features include:
-
-- Adding training techniques and videos from users to benefit the whole group.
-- Having an Illness diagnoses page so the user can put in the symptoms and their diagnosis with a link to a vet to confirm and assist with the issue.
+- As a user, I can track where my delivery is so i know what time it will be arriving
 
 
 ## Tools & Technologies Used
