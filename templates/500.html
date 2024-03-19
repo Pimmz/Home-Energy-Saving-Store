@@ -5,22 +5,27 @@
 
 <!--Catches any 500 Internal server Errors-->
 
-<div class=".container-500">
-    <div class="container-fluid d-flex align-items-center justify-content-center" style="height: 100vh;">
-        <div class="row">
-            <div class="col-12 col-md-7 col-lg-6 text-center">
+       
+<div class="overlay"></div>
+<div class=".container-500 col-12">
+    <div class="gif text-center mt-5">
+        <img src="/media/poorly.png" alt="bye">
+    </div>
+    <div class="container-fluid row justify-content-center align-items-center"  >
+        <div class="col-10 col-sm-7 col-lg-6">
+            <div class="text-center">
                 <h1 class="display-4 logo-font text-black">
                     Oh No! Sorry theres a Server Error
                 </h1>
                 <div class="my-5">
                     <h4>
-                    <a href="{% url 'home' %}" 
-                    class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">
-                    Return to shop</a>
+                        <a href="{% url 'home' %}" 
+                        class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">
+                        Return to shop</a>
                     </h4>
                 </div>
             </div>
-        </div>
+        </div> 
     </div>
 </div>
 

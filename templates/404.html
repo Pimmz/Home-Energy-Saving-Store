@@ -5,15 +5,26 @@
 
 <!--Catches any 404 Not Found errors-->
 
-<div class="container-fluid">
-    <div class="container-404">
-        <p class="page-title text-center mt-5">Error 404 "Not Found"</p>
-        <hr class="rehome">
-        <br>
-        <h2 class="text-center mt-3">Sorry! that page is Not Found</h2>
+<div class="overlay"></div>
+<div class=".container-404 col-12">
+    <div class="gif text-center mt-5">
+        <img src="/media/poorly.png" alt="bye">
     </div>
-</div>
-<div class="text-center mt-5">
-    <a class="btn btn-success m-2" href="{% url 'home' %}">Return To The Home Page</a>
+    <div class="container-fluid row justify-content-center align-items-center"  >
+        <div class="col-10 col-sm-7 col-lg-6">
+            <div class="text-center">
+                <h1 class="display-4 logo-font text-black">
+                    Sorry! that page is Not Found
+                </h1>
+                <div class="my-5">
+                    <h4>
+                        <a href="{% url 'home' %}" 
+                        class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">
+                        Return to shop</a>
+                    </h4>
+                </div>
+            </div>
+        </div> 
+    </div>
 </div>
 {%endblock%}

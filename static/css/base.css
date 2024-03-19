@@ -15,21 +15,10 @@ body {
 
 }
 
-.container-400,
-.container-403,
-.container-404,
-.container-500 {
-    border: none;
-    width: 100%;
-}
 
 .container-contact,
 .container-tips,
-.container-faq,
-.container-400,
-.container-403,
-.container-404,
-.container-500 {
+.container-faq {
     background-color: beige;
 }
 
