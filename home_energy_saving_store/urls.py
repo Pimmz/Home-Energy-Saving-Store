@@ -13,6 +13,7 @@ urlpatterns = [
     path('checkout/', include('checkout.urls')),
     path('profile/', include('profiles.urls')),
     path('', include('contact.urls')),
+    path('', include('newsletter.urls')),
     path('', include('tips_and_tricks.urls')),
     path('', include('faq.urls')),
     path('400/', views.custom_400.as_view(), name='custom_400'),
