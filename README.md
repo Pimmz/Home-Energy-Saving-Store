@@ -1,10 +1,9 @@
-Facebook link 
+# [HOME ENERGY SAVING STORE](https://home-energy-saving-store-be6e9d82e03c.herokuapp.com)
 
-Deployed site link - https://home-energy-saving-store-be6e9d82e03c.herokuapp.com/
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Pimmz/Home-Energy-Saving-Store)](https://github.com/Pimmz/Home-Energy-Saving-Store/commits/main)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Pimmz/Home-Energy-Saving-Store)](https://github.com/Pimmz/Home-Energy-Saving-Store/commits/main)
+[![GitHub repo size](https://img.shields.io/github/repo-size/Pimmz/Home-Energy-Saving-Store)](https://github.com/Pimmz/Home-Energy-Saving-Store)
 
-mailchimp newsletter - https://us21.admin.mailchimp.com/reports/clickmap?id=12670381
-
-fix merge error 
 
 HOME ENERGY SAVING STORE
 
@@ -93,7 +92,6 @@ category by name
 - As a Store Owner I can delete a product so that I can remove items that are no longer for sale
 - As a Store Owner I can edit/ update a product so that I can change product prices descriptions images and other product criteria
 - As a Store Owner I can add a product so that I can add new items to my store
-
 
 ## Wireframes
 
@@ -220,6 +218,15 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Cancel button to redirect the user back if they have changed their mind.
 - Confirmation message that the form has been successfully submitted.
 
+- **Newsletter Pages**
+![Newsletter Page](documentation/readme_images/newsletter.png)
+
+- Clear heading and reasons why to sign up to the newsletter.
+- Submit button to send the application form onwards
+- Cancel button to redirect the user back if they have changed their mind.
+- Confirmation message that the form has been successfully submitted.
+- Error message pops up if the user has already subscribed.
+
 - **Tips and Tricks Page**
 ![Tips and Tricks Page](documentation/readme_images/tips.png)
 
@@ -281,39 +288,43 @@ Custom Error Pages were created to give the user more information on the error a
 
 ### Future Features
 
-The following user stories were scoped out of the project due to skill level It is intended that these user stories will be implemented at a later date when I have the suficiant skills to complete them.
+The following user stories were scoped out of the project due to skill level It is intended that these user stories will be implemented at a later date when I have the sufficient skills to complete them.
 
-- As a user, I can track where my delivery is so i know what time it will be arriving
-
+- For a user to be able to track where my delivery is so i know what time it will be arriving
+- A search engine that the user can put their information in and the best and most affordable energy deal comes up.
 
 ## Tools & Technologies Used
 
-- [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
-- [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
-- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for an enhanced responsive layout.
-- [JavaScript](https://www.javascript.com) used for user interaction on the site.
-- [Python](https://www.python.org) is used as the back-end programming language.
-- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
-- [GitHub](https://github.com) used for secure online code storage.
-- [codeanywhere](https://app.codeanywhere.com/) used as a cloud-based IDE for development.
-- [Bootstrap](https://getbootstrap.com) is used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [Django](https://www.djangoproject.com) used as the Python framework for the site.
-- [Django-allauth](https://django-allauth.readthedocs.io/en/latest/installation.html): authentication library used to create the user accounts
-- [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
-- [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
-- [Cloudinary](https://cloudinary.com) is used for online static file storage.
-- [Balsamiq](https://balsamiq.com/) - Used to generate Wireframe images.
-- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for overall development and tweaking, including testing responsiveness and performance.
-- [Font Awesome](https://fontawesome.com/) - Used for icons in the information bar.
-- [Google Fonts](https://fonts.google.com/) - Used to import and alter fonts on the page.
-- [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
-- [Jshint](https://jshint.com/) - used to validate javascript
-- [Colorcodes](https://htmlcolorcodes.com) - used for the colours in the site.
-- [Favicon](https://favicon.io/) - Used to create the favicon.
-- [Lucidchart](https://lucid.app/documents#/dashboard) - used to create the database schema design
-- [Grammerly](https://app.grammarly.com/) - used to proofread the README.md
-- [Summernote](https://summernote.org/): A WYSIWYG editor to allow users to edit their posts
-- [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) used to manage Django Forms
+- [![Markdown Builder](https://img.shields.io/badge/Markdown_Builder-grey?logo=markdown&logoColor=000000)](https://tim.2bn.dev/markdown-builder) used to generate README and TESTING templates.
+- [![Git](https://img.shields.io/badge/Git-grey?logo=git&logoColor=F05032)](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
+- [![Git](https://img.shields.io/badge/GitHub-grey?logo=github&logoColor=181717)](https://github.com) used for secure online code storage.
+- [![Codeanywhere](https://img.shields.io/badge/Codeanywhere-grey?logo=ebox&logoColor=7F3F98)](https://codeanywhere.com) used as a cloud-based IDE for development.
+- [![VSCode](https://img.shields.io/badge/VSCode-grey?logo=visualstudiocode&logoColor=007ACC)](https://code.visualstudio.com) used as my local IDE for development.
+- [![HTML](https://img.shields.io/badge/HTML-grey?logo=html5&logoColor=E34F26)](https://en.wikipedia.org/wiki/HTML) used for the main site content.
+- [![CSS](https://img.shields.io/badge/CSS-grey?logo=css3&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
+- [![JavaScript](https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoColor=F7DF1E)](https://www.javascript.com) used for user interaction on the site.
+- [![jQuery](https://img.shields.io/badge/jQuery-grey?logo=jquery&logoColor=0769AD)](https://jquery.com) used for user interaction on the site.
+- [![Python](https://img.shields.io/badge/Python-grey?logo=python&logoColor=3776AB)](https://www.python.org) used as the back-end programming language.
+- [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-grey?logo=githubpages&logoColor=222222)](https://pages.github.com) used for hosting the deployed front-end site.
+- [![Colorcodes](https://img.shields.io/badge/Colorcodes-grey?logo=githubpages&logoColor=222222)](https://htmlcolorcodes.com) - used for the colours in the site.
+- [![lucidChart](https://img.shields.io/badge/Lucid_Chart-grey?logo=githubpages&logoColor=222222)](https://lucid.app/documents#/dashboard) - used to create the database schema design
+- [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) used for hosting the deployed back-end site.
+- [![Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
+- [![Jest](https://img.shields.io/badge/Jest-grey?logo=jest&logoColor=c21325)](https://jestjs.io) used for automated JavaScript testing.
+- [![Flask](https://img.shields.io/badge/Flask-grey?logo=flask&logoColor=000000)](https://flask.palletsprojects.com) used as the Python framework for the site.
+- [![MongoDB](https://img.shields.io/badge/MongoDB-grey?logo=mongodb&logoColor=47A248)](https://www.mongodb.com) used as the non-relational database management with Flask.
+- [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-grey?logo=sqlalchemy&logoColor=D71F00)](https://www.sqlalchemy.org) used as the relational database management with Flask.
+- [![Django](https://img.shields.io/badge/Django-grey?logo=django&logoColor=092E20)](https://www.djangoproject.com) used as the Python framework for the site.
+- [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-grey?logo=postgresql&logoColor=4169E1)](https://www.postgresql.org) used as the relational database management.
+- [![PostgreSQL by Code Institute](https://img.shields.io/badge/PostgreSQL_by_Code_Institute-grey?logo=okta&logoColor=F05223)](https://dbs.ci-dbs.net) used as the Postgres database from Code Institute.
+- [![ElephantSQL](https://img.shields.io/badge/ElephantSQL-grey?logo=postgresql&logoColor=36A6E2)](https://www.elephantsql.com) used as the Postgres database.
+- [![Cloudinary](https://img.shields.io/badge/Cloudinary-grey?logo=cloudinary&logoColor=3448C5)](https://cloudinary.com) used for online static file storage.
+- [![WhiteNoise](https://img.shields.io/badge/WhiteNoise-grey?logo=python&logoColor=FFFFFF)](https://whitenoise.readthedocs.io) used for serving static files with Heroku.
+- [![Stripe](https://img.shields.io/badge/Stripe-grey?logo=stripe&logoColor=008CDD)](https://stripe.com) used for online secure payments of ecommerce products/services.
+- [![Gmail API](https://img.shields.io/badge/Gmail_API-grey?logo=gmail&logoColor=EA4335)](https://mail.google.com) used for sending emails in my application.
+- [![MailChimp](https://img.shields.io/badge/MailChimp-grey?logo=mailchimp&logoColor=FFE01B)](https://mailchimp.com) used for sending newsletter subscriptions.
+- [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes) used for creating wireframes.
+- [![Font Awesome](https://img.shields.io/badge/Font_Awesome-grey?logo=fontawesome&logoColor=528DD7)](https://fontawesome.com) used for the icons.
 
 ## Database Design
 
@@ -351,11 +362,36 @@ class TipsAndTricks(models.Model):
     | **PK** | created_at | DateTimeField | Creation Timestamp |
     | **PK** | slug | SlugField | Uniques slug for url |
     
-🛑🛑🛑🛑🛑 AM I OK WITH JUST ONE MODEL ? 🛑🛑🛑🛑🛑
 
 - To help organise the remaining models required I used [Lucidchart](https://lucid.app/lucidchart/0a00742c-aa55-4964-8626-cff679e4ba5b/edit?viewport_loc=-476%2C20%2C3384%2C1572%2C0_0&invitationId=inv_85e6fc15-610f-42fe-b2bf-59e51136a95c)
 
 ![screenshot](documentation/readme_images/erd.png)
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+
+I have used `pygraphviz` and `django-extensions` to auto-generate an ERD.
+
+The steps taken were as follows:
+- In the terminal: `sudo apt update`
+- then: `sudo apt-get install python3-dev graphviz libgraphviz-dev pkg-config`
+- then type `Y` to proceed
+- then: `pip3 install django-extensions pygraphviz`
+- in my `settings.py` file, I added the following to my `INSTALLED_APPS`:
+```python
+INSTALLED_APPS = [
+    ...
+    'django_extensions',
+    ...
+]
+```
+- back in the terminal: `python3 manage.py graph_models -a -o erd.png`
+- dragged the new `erd.png` file into my `documentation/` folder
+- removed `'django_extensions',` from my `INSTALLED_APPS`
+- finally, in the terminal: `pip3 uninstall django-extensions pygraphviz -y`
+
+![erd](documentation/erd.png)
+source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to-visualize-the-database-diagram-in-django-application-c5fa7e710e16)
+
 
 ## Agile Development Process
 
@@ -458,38 +494,14 @@ provided by Code Institute.
 
 Ive created my Facebook Business Page. Here is the link link - [Facebook](https://www.facebook.com/profile.php?id=61554298768912) 
 
-Ive alkso included a screenshot in case Facebook take down my business page![Facebook](documentation/readme_images/facebook.png)
+Ive also included a screenshot in case Facebook take down my business page![Facebook](documentation/readme_images/facebook.png)
 
 ### Newsletter Marketing
 
 I have incorporate a newsletter sign-up form on my application, to allow users to supply their
 email address if they are interested in learning more. 
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Option 1 (MailChimp):
-- Sign up for a Mailchimp account
-- This allows up to 2,500 subscription email sends per month
-- Incorporate the code and scripts into your project like in the CI lessons.
-
-Option 2 (Django):
-- Create a custom newsletter app in your project, with a custom model.
-- This method satisfies two assessment criteria:
-    - include a newsletter
-    - one of your custom models
-- It doesn't need anything except the "email" on the model.
-- Example:
-    ```python
-    class Newsletter(models.Model):
-    email = models.EmailField(null=False, blank=False)
-
-    def __str__(self):
-        return self.email
-    ```
-- Consider using the same `send_mail()` functionality used on the `webhook_handler.py` file.
-    - You can trigger an email sent out to subscribed users when new products are added to the site!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+![Newsletter Page](documentation/readme_images/newsletter.png)
 
 ## Security Features and Defensive Design
 
@@ -519,12 +531,28 @@ Option 2 (Django):
 - 500 Server Error - Error 500 "Internal Server Error" Oh No! Dont worry its me! not you!
 
 ## Testing
-
-For all testing, please refer to the [TESTING.md](TESTING.md) file.
+  
+> For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Deployment
 
 The live deployed application can be found deployed on [Heroku](https://home-energy-saving-store-be6e9d82e03c.herokuapp.com).
+
+### PostgreSQL Database
+
+This project uses a [Code Institute PostgreSQL Database](https://dbs.ci-dbs.net).
+
+To obtain my own Postgres Database from Code Institute, I followed these steps:
+
+- Signed-in to the CI LMS using my email address.
+- An email was sent to me with my new Postgres Database.
+
+> [!CAUTION]  
+> - PostgreSQL databases by Code Institute are only available to CI Students.
+> - You must acquire your own PostgreSQL database through some other method
+> if you plan to clone/fork this repository.
+> - Code Institute students are allowed a maximum of 8 databases.
+> - Databases are subject to deletion after 18 months.
 
 ### ElephantSQL Database
 
@@ -550,9 +578,10 @@ To obtain your own Cloudinary API key, create an account and log in.
 - On your Cloudinary Dashboard, you can copy your **API Environment Variable**.
 - Be sure to remove the `CLOUDINARY_URL=` as part of the API **value**; this is the **key**.
 
+
 ### Amazon AWS
 
-This project isnt using AWS but if it did you could uses it at [AWS](https://aws.amazon.com) to store media and static files online, due to the fact that Heroku doesn't persist this type of data.
+This project isnt using [AWS] but if it did you could uses it at (https://aws.amazon.com) to store media and static files online, due to the fact that Heroku doesn't persist this type of data.
 
 Once you've created an AWS account and logged-in, follow these series of steps to get your project connected.
 Make sure you're on the **AWS Management Console** page.
@@ -729,6 +758,9 @@ Deployment steps are as follows, after account setup:
 - Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select **Create App**.
 - From the new app **Settings**, click **Reveal Config Vars**, and set your environment variables.
 
+> [!IMPORTANT]  
+> This is a sample only; you would replace the values with your own if cloning/forking my repository.
+
 | Key | Value |
 | --- | --- |
 | `CLOUDINARY_URL` | user's own value |
@@ -745,10 +777,11 @@ Deployment steps are as follows, after account setup:
 | `STRIPE_WH_SECRET` | user's own value |
 | `USE_AWS` | True |
 
-Heroku needs two additional files in order to deploy properly.
+Heroku needs three additional files in order to deploy properly.
 
 - requirements.txt
 - Procfile
+- runtime.txt
 
 You can install this project's **requirements** (where applicable) using:
 
@@ -762,6 +795,11 @@ The **Procfile** can be created with the following command:
 
 - `echo web: gunicorn app_name.wsgi > Procfile`
 - *replace **app_name** with the name of your primary Django app name; the folder where settings.py is located*
+
+The **runtime.txt** file needs to know which Python version you're using:
+1. type: `python3 --version` in the terminal.
+2. in the **runtime.txt** file, add your Python version:
+	- `python-3.9.18`
 
 For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
 
@@ -789,12 +827,14 @@ For either method, you will need to install any applicable packages found within
 You will need to create a new file called `env.py` at the root-level,
 and include the same environment variables listed above from the Heroku deployment steps.
 
+> [!IMPORTANT]  
+> This is a sample only; you would replace the values with your own if cloning/forking my repository.
+
 Sample `env.py` file:
 
 ```python
 import os
 
-os.environ.setdefault("CLOUDINARY_URL", "user's own value")
 os.environ.setdefault("AWS_ACCESS_KEY_ID", "user's own value")
 os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "user's own value")
 os.environ.setdefault("DATABASE_URL", "user's own value")
@@ -852,6 +892,7 @@ You can fork this repository by using the following steps:
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Pimmz/Home-Energy-Saving-Store)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
+
 
 ### Local VS Deployment
 
