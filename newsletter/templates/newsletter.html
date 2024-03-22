@@ -4,19 +4,25 @@
 
 {% block content %}
 
-<div class="container-contact col-12 h-55">
+<div class="container-contact col-12 vh-100">
     <div class="row justify-content-center">
         <div class="col-10 col-sm-7 col-lg-4">
             <h1 class="mt-5">Newsletter</h1>
             <hr class="mt-0 mb-4">
+            <h3 class="flash mt-5 mb-4">Sign Up Today To Get;</h3>
+            <h5 class="mt-5">Exclusive Discounts And Deals</h5>
+            <h5>Helpful Tips And Advice</h5>
+            <h5>Stay Up To Date With Latest Trends</h5>
+            <h5>Great Product Recommendations</h5>
+            <h5 class="mb-5">Empowerment And Savings On Your Energy Bill</h5>
              {% if messages %}
-            <div id="msg" class="alert alert-{% if message.tags == 'error' %}danger{%else%}{{message.tags}}{%endif%} mt-3" role="alert">
+            <div id="msg" class="alert alert-{% if message.tags == 'error' %}danger{%else%}{{message.tags}}{%endif%} mt-5" role="alert">
                 {% for message in messages %}
                 {{ message }}
                 {% endfor %}
             </div>
             {% endif %}
-            <form method="post">
+            <form method="post mt-5">
                 {% csrf_token %}
                 {{ form|crispy }}
                 <button type="submit" class="btn btn-success">Submit</button>

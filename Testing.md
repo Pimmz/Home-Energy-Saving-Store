@@ -1,18 +1,54 @@
 # Testing
 
-Return back to the [README.md](README.md) file.
+> [!NOTE]  
+> Return back to the [README.md](README.md) file.
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
 In this section, you need to convince the assessors that you have conducted enough testing to legitimately believe that the site works well.
 Essentially, in this part, you should go over all of your project's features, and ensure that they all work as intended,
 with the project providing an easy and straightforward way for the users to achieve their goals.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+Feature-by-Feature Testing:
+
+Go through each feature of your portfolio site and detail the testing process for each.
+
+Explain the functionality and demonstrate how it aligns with the intended purpose. This could include:
+
+- Navigation: Ensuring smooth transitions between pages, links directing to the correct destinations.
+- Responsive Design: Checking for compatibility across various devices and screen sizes.
+- Portfolio Display: Verifying that projects are properly showcased with accurate descriptions, images, and links.
+- Contact Form: Testing the form submission process, ensuring the user receives a confirmation, and you receive the message.
+
+User Experience Testing:
+
+- Usability Testing: Have users (or simulated users) interact with the site and provide feedback. Document any issues encountered and the resolutions implemented.
+- Accessibility Testing: Confirm compliance with accessibility standards (e.g., screen reader compatibility, proper alt text for images, keyboard navigation).
+
+Compatibility Testing:
+
+- Browser Compatibility: Testing on different browsers (Chrome, Firefox, Safari, Edge, etc.) to ensure consistent performance.
+- Device Compatibility: Ensuring functionality across various devices (desktops, laptops, tablets, and mobile phones).
+- Performance Testing (optional):
+	- Speed and Load Testing: Tools like PageSpeed Insights or GTmetrix to check page load times and optimize where necessary.
+	- Scalability Testing: Assess how the site handles increased traffic or usage.
+
+Regression Testing:
+
+After implementing fixes or updates, ensure that previous features and functionalities still work as intended. This prevents new changes from breaking existing features.
+
+Documentation and Logs:
+
+Maintain records of testing procedures, results, and any bugs encountered along with their resolutions. This helps demonstrate a systematic approach to testing and problem-solving.
+User Feedback Incorporation:
+
+If applicable, mention how user feedback has been taken into account and implemented to enhance the user experience.
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ## Code Validation
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
 Use the space to discuss code validation for any of your own code files (where applicable).
 You are not required to validate external libraries/frameworks, such as imported Bootstrap, Materialize, Font Awesome, etc.
@@ -21,234 +57,129 @@ You are not required to validate external libraries/frameworks, such as imported
 
 **PRO TIP**: Always validate the live site pages, not your local code. There could be subtle/hidden differences.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ### HTML
 
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- If you are copying/pasting your HTML code, use this link: https://validator.w3.org/#validate_by_input
-- (*recommended*) If you are using the live deployed site pages, use this link: https://validator.w3.org/#validate_by_uri
-
-It's recommended to validate the live pages (each of them) using the deployed URL.
-This will give you a custom URL as well, which you can use on your testing documentation.
-It makes it easier to return back to a page to validate it again in the future.
-The URL will look something like this:
-
-- https://validator.w3.org/nu/?doc=https%3A%2F%2FPimmz.github.io%2FHome-Energy-Saving-Store%2Findex.html
-
-Sample HTML code validation documentation (tables are extremely helpful!):
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-| Page | W3C URL | Screenshot | Notes |
+| Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FPimmz.github.io%2FHome-Energy-Saving-Store%2Findex.html) | ![screenshot](documentation/html-validation-home.png) | Section lacks header h2-h6 warning |
-| Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FPimmz.github.io%2FHome-Energy-Saving-Store%2Fcontact.html) | ![screenshot](documentation/html-validation-contact.png) | obsolete iframe warnings |
-| Quiz | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FPimmz.github.io%2FHome-Energy-Saving-Store%2Fquiz.html) | ![screenshot](documentation/html-validation-quiz.png) | Pass: No Errors |
-| Add Blog | n/a | ![screenshot](documentation/html-validation-add-blog.png) | Duplicate IDs found, and fixed |
-| Checkout | n/a | ![screenshot](documentation/html-validation-checkout.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining HTML files |
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-**IMPORTANT**: Python/Jinja syntax in HTML
-
-Python projects that use Jinja syntax, such as `{% for loops %}`, `{% url 'home' %}`, and `{{ variable|filter }}`
-will not validate properly if you're copying/pasting into the HTML validator.
-
-In order to properly validate these types of files, it's recommended to
-[validate by uri](https://validator.w3.org/#validate_by_uri) from the deployed Heroku pages.
-
-Unfortunately, pages that require a user to be logged-in and authenticated (CRUD functionality),
-will not work using this method, due to the fact that the HTML Validator (W3C) doesn't have
-access to login to your pages.
-In order to properly validate HTML pages with Jinja syntax for authenticated pages, follow these steps:
-
-- Navigate to the deployed pages which require authentication
-- Right-click anywhere on the page, and select **View Page Source** (usually `CTRL+U` or `⌘+U` on Mac).
-- This will display the entire "compiled" code, without any Jinja syntax.
-- Copy everything, and use the [validate by input](https://validator.w3.org/#validate_by_input) method.
-- Repeat this process for every page that requires a user to be logged-in/authenticated.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+| bag | bag-total.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | bag.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | checkout-buttons.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | product-image.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | product-info.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | quantity-form.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | checkout.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | checkout_success.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| contact | contact.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| faq | faq.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| home | index.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| newsletter | newsletter.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | add_product.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | custom_clearable_file_input.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | edit_product.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | product_detail.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | products.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| profiles | profile.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | 400.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | 403.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | 404.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | 500.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| tips_and_tricks | add_post.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| tips_and_tricks | tips_and_tricks.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| tips_and_tricks | update_post.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 
 ### CSS
 
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- If you are copying/pasting your HTML code, use this link: https://jigsaw.w3.org/css-validator/#validate_by_input
-- (*recommended*) If you are using the live deployed site, use this link: https://jigsaw.w3.org/css-validator/#validate_by_uri
-
-It's recommended to validate the live site if you only have a single CSS file using the deployed URL.
-This will give you a custom URL as well, which you can use on your testing documentation.
-It makes it easier to return back to the page to validate it again in the future.
-The URL will look something like this:
-
-- https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2FPimmz.github.io%2FHome-Energy-Saving-Store
-
-If you have multiple CSS files, then individual [validation by input](https://jigsaw.w3.org/css-validator/#validate_by_input)
-is recommended for the additional CSS files.
-
-**IMPORTANT**: Third-Party tools
-
-If you're using extras like Bootstrap, Materialize, Font Awesome, then sometimes the validator
-will attempt to also validate this code, even if it's not part of your own actual code.
-You are not required to validate the external libraries or frameworks!
-
-Sample CSS code validation documentation (tables are extremely helpful!):
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-| File | Jigsaw URL | Screenshot | Notes |
+| Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2FPimmz.github.io%2FHome-Energy-Saving-Store) | ![screenshot](documentation/css-validation-style.png) | Pass: No Errors |
-| checkout.css | n/a | ![screenshot](documentation/css-validation-checkout.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining CSS files |
+| checkout | checkout.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| home | error.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| profiles | profile.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| static | base.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 
 ### JavaScript
 
 I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-If using modern JavaScript (ES6) methods, then make sure to include the following
-line at the very top of every single JavaScript file (this should remain in your files for submission):
-
-    /* jshint esversion: 11 */
-
-If you are also including jQuery (`$`), then the updated format will be:
-
-    /* jshint esversion: 11, jquery: true */
-
-This allows the JShint validator to recognize modern ES6 methods, such as:
-`let`, `const`, `template literals`, `arrow functions (=>)`, etc.
-
-**IMPORTANT**: External resources
-
-Sometimes we'll write JavaScript that imports variables from other files, such as an array of questions
-from `questions.js`, which are used within the main `script.js` file elsewhere.
-If that's the case, the JShint validation tool doesn't know how to recognize unused variables
-that would normally be imported locally in your code.
-These warnings are acceptable to showcase on your screenshots.
-
-The same thing applies when using external libraries such as Stripe, Leaflet, Bootstrap, Materialize, etc..
-To instantiate these components, we need to use their respective declarator.
-Again, the JShint validation tool would flag these as undefined/unused variables.
-These warnings are acceptable to showcase on your screenshots.
-
-Sample JS code validation documentation (tables are extremely helpful!):
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-| File | Screenshot | Notes |
-| --- | --- | --- |
-| script.js | ![screenshot](documentation/js-validation-script.png) | Unused variables from external files |
-| questions.js | ![screenshot](documentation/js-validation-questions.png) | Pass: No Errors |
-| quiz.js | ![screenshot](documentation/js-validation-quiz.png) | Unused variables from external files |
-| stripe_elements.js | ![screenshot](documentation/js-validation-stripe.png) | Undefined Stripe variable |
-| x | x | x | repeat for all remaining JavaScript files |
+| Directory | File | Screenshot | Notes |
+| --- | --- | --- | --- |
+| checkout | stripe_elements.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| profiles | countryfield.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| static | base.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 
 ### Python
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-The CI Python Linter can be used two different ways.
-- Copy/Paste your Python code directly into the linter.
-- As an API, using the "raw" URL appended to the linter URL.
-    - To find the "raw" URL, navigate to your file directly on the GitHub repo.
-    - On that page, GitHub provides a button on the right called "Raw" that you can click on.
-    - From that new page, copy the full URL, and paste it after the CI Python Linter URL (with a `/` separator).
-    - Check the example table below for a live demo.
-
-It's recommended to validate each file using the API URL.
-This will give you a custom URL which you can use on your testing documentation.
-It makes it easier to return back to a file to validate it again in the future.
-Use the steps above to generate your own custom URLs for each Python file.
-
-**IMPORTANT**: `E501 line too long` errors
-
-You must strive to fix any Python lines that are too long ( >80 characters ).
-In rare cases where you cannot break the lines [without breaking the functionality],
-then by adding `# noqa` to the end of those lines will ignore linting validation.
-
-`# noqa` = **NO Quality Assurance**
-
-**NOTE**: You must include 2 *spaces* before the `#`, and 1 *space* after the `#`.
-
-Do not use `# noqa` all over your project just to clear down validation errors!
-This can still cause a project to fail, for failing to fix actual PEP8 validation errors.
-
-Sometimes strings or variables get too long, or long `if` conditional statements.
-These are acceptable instances to use the `# noqa`.
-
-When trying to fix "line too long" errors, try to avoid using `/` to split lines.
-A better approach would be to use any type of opening bracket, and hit Enter just after that.
-
-Any opening bracket type will work: `(`, `[`, `{`.
-
-By using an opening bracket, Python knows where to appropriately indent the next line of code,
-without having to "guess" yourself and attempt to tab to the correct indentation level.
-
-Sample Python code validation documentation below (tables are extremely helpful!).
-
-**Note**: This gives examples of PP3 (Python-only), and Flask/Django files, so eliminate the ones not applicable to your own project.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
-| File | CI URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| run.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/home-energy-saving-store/main/run.py) | ![screenshot](documentation/py-validation-run.png) | W291 trailing whitespace |
-| settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/home-energy-saving-store/main/boutique-ado/settings.py) | ![screenshot](documentation/py-validation-settings.png) | E501 line too long |
-| Blog views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/home-energy-saving-store/main/blog/views.py) | ![screenshot](documentation/py-validation-blog-views.png) | Pass: No Errors |
-| Checkout urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/home-energy-saving-store/main/checkout/urls.py) | ![screenshot](documentation/py-validation-checkout-urls.png) | W292 no newline at end of file |
-| Profiles models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/home-energy-saving-store/main/profiles/models.py) | ![screenshot](documentation/py-validation-profiles-models.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining Python files |
-
-**IMPORTANT**: Django settings.py
-
-The Django settings.py file comes with 4 lines that are quite long, and will throw the `E501 line too long` error.
-This is default behavior, but can be fixed by adding `# noqa` to the end of those lines.
-
-Example:
-
-```python
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",  # noqa
-    },
-]
-```
-
-**IMPORTANT**: migration and pycache files
-
-You do not have to ever validate files from the `migrations/` or `pycache/` folders!
-Ignore these `.py` files, and validate just the files that you've created or modified.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+| Directory | File | CI URL | Screenshot | Notes |
+| --- | --- | --- | --- | --- |
+| bag | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | contexts.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/contexts.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | bag_tools.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/templatetags/bag_tools.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/checkout/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/checkout/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/checkout/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | signals.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/checkout/signals.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/checkout/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/checkout/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | webhook_handler.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/checkout/webhook_handler.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | webhooks.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/checkout/webhooks.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| contact | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/contact/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| contact | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/contact/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| contact | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/contact/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| contact | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/contact/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| contact | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/contact/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| faq | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/faq/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| faq | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/faq/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| faq | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/faq/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| faq | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/faq/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| home | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| home | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| home | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| home | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| home_energy_saving_store | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home_energy_saving_store/settings.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| home_energy_saving_store | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home_energy_saving_store/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| home_energy_saving_store | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home_energy_saving_store/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+|  | manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/manage.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| newsletter | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/newsletter/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| newsletter | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/newsletter/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| newsletter | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/newsletter/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| newsletter | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/newsletter/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| newsletter | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/newsletter/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | widgets.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/widgets.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| profiles | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| profiles | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| profiles | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| profiles | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| profiles | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| tips_and_tricks | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| tips_and_tricks | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| tips_and_tricks | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| tips_and_tricks | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| tips_and_tricks | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 
 ## Browser Compatibility
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
 Use this space to discuss testing the live/deployed site on various browsers.
 
-Consider testing at least 3 different browsers, if available on your system.
+Consider testing AT LEAST 3 different browsers, if available on your system.
+
+You DO NOT need to use all of the browsers below, just pick any 3 (minimum).
 
 Recommended browsers to consider:
 - [Chrome](https://www.google.com/chrome)
@@ -266,23 +197,23 @@ If you use these, you must provide a link to the source used for attribution, an
 
 Sample browser testing documentation:
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
 | Browser | Home | About | Contact | etc | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Chrome | ![screenshot](documentation/browser-chrome-home.png) | ![screenshot](documentation/browser-chrome-about.png) | ![screenshot](documentation/browser-chrome-contact.png) | ![screenshot](documentation/browser-chrome-etc.png) | Works as expected |
-| Firefox | ![screenshot](documentation/browser-firefox-home.png) | ![screenshot](documentation/browser-firefox-about.png) | ![screenshot](documentation/browser-firefox-contact.png) | ![screenshot](documentation/browser-firefox-etc.png) | Works as expected |
-| Edge | ![screenshot](documentation/browser-edge-home.png) | ![screenshot](documentation/browser-edge-about.png) | ![screenshot](documentation/browser-chrome-edge.png) | ![screenshot](documentation/browser-edge-etc.png) | Works as expected |
-| Safari | ![screenshot](documentation/browser-safari-home.png) | ![screenshot](documentation/browser-safari-about.png) | ![screenshot](documentation/browser-safari-contact.png) | ![screenshot](documentation/browser-safari-etc.png) | Minor CSS differences |
-| Brave | ![screenshot](documentation/browser-brave-home.png) | ![screenshot](documentation/browser-brave-about.png) | ![screenshot](documentation/browser-brave-contact.png) | ![screenshot](documentation/browser-brave-etc.png) | Works as expected |
-| Opera | ![screenshot](documentation/browser-opera-home.png) | ![screenshot](documentation/browser-opera-about.png) | ![screenshot](documentation/browser-opera-contact.png) | ![screenshot](documentation/browser-opera-etc.png) | Minor differences |
+| Chrome | ![screenshot](documentation/browsers/browser-chrome-home.png) | ![screenshot](documentation/browsers/browser-chrome-about.png) | ![screenshot](documentation/browsers/browser-chrome-contact.png) | ![screenshot](documentation/browsers/browser-chrome-etc.png) | Works as expected |
+| Firefox | ![screenshot](documentation/browsers/browser-firefox-home.png) | ![screenshot](documentation/browsers/browser-firefox-about.png) | ![screenshot](documentation/browsers/browser-firefox-contact.png) | ![screenshot](documentation/browsers/browser-firefox-etc.png) | Works as expected |
+| Edge | ![screenshot](documentation/browsers/browser-edge-home.png) | ![screenshot](documentation/browsers/browser-edge-about.png) | ![screenshot](documentation/browsers/browser-chrome-edge.png) | ![screenshot](documentation/browsers/browser-edge-etc.png) | Works as expected |
+| Safari | ![screenshot](documentation/browsers/browser-safari-home.png) | ![screenshot](documentation/browsers/browser-safari-about.png) | ![screenshot](documentation/browsers/browser-safari-contact.png) | ![screenshot](documentation/browsers/browser-safari-etc.png) | Minor CSS differences |
+| Brave | ![screenshot](documentation/browsers/browser-brave-home.png) | ![screenshot](documentation/browsers/browser-brave-about.png) | ![screenshot](documentation/browsers/browser-brave-contact.png) | ![screenshot](documentation/browsers/browser-brave-etc.png) | Works as expected |
+| Opera | ![screenshot](documentation/browsers/browser-opera-home.png) | ![screenshot](documentation/browsers/browser-opera-about.png) | ![screenshot](documentation/browsers/browser-opera-contact.png) | ![screenshot](documentation/browsers/browser-opera-etc.png) | Minor differences |
 | repeat for any other tested browsers | x | x | x | x | x |
 
 ## Responsiveness
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
 Use this space to discuss testing the live/deployed site on various device sizes.
 
@@ -301,24 +232,24 @@ It showcases a higher level of manual tests, and can be seen as a positive inclu
 
 Sample responsiveness testing documentation:
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
 | Device | Home | About | Contact | etc | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/responsive-mobile-home.png) | ![screenshot](documentation/responsive-mobile-about.png) | ![screenshot](documentation/responsive-mobile-contact.png) | ![screenshot](documentation/responsive-mobile-etc.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/responsive-tablet-home.png) | ![screenshot](documentation/responsive-tablet-about.png) | ![screenshot](documentation/responsive-tablet-contact.png) | ![screenshot](documentation/responsive-tablet-etc.png) | Works as expected |
-| Desktop | ![screenshot](documentation/responsive-desktop-home.png) | ![screenshot](documentation/responsive-desktop-about.png) | ![screenshot](documentation/responsive-desktop-contact.png) | ![screenshot](documentation/responsive-desktop-etc.png) | Works as expected |
-| XL Monitor | ![screenshot](documentation/responsive-xl-home.png) | ![screenshot](documentation/responsive-xl-about.png) | ![screenshot](documentation/responsive-xl-contact.png) | ![screenshot](documentation/responsive-xl-etc.png) | Scaling starts to have minor issues |
-| 4K Monitor | ![screenshot](documentation/responsive-4k-home.png) | ![screenshot](documentation/responsive-4k-about.png) | ![screenshot](documentation/responsive-4k-contact.png) | ![screenshot](documentation/responsive-4k-etc.png) | Noticeable scaling issues |
-| Google Pixel 7 Pro | ![screenshot](documentation/responsive-pixel-home.png) | ![screenshot](documentation/responsive-pixel-about.png) | ![screenshot](documentation/responsive-pixel-contact.png) | ![screenshot](documentation/responsive-pixel-etc.png) | Works as expected |
-| iPhone 14 | ![screenshot](documentation/responsive-iphone-home.png) | ![screenshot](documentation/responsive-iphone-about.png) | ![screenshot](documentation/responsive-iphone-contact.png) | ![screenshot](documentation/responsive-iphone-etc.png) | Works as expected |
+| Mobile (DevTools) | ![screenshot](documentation/responsiveness/responsive-mobile-home.png) | ![screenshot](documentation/responsiveness/responsive-mobile-about.png) | ![screenshot](documentation/responsiveness/responsive-mobile-contact.png) | ![screenshot](documentation/responsiveness/responsive-mobile-etc.png) | Works as expected |
+| Tablet (DevTools) | ![screenshot](documentation/responsiveness/responsive-tablet-home.png) | ![screenshot](documentation/responsiveness/responsive-tablet-about.png) | ![screenshot](documentation/responsiveness/responsive-tablet-contact.png) | ![screenshot](documentation/responsiveness/responsive-tablet-etc.png) | Works as expected |
+| Desktop | ![screenshot](documentation/responsiveness/responsive-desktop-home.png) | ![screenshot](documentation/responsiveness/responsive-desktop-about.png) | ![screenshot](documentation/responsiveness/responsive-desktop-contact.png) | ![screenshot](documentation/responsiveness/responsive-desktop-etc.png) | Works as expected |
+| XL Monitor | ![screenshot](documentation/responsiveness/responsive-xl-home.png) | ![screenshot](documentation/responsiveness/responsive-xl-about.png) | ![screenshot](documentation/responsiveness/responsive-xl-contact.png) | ![screenshot](documentation/responsiveness/responsive-xl-etc.png) | Scaling starts to have minor issues |
+| 4K Monitor | ![screenshot](documentation/responsiveness/responsive-4k-home.png) | ![screenshot](documentation/responsiveness/responsive-4k-about.png) | ![screenshot](documentation/responsiveness/responsive-4k-contact.png) | ![screenshot](documentation/responsiveness/responsive-4k-etc.png) | Noticeable scaling issues |
+| Google Pixel 7 Pro | ![screenshot](documentation/responsiveness/responsive-pixel-home.png) | ![screenshot](documentation/responsiveness/responsive-pixel-about.png) | ![screenshot](documentation/responsiveness/responsive-pixel-contact.png) | ![screenshot](documentation/responsiveness/responsive-pixel-etc.png) | Works as expected |
+| iPhone 14 | ![screenshot](documentation/responsiveness/responsive-iphone-home.png) | ![screenshot](documentation/responsiveness/responsive-iphone-about.png) | ![screenshot](documentation/responsiveness/responsive-iphone-contact.png) | ![screenshot](documentation/responsiveness/responsive-iphone-etc.png) | Works as expected |
 | repeat for any other tested browsers | x | x | x | x | x |
 
 ## Lighthouse Audit
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
 Use this space to discuss testing the live/deployed site's Lighthouse Audit reports.
 Avoid testing the local version (especially if developing in Gitpod), as this can have knock-on effects of performance.
@@ -333,20 +264,20 @@ Make sure to test the Lighthouse Audit results for all of your pages.
 
 Sample Lighthouse testing documentation:
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse-home-desktop.png) | Some minor warnings |
-| About | ![screenshot](documentation/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse-about-desktop.png) | Some minor warnings |
-| Gallery | ![screenshot](documentation/lighthouse-gallery-mobile.png) | ![screenshot](documentation/lighthouse-gallery-desktop.png) | Slow response time due to large images |
+| Home | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Some minor warnings |
+| About | ![screenshot](documentation/lighthouse/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-about-desktop.png) | Some minor warnings |
+| Gallery | ![screenshot](documentation/lighthouse/lighthouse-gallery-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-gallery-desktop.png) | Slow response time due to large images |
 | x | x | x | repeat for any other tested pages/sizes |
 
 ## Defensive Programming
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
 Defensive programming (defensive design) is extremely important!
 
@@ -397,34 +328,34 @@ Expected Outcome / Test Performed / Result Received / Fixes Implemented
 
 Use the table below as a basic start, and expand on it using the logic above.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 Defensive programming was manually tested with the below user acceptance testing:
 
 | Page | Expectation | Test | Result | Fix | Screenshot |
 | --- | --- | --- | --- | --- | --- |
 | Home | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature01.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature02.png) |
+| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature01.png) |
+| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature02.png) |
 | About | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature03.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature04.png) |
+| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature03.png) |
+| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature04.png) |
 | Gallery | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature05.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature06.png) |
+| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature05.png) |
+| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature06.png) |
 | Contact | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature07.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature08.png) |
+| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature07.png) |
+| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature08.png) |
 | repeat for all remaining pages | x | x | x | x | x |
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
 Another way of performing defensive testing is a simple Pass/Fail for each test.
 The assessors prefer the above method, with the full test explained, but this is also acceptable in most cases.
 
 When in doubt, use the above method instead, and delete the table below.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 | Page | User Action | Expected Result | Pass/Fail | Comments |
 | --- | --- | --- | --- | --- |
@@ -461,16 +392,16 @@ When in doubt, use the above method instead, and delete the table below.
 | | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
 | repeat for all remaining pages | x | x | x | x |
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
 Repeat for all other tests, as applicable to your own site.
 The aforementioned tests are just an example of a few different project scenarios.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ## User Story Testing
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
 Testing user stories is actually quite simple, once you've already got the stories defined on your README.
 
@@ -478,19 +409,19 @@ Most of your project's **features** should already align with the **user stories
 so this should as simple as creating a table with the user story, matching with the re-used screenshot
 from the respective feature.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 | User Story | Screenshot |
 | --- | --- |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature01.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature02.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature03.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature04.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature05.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature06.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature07.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature08.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature09.png) |
+| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature01.png) |
+| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature02.png) |
+| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature03.png) |
+| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature04.png) |
+| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature05.png) |
+| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature06.png) |
+| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature07.png) |
+| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature08.png) |
+| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature09.png) |
 | repeat for all remaining user stories | x |
 
 ## Automated Testing
@@ -501,11 +432,11 @@ I fully acknowledge and understand that, in a real-world scenario, an extensive 
 
 ### JavaScript (Jest Testing)
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
 Adjust the code below (file names, etc.) to match your own project files/folders.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 I have used the [Jest](https://jestjs.io) JavaScript testing framework to test the application functionality.
 
@@ -572,27 +503,27 @@ Below are the results from the tests that I've written for this application:
 
 | Test Suites | Tests | Screenshot |
 | --- | --- | --- |
-| 1 passed | 16 passed | ![screenshot](documentation/js-test-coverage.png) |
+| 1 passed | 16 passed | ![screenshot](documentation/tests/js-test-coverage.png) |
 | x | x | repeat for all remaining tests |
 
 #### Jest Test Issues
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
 Use this section to list any known issues you ran into while writing your Jest tests.
 Remember to include screenshots (where possible), and a solution to the issue (if known).
 
 This can be used for both "fixed" and "unresolved" issues.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ### Python (Unit Testing)
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
 Adjust the code below (file names, etc.) to match your own project files/folders.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 I have used Django's built-in unit testing framework to test the application functionality.
 
@@ -616,42 +547,42 @@ Below are the results from the various apps on my application that I've tested:
 
 | App | File | Coverage | Screenshot |
 | --- | --- | --- | --- |
-| Bag | test_forms.py | 99% | ![screenshot](documentation/py-test-bag-forms.png) |
-| Bag | test_models.py | 89% | ![screenshot](documentation/py-test-bag-models.png) |
-| Bag | test_urls.py | 100% | ![screenshot](documentation/py-test-bag-urls.png) |
-| Bag | test_views.py | 71% | ![screenshot](documentation/py-test-bag-views.png) |
-| Checkout | test_forms.py | 99% | ![screenshot](documentation/py-test-checkout-forms.png) |
-| Checkout | test_models.py | 89% | ![screenshot](documentation/py-test-checkout-models.png) |
-| Checkout | test_urls.py | 100% | ![screenshot](documentation/py-test-checkout-urls.png) |
-| Checkout | test_views.py | 71% | ![screenshot](documentation/py-test-checkout-views.png) |
-| Home | test_forms.py | 99% | ![screenshot](documentation/py-test-home-forms.png) |
-| Home | test_models.py | 89% | ![screenshot](documentation/py-test-home-models.png) |
-| Home | test_urls.py | 100% | ![screenshot](documentation/py-test-home-urls.png) |
-| Home | test_views.py | 71% | ![screenshot](documentation/py-test-home-views.png) |
-| Products | test_forms.py | 99% | ![screenshot](documentation/py-test-products-forms.png) |
-| Products | test_models.py | 89% | ![screenshot](documentation/py-test-products-models.png) |
-| Products | test_urls.py | 100% | ![screenshot](documentation/py-test-products-urls.png) |
-| Products | test_views.py | 71% | ![screenshot](documentation/py-test-products-views.png) |
-| Profiles | test_forms.py | 99% | ![screenshot](documentation/py-test-profiles-forms.png) |
-| Profiles | test_models.py | 89% | ![screenshot](documentation/py-test-profiles-models.png) |
-| Profiles | test_urls.py | 100% | ![screenshot](documentation/py-test-profiles-urls.png) |
-| Profiles | test_views.py | 71% | ![screenshot](documentation/py-test-profiles-views.png) |
+| Bag | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-bag-forms.png) |
+| Bag | test_models.py | 89% | ![screenshot](documentation/tests/py-test-bag-models.png) |
+| Bag | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-bag-urls.png) |
+| Bag | test_views.py | 71% | ![screenshot](documentation/tests/py-test-bag-views.png) |
+| Checkout | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-checkout-forms.png) |
+| Checkout | test_models.py | 89% | ![screenshot](documentation/tests/py-test-checkout-models.png) |
+| Checkout | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-checkout-urls.png) |
+| Checkout | test_views.py | 71% | ![screenshot](documentation/tests/py-test-checkout-views.png) |
+| Home | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-home-forms.png) |
+| Home | test_models.py | 89% | ![screenshot](documentation/tests/py-test-home-models.png) |
+| Home | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-home-urls.png) |
+| Home | test_views.py | 71% | ![screenshot](documentation/tests/py-test-home-views.png) |
+| Products | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-products-forms.png) |
+| Products | test_models.py | 89% | ![screenshot](documentation/tests/py-test-products-models.png) |
+| Products | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-products-urls.png) |
+| Products | test_views.py | 71% | ![screenshot](documentation/tests/py-test-products-views.png) |
+| Profiles | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-profiles-forms.png) |
+| Profiles | test_models.py | 89% | ![screenshot](documentation/tests/py-test-profiles-models.png) |
+| Profiles | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-profiles-urls.png) |
+| Profiles | test_views.py | 71% | ![screenshot](documentation/tests/py-test-profiles-views.png) |
 | x | x | x | repeat for all remaining tested apps/files |
 
 #### Unit Test Issues
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
 Use this section to list any known issues you ran into while writing your unit tests.
 Remember to include screenshots (where possible), and a solution to the issue (if known).
 
 This can be used for both "fixed" and "unresolved" issues.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ## Bugs
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
 This section is primarily used for JavaScript and Python applications,
 but feel free to use this section to document any HTML/CSS bugs you might run into.
@@ -661,41 +592,41 @@ Make sure to include any necessary steps you've implemented to fix the bug(s) as
 
 **PRO TIP**: screenshots of bugs are extremely helpful, and go a long way!
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 - JS Uncaught ReferenceError: `foobar` is undefined/not defined
 
-    ![screenshot](documentation/bug01.png)
+    ![screenshot](documentation/bugs/bug01.png)
 
     - To fix this, I _____________________.
 
 - JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).
 
-    ![screenshot](documentation/bug02.png)
+    ![screenshot](documentation/bugs/bug02.png)
 
     - To fix this, I _____________________.
 
 - Python `'ModuleNotFoundError'` when trying to import module from imported package
 
-    ![screenshot](documentation/bug03.png)
+    ![screenshot](documentation/bugs/bug03.png)
 
     - To fix this, I _____________________.
 
 - Django `TemplateDoesNotExist` at /appname/path appname/template_name.html
 
-    ![screenshot](documentation/bug04.png)
+    ![screenshot](documentation/bugs/bug04.png)
 
     - To fix this, I _____________________.
 
 - Python `E501 line too long` (93 > 79 characters)
 
-    ![screenshot](documentation/bug04.png)
+    ![screenshot](documentation/bugs/bug04.png)
 
     - To fix this, I _____________________.
 
 ### GitHub **Issues**
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
 An improved way to manage bugs is to use the built-in **Issues** tracker on your GitHub repository.
 To access your Issues, click on the "Issues" tab at the top of your repository.
@@ -711,9 +642,11 @@ Once you've sorted the issue, you should then "Close" it.
 
 When showcasing your bug tracking for assessment, you can use the following format:
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 **Fixed Bugs**
+
+[![GitHub issue custom search](https://img.shields.io/github/issues-search?query=repo%3APimmz%2FHome-Energy-Saving-Store%20label%3Abug&label=bugs)](https://github.com/Pimmz/Home-Energy-Saving-Store/issues?q=is%3Aissue+is%3Aclosed+label%3Abug)
 
 All previously closed/fixed bugs can be tracked [here](https://github.com/Pimmz/Home-Energy-Saving-Store/issues?q=is%3Aissue+is%3Aclosed).
 
@@ -725,6 +658,9 @@ All previously closed/fixed bugs can be tracked [here](https://github.com/Pimmz/
 
 **Open Issues**
 
+[![GitHub issues](https://img.shields.io/github/issues/Pimmz/Home-Energy-Saving-Store)](https://github.com/Pimmz/Home-Energy-Saving-Store/issues)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/Pimmz/Home-Energy-Saving-Store)](https://github.com/Pimmz/Home-Energy-Saving-Store/issues?q=is%3Aissue+is%3Aclosed)
+
 Any remaining open issues can be tracked [here](https://github.com/Pimmz/Home-Energy-Saving-Store/issues).
 
 | Bug | Status |
@@ -734,7 +670,7 @@ Any remaining open issues can be tracked [here](https://github.com/Pimmz/Home-En
 
 ## Unfixed Bugs
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
 You will need to mention unfixed bugs and why they were not fixed.
 This section should include shortcomings of the frameworks or technologies used.
@@ -747,30 +683,31 @@ they need to know whether or not you're aware of them as well, and why you've no
 
 Some examples:
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 - On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
 
-    ![screenshot](documentation/unfixed-bug01.png)
+    ![screenshot](documentation/bugs/unfixed-bug01.png)
 
     - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
 
 - For PP3, when using a helper `clear()` function, any text above the height of the terminal does not clear, and remains when you scroll up.
 
-    ![screenshot](documentation/unfixed-bug02.png)
+    ![screenshot](documentation/bugs/unfixed-bug02.png)
 
     - Attempted fix: I tried to adjust the terminal size, but it only resizes the actual terminal, not the allowable area for text.
 
 - When validating HTML with a semantic `section` element, the validator warns about lacking a header `h2-h6`. This is acceptable.
 
-    ![screenshot](documentation/unfixed-bug03.png)
+    ![screenshot](documentation/bugs/unfixed-bug03.png)
 
     - Attempted fix: this is a known warning and acceptable, and my section doesn't require a header since it's dynamically added via JS.
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
 If you legitimately cannot find any unfixed bugs or warnings, then use the following sentence:
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
-There are no remaining bugs that I am aware of.
+> [!NOTE]  
+> There are no remaining bugs that I am aware of.
