@@ -110,12 +110,15 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | Directory | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
 | bag | admin.py | [PEP8 CI]() | |Not Used|
-| bag | apps.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/apps.py) | ![screenshot](documentation/testing_images/linter/apps.png)  | |
-| bag | contexts.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/contexts.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| bag | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| bag | bag_tools.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/templatetags/bag_tools.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| bag | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| bag | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | apps.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/apps.py) | ![screenshot](documentation/testing_images/linter/apps.png)  | Pass: No Errors|
+| bag | contexts.py | [PEP8 CI](https://pep8ci.herokuapp.com/) | ![screenshot](documentation/testing_images/linter/context.png) | Pass: No Errors|
+| bag | models.py | [PEP8 CI]() ||Not Used|
+| bag | bag_tools.py | [PEP8 CI](https://pep8ci.herokuapp.com/) | ![screenshot](documentation/testing_images/linter/tools.png) | Pass: No Errors|
+| bag | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://) | ![screenshot](documentation/testing_images/linter/urls.png) |Pass: No Errors |
+| bag | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/) | ![screenshot](documentation/testing_images/linter/views.png) | Pass: No Errors|
+
+
+
 | checkout | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/checkout/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | checkout | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/checkout/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | checkout | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/checkout/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
