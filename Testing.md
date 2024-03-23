@@ -110,7 +110,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | Directory | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
 | bag | admin.py | [PEP8 CI]() | |Not Used|
-| bag | apps.py | [PEP8 CI](https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/apps.py) | ![screenshot](documentation/testing_images/linter/apps.png)  | |
+| bag | apps.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/apps.py) | ![screenshot](documentation/testing_images/linter/apps.png)  | |
 | bag | contexts.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/contexts.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | bag | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | bag | bag_tools.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/templatetags/bag_tools.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
