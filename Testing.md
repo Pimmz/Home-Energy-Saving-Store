@@ -48,17 +48,6 @@ If applicable, mention how user feedback has been taken into account and impleme
 
 ## Code Validation
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use the space to discuss code validation for any of your own code files (where applicable).
-You are not required to validate external libraries/frameworks, such as imported Bootstrap, Materialize, Font Awesome, etc.
-
-**IMPORTANT**: You must provide a screenshot for each file you validate.
-
-**PRO TIP**: Always validate the live site pages, not your local code. There could be subtle/hidden differences.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ### HTML
 
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
@@ -106,11 +95,13 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
 
-| Directory | File | Screenshot | Notes |
-| --- | --- | --- | --- |
-| checkout | stripe_elements.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| profiles | countryfield.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| static | base.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+I have used /* jshint esversion: 11, jquery: true */ at the top of the file so Jshint is allowed to recognize modern ES6 methods, such as:
+`let`.
+
+| File | Screenshot | Notes |
+| --- | --- | --- |
+| base.js | ![screenshot](documentation/testing_images/jshint.png) | Unused variables from external file|
+
 
 ### Python
 
@@ -118,7 +109,8 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | Directory | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
-| bag | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | admin.py | [PEP8 CI]() | |Not Used|
+| bag | apps.py | [PEP8 CI](https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/apps.py) | ![screenshot](documentation/testing_images/linter/apps.png)  | |
 | bag | contexts.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/contexts.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | bag | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | bag | bag_tools.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/bag/templatetags/bag_tools.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
