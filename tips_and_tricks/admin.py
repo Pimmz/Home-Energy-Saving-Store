@@ -1,8 +1,9 @@
 from django.contrib import admin
 from .models import TipsAndTricks, ApprovalStatus
 
+
 class ApprovalStatusAdmin(admin.ModelAdmin):
-    list_display = ['post','is_approved']
+    list_display = ['post', 'is_approved']
     actions = ['approve_posts']
 
     def approve_posts(self, request, queryset):
@@ -13,6 +14,7 @@ class ApprovalStatusAdmin(admin.ModelAdmin):
             approval_status.save()
 
         self.message_user(request, "Selected posts have been approved.")
+
 
 admin.site.register(TipsAndTricks)
 admin.site.register(ApprovalStatus, ApprovalStatusAdmin)

@@ -14,7 +14,7 @@ def newsletter_view(request):
             return redirect('newsletter')
         if form.is_valid():
             form.save()
-            messages.success(request, 'Thanks for signing upto our newsletter')     
+            messages.success(request, 'Thanks for signing upto our newsletter')
             return redirect('newsletter')
         messages.error(request, 'Error please try again!')
     context = {'form': form}

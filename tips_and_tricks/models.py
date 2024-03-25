@@ -17,7 +17,7 @@ class TipsAndTricks(models.Model):
     slug = models.SlugField(unique=True, blank=True, null=True)
 
     def save(self, *args, **kwargs):
-        if not self.slug:   
+        if not self.slug:
             self.slug = slugify(self.title)
         super().save(*args, **kwargs)
 
@@ -25,4 +25,3 @@ class TipsAndTricks(models.Model):
 class ApprovalStatus(models.Model):
     post = models.OneToOneField(TipsAndTricks, on_delete=models.CASCADE)
     is_approved = models.BooleanField(default=False)
-    
