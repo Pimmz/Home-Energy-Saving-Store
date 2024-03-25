@@ -107,6 +107,10 @@ I have used /* jshint esversion: 11, jquery: true */ at the top of the file so J
 
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
+For lines that have been too long I have shortened everything where possible however there was one section in settings.py that couldn't be shortened due to it affecting the functionality of the code so I have used `# noqa` at the end of those lines so it will ignore linting validation.
+
+![screenshot](documentation/testing_images/linter/hess_noqa.png)
+
 | Directory | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
 | bag | admin.py | [PEP8 CI]() | |Not Used|
@@ -125,47 +129,56 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | checkout | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/checkout/views.py) | ![screenshot](documentation/testing_images/linter/checkout_views.png) | Pass: No Errors|
 | checkout | webhook_handler.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/checkout/webhook_handler.py) | ![screenshot](documentation/testing_images/linter/checkout_handler.png) | Pass: No Errors|
 | checkout | webhooks.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/checkout/webhooks.py) | ![screenshot](documentation/testing_images/linter/checkout_webhook.png) | Pass: No Errors|
+| contact | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/contact/admin.py) | ![screenshot](documentation/testing_images/linter/contact_admin.png) |Pass: No Errors |
+| contact | apps.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/contact/apps.py) | ![screenshot](documentation/testing_images/linter/contact_apps.png) |Pass: No Errors |
+| contact | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/contact/forms.py) | ![screenshot](documentation/testing_images/linter/contact_forms.png) |Pass: No Errors |
+| contact | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/contact/models.py) | ![screenshot](documentation/testing_images/linter/contact_models.png) |Pass: No Errors |
+| contact | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/contact/urls.py) | ![screenshot](documentation/testing_images/linter/contact_urls.png) |Pass: No Errors |
+| contact | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/contact/views.py) | ![screenshot](documentation/testing_images/linter/contact_views.png) |Pass: No Errors |
+| faq | admin.py | [PEP8 CI] |Not Used|
+| faq | apps.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/faq/apps.py) | ![screenshot](documentation/testing_images/linter/faq_app.png) |Pass: No Errors |
+| faq | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/faq/models.py) | ![screenshot](documentation/testing_images/linter/faq_models.png) |Pass: No Errors |
+| faq | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/faq/urls.py) | ![screenshot](documentation/testing_images/linter/faq.urls.png) |Pass: No Errors |
+| faq | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/faq/views.py) | ![screenshot](documentation/testing_images/linter/faq_views.png) |Pass: No Errors |
+| home | admin.py | [PEP8 CI] | Not used|
+| home | apps.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home/apps.py) | ![screenshot](documentation/testing_images/linter/home_apps.png) | Pass: No Errors|
+| home | models.py | [PEP8 CI] | Not used|
+| home | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home/urls.py) | ![screenshot](documentation/testing_images/linter/home_urls.png) | Pass: No Errors|
+| home | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home/views.py) | ![screenshot](documentation/testing_images/linter/home_views.png) |Pass: No Errors |
+| home_energy_saving_store | asgi.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home_energy_saving_store/asgi.py) | ![screenshot](documentation/testing_images/linter/hess_asgi.png) |Pass: No Errors |
+| home_energy_saving_store | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home_energy_saving_store/settings.py) | ![screenshot](documentation/testing_images/linter/hess_settings.png) | Pass: No Errors|
+| home_energy_saving_store | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home_energy_saving_store/urls.py) | ![screenshot](documentation/testing_images/linter/hess_urls.png) | Pass: No Errors|
+| home_energy_saving_store | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home_energy_saving_store/views.py) | ![screenshot](documentation/testing_images/linter/hess_views.png) |Pass: No Errors |
+
+| newsletter | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/newsletter/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+| newsletter | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/newsletter/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+| newsletter | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/newsletter/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+| newsletter | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/newsletter/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+| newsletter | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/newsletter/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
 
 
+| products | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+| products | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+| products | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+| products | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+| products | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+| products | widgets.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/widgets.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
 
-| contact | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/contact/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| contact | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/contact/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| contact | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/contact/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| contact | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/contact/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| contact | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/contact/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| faq | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/faq/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| faq | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/faq/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| faq | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/faq/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| faq | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/faq/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| home | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| home | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| home | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| home | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| home_energy_saving_store | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home_energy_saving_store/settings.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| home_energy_saving_store | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home_energy_saving_store/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| home_energy_saving_store | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home_energy_saving_store/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-|  | manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/manage.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| newsletter | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/newsletter/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| newsletter | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/newsletter/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| newsletter | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/newsletter/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| newsletter | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/newsletter/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| newsletter | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/newsletter/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | widgets.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/widgets.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| profiles | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| profiles | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| profiles | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| profiles | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| profiles | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| tips_and_tricks | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| tips_and_tricks | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| tips_and_tricks | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| tips_and_tricks | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| tips_and_tricks | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+
+| profiles | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+| profiles | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+| profiles | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+| profiles | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+| profiles | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+
+
+| tips_and_tricks | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+| tips_and_tricks | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+| tips_and_tricks | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+| tips_and_tricks | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+| tips_and_tricks | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+
+|  | manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/manage.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
 
 ## Browser Compatibility
 

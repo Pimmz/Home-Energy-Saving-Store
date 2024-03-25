@@ -15,7 +15,7 @@ class Contact(models.Model):
     subject = models.CharField(
         choices=SUBJECT_CHOICES, max_length=25, null=False, blank=False
     )
-    reason_for_contact = models.TextField( 
+    reason_for_contact = models.TextField(
         null=False, blank=False
     )
 

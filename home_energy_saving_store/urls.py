@@ -20,6 +20,5 @@ urlpatterns = [
     path('403/', views.custom_403.as_view(), name='custom_403'),
     path('404/', views.custom_404.as_view(), name='custom_404'),
     path('500/', views.custom_500.as_view(), name='custom_500'),
-  
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
