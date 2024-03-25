@@ -311,7 +311,11 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-
+@media (max-width: 1228px) {
+    .collapse navbar-collapse {
+        font-size: 100px
+    }
+}
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {

@@ -178,7 +178,7 @@ For lines that have been too long I have shortened everything where possible how
 
 ## Browser Compatibility
 
-I have tested The Fox Terriers Owners Club on four different browsers using [Browserling](https://www.browserling.com/). I used this site because you can test multiple browsers in one place for free. The first was Chrome, the second was Firefox, the third was Edge and the fourth was Opera.
+I have tested the Home Energy Saving Store on four different browsers using [Browserling](https://www.browserling.com/). I used this site because you can test multiple browsers in one place for free. The first was Chrome, the second was Firefox, the third was Edge and the fourth was Opera.
 
 - [Chrome](https://www.google.com/chrome)
 - [Firefox (Developer Edition)](https://www.mozilla.org/firefox/developer)
@@ -189,48 +189,31 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 | Browser | Screenshot | Notes |
 | --- | --- | --- |
-| Chrome | ![screenshot](documentation/testing_images/browser/chrometest.png) | Works as expected |
-| Firefox | ![screenshot](documentation/testing_images/browser/firefoxtest.png) | Works as expected |
-| Edge | ![screenshot](documentation/testing_images/browser/edgetest.png) | Works as expected |
-| Opera | ![screenshot](documentation/testing_images/browser/operatest.png) | Works as expected |
+| Chrome | ![screenshot](documentation/testing_images/reponsiveness/chrome.png) | Works as expected |
+| Firefox | ![screenshot](documentation/testing_images/reponsiveness/firefox.png) | Works as expected |
+| Edge | ![screenshot](documentation/testing_images/reponsiveness/edge.png) | Works as expected |
+| Opera | ![screenshot](documentation/testing_images/reponsiveness/opera.png) | Works as expected |
 
 
 
 ## Responsiveness
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to discuss testing the live/deployed site on various device sizes.
-
-The minimum requirement is for the following 3 tests:
-- Mobile
-- Tablet
-- Desktop
-
-**IMPORTANT**: You must provide screenshots of the tested responsiveness, to "prove" that you've actually tested them.
-
-Using the "amiresponsive" mockup image (or similar) does not suffice the requirements.
-Consider using some of the built-in device sizes in the Developer Tools.
-
-If you have tested the project on your actual mobile phone or tablet, consider also including screenshots of these as well.
-It showcases a higher level of manual tests, and can be seen as a positive inclusion!
-
-Sample responsiveness testing documentation:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
-| Device | Home | About | Contact | etc | Notes |
-| --- | --- | --- | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/responsiveness/responsive-mobile-home.png) | ![screenshot](documentation/responsiveness/responsive-mobile-about.png) | ![screenshot](documentation/responsiveness/responsive-mobile-contact.png) | ![screenshot](documentation/responsiveness/responsive-mobile-etc.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/responsiveness/responsive-tablet-home.png) | ![screenshot](documentation/responsiveness/responsive-tablet-about.png) | ![screenshot](documentation/responsiveness/responsive-tablet-contact.png) | ![screenshot](documentation/responsiveness/responsive-tablet-etc.png) | Works as expected |
-| Desktop | ![screenshot](documentation/responsiveness/responsive-desktop-home.png) | ![screenshot](documentation/responsiveness/responsive-desktop-about.png) | ![screenshot](documentation/responsiveness/responsive-desktop-contact.png) | ![screenshot](documentation/responsiveness/responsive-desktop-etc.png) | Works as expected |
-| XL Monitor | ![screenshot](documentation/responsiveness/responsive-xl-home.png) | ![screenshot](documentation/responsiveness/responsive-xl-about.png) | ![screenshot](documentation/responsiveness/responsive-xl-contact.png) | ![screenshot](documentation/responsiveness/responsive-xl-etc.png) | Scaling starts to have minor issues |
-| 4K Monitor | ![screenshot](documentation/responsiveness/responsive-4k-home.png) | ![screenshot](documentation/responsiveness/responsive-4k-about.png) | ![screenshot](documentation/responsiveness/responsive-4k-contact.png) | ![screenshot](documentation/responsiveness/responsive-4k-etc.png) | Noticeable scaling issues |
-| Google Pixel 7 Pro | ![screenshot](documentation/responsiveness/responsive-pixel-home.png) | ![screenshot](documentation/responsiveness/responsive-pixel-about.png) | ![screenshot](documentation/responsiveness/responsive-pixel-contact.png) | ![screenshot](documentation/responsiveness/responsive-pixel-etc.png) | Works as expected |
-| iPhone 14 | ![screenshot](documentation/responsiveness/responsive-iphone-home.png) | ![screenshot](documentation/responsiveness/responsive-iphone-about.png) | ![screenshot](documentation/responsiveness/responsive-iphone-contact.png) | ![screenshot](documentation/responsiveness/responsive-iphone-etc.png) | Works as expected |
-| repeat for any other tested browsers | x | x | x | x | x |
+| Device | Screenshot | Notes |
+| --- | --- | --- |
+| ipad mini | ![screenshot](documentation/testing_images/reponsiveness/ipadmini.png) | Works as expected |
+| ipad air | ![screenshot](documentation/testing_images/reponsiveness/ipadair.png) | Works as expected |
+| iphonese | ![screenshot](documentation/testing_images/reponsiveness/iphonese.png)| Works as expected |
+| iphone 12 pro | ![screenshot](documentation/testing_images/reponsiveness/iphone12pro.png) | Works as expected |
+| iphone xr | ![screenshot](documentation/testing_images/reponsiveness/iphonexr.png) | Works as expected |
+| Nest hub| ![screenshot](documentation/testing_images/reponsiveness/nesthub.png) | Works as expected |
+| Nest hub Max| ![screenshot](documentation/testing_images/reponsiveness/nesthubmax.png) | Works as expected |
+| Pixel 7 | ![screenshot](documentation/testing_images/reponsiveness/pixel7.png) | Works as expected |
+| Surface duo | ![screenshot](documentation/testing_images/reponsiveness/surfaceduo.png) | Works as expected |
+| Galaxy A51 / 71 | ![screenshot](documentation/testing_images/reponsiveness/a51.png) | Works as expected |
+| Galaxy S8 | ![screenshot](documentation/testing_images/reponsiveness/galaxys8.png) | Works as expected |
+| Galaxy S20 Ultra | ![screenshot](documentation/testing_images/reponsiveness/s20ultra.png) | Works as expected |
 
 ## Lighthouse Audit
 
