@@ -335,28 +335,41 @@ Defensive programming was manually tested with the below user acceptance testing
 
 ## User Story Testing
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Testing user stories is actually quite simple, once you've already got the stories defined on your README.
-
-Most of your project's **features** should already align with the **user stories**,
-so this should as simple as creating a table with the user story, matching with the re-used screenshot
-from the respective feature.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 | User Story | Screenshot |
 | --- | --- |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature01.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature02.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature03.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature04.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature05.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature06.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature07.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature08.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature09.png) |
-| repeat for all remaining user stories | x |
+|EPIC Viewing and Navigation |
+| As a shopper I can contact the store so that I can make a query about something or return a product | ![screenshot](documentation/readme_images/contact.png) |
+| As a Shopper I can view tips and tricks so that I can learn from other user what they have done to save money on my heating and electricity costs | ![screenshot](documentation/readme_images/tips.png) |
+| As a Shopper I can find the store on Facebook so that I can easily find it and trust its authenticity | ![screenshot](documentation/readme_images/facebook.png) |
+| As a Shopper I can easily view the total of my purchases at any time so that I can avoid spending too much | ![screenshot](documentation/readme_images/basket.png) |
+| As a Shopper I can view individual products details so that I can identify the price, description, product rating, product image and available sizes | ![screenshot](documentation/readme_images/all.png) |
+| As a Shopper I can view a specific category of products so that I can quickly find products I'm interested in without having to search through all the products | ![screenshot](documentation/readme_images/cat.png) |
+| As a shopper I can view a list of products so that I can select some to purchase | ![screenshot](documentation/readme_images/all.png) |
+| EPIC Registration and User Accounts |
+### As a Site user I can have a personalised user profile so that I can view my personal order history and order confirmations and save my payment information | ![screenshot](documentation/features/feature01.png) |
+| As a Shopper I can Subscribe to to get exclusive offers and News so that I can stay upto date with new and exciting energy saving products as well as exclusive offers and discounts | ![screenshot](documentation/readme_images/newsletter.png) |
+### As a Site user I can receive an email confirmation after registering so that I can verify that my account registration was successful | ![screenshot](documentation/features/feature01.png) |
+| As a Shopper I can Easily recover my password in case I forget it so that I can recover access to my account | ![screenshot](documentation/readme_images/password.png) |
+| As a Site User I can easily login or log out so that I can access my personal account information | ![screenshot](documentation/readme_images/password.png) |
+| As a Site user I can easily register for an account so that I can have a personal account and be able to view my profile | ![screenshot](documentation/readme_images/register.png) |
+| EPIC | Sorting and Searching |
+| As a Shopper I can Search for a product by name or description so that I can find a specific product I'd like to purchase | ![screenshot](documentation/readme_images/search.png) |
+| As a Shopper I can sort multiple categories of products simultaneously so that I can find the best price or best rated products across a broad categories | ![screenshot](documentation/readme_images/cat.png) |
+| As a Shopper I can sort a specific category of product so that I can find the best priced or best rated product in a specific category or sort the product in that 	 
+category by name | ![screenshot](documentation/readme_images/sort.png) |
+| As a Shopper I can sort the list of available products so that I can easily identify the best rated best priced and categorically sorted products | ![screenshot](documentation/readme_images/sort.png) |
+| EPIC Purchasing and Checkout |
+### As a Shopper I can receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my record | ![screenshot](documentation/features/feature01.png) |
+### As a Shopper I can view an order confirmation after checkout so that I can verify that I haven't made any mistakes | ![screenshot](documentation/features/feature01.png) |
+### As a Shopper I can Feel my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase | ![screenshot](documentation/features/feature01.png) |
+| As a Shopper I can easily enter my payment information so that I can check out quickly and with no hassles | ![screenshot](documentation/readme_images/checkout.png) |
+| As a Shopper I can Adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before checkout | ![screenshot](documentation/readme_images/basket.png) |
+| As a Shopper I can view items in my bag to be purchased so that I can identify the total cost of my purchase and all items I will receive | ![screenshot](documentation/readme_images/basket.png) |
+| As a Shopper I can easily select the quantity of a product when purchasing it so that I can ensure I don't accidentally select the wrong product quantity | ![screenshot](documentation/readme_images/qty.png) |
+| EPIC Admin and Store Management |
+|As a Store Owner I can delete a product so that I can remove items that are no longer for sale | ![screenshot](documentation/readme_images/edit.png) |
+| As a Store Owner I can edit/ update a product so that I can change product prices descriptions images and other product criteria | ![screenshot](documentation/readme_images/edit.png) |
+| As a Store Owner I can add a product so that I can add new items to my store | ![screenshot](documentation/readme_images/manage.png) |
 
 ## Automated Testing
 
@@ -366,90 +379,11 @@ I fully acknowledge and understand that, in a real-world scenario, an extensive 
 
 ### JavaScript (Jest Testing)
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
+Due to only having 5 lines of javascript used as a timeout method for the pop up messages I was unable to test it with jest. If I had more javascript I would have used the [jestspyon method](https://jestjs.io/docs/jest-object#jestspyonobject-methodname)
 
-Adjust the code below (file names, etc.) to match your own project files/folders.
+Although I have completed a manual test with a screen shot so you can see the pop up message that will then disappear in 4 secounds.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-I have used the [Jest](https://jestjs.io) JavaScript testing framework to test the application functionality.
-
-In order to work with Jest, I first had to initialize NPM.
-
-- `npm init`
-- Hit `enter` for all options, except for **test command:**, just type `jest`.
-
-Add Jest to a list called **Dev Dependencies** in a dev environment:
-
-- `npm install --save-dev jest`
-
-**IMPORTANT**: Initial configurations
-
-When creating test files, the name of the file needs to be `file-name.test.js` in order for Jest to properly work.
-
-Without the following, Jest won't properly run the tests:
-
-- `npm install -D jest-environment-jsdom`
-
-Due to a change in Jest's default configuration, you'll need to add the following code to the top of the `.test.js` file:
-
-```js
-/**
- * @jest-environment jsdom
- */
-
-const { test, expect } = require("@jest/globals");
-const { function1, function2, function3, etc. } = require("../script-name");
-
-beforeAll(() => {
-    let fs = require("fs");
-    let fileContents = fs.readFileSync("index.html", "utf-8");
-    document.open();
-    document.write(fileContents);
-    document.close();
-});
-```
-
-Remember to adjust the `fs.readFileSync()` to the specific file you'd like you test.
-The example above is testing the `index.html` file.
-
-Finally, at the bottom of the script file where your primary scripts are written, include the following at the bottom of the file.
-Make sure to include the name of all of your functions that are being tested in the `.test.js` file.
-
-```js
-if (typeof module !== "undefined") module.exports = {
-    function1, function2, function3, etc.
-};
-```
-
-Now that these steps have been undertaken, further tests can be written, and be expected to fail initially.
-Write JS code that can get the tests to pass as part of the Red-Green refactor process.
-
-Once ready, to run the tests, use this command:
-
-- `npm test`
-
-**NOTE**: To obtain a coverage report, use the following command:
-
-- `npm test --coverage`
-
-Below are the results from the tests that I've written for this application:
-
-| Test Suites | Tests | Screenshot |
-| --- | --- | --- |
-| 1 passed | 16 passed | ![screenshot](documentation/tests/js-test-coverage.png) |
-| x | x | repeat for all remaining tests |
-
-#### Jest Test Issues
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this section to list any known issues you ran into while writing your Jest tests.
-Remember to include screenshots (where possible), and a solution to the issue (if known).
-
-This can be used for both "fixed" and "unresolved" issues.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+![Confirmation](documentation/testing_images/automated/test.png)
 
 ### Python (Unit Testing)
 
