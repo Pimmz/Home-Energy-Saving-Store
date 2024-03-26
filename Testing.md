@@ -213,35 +213,44 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | Surface duo | ![screenshot](documentation/testing_images/reponsiveness/surfaceduo.png) | Works as expected |
 | Galaxy A51 / 71 | ![screenshot](documentation/testing_images/reponsiveness/a51.png) | Works as expected |
 | Galaxy S8 | ![screenshot](documentation/testing_images/reponsiveness/galaxys8.png) | Works as expected |
-| Galaxy S20 Ultra | ![screenshot](documentation/testing_images/reponsiveness/s20ultra.png) | Works as expected |
+| Galaxy S20 Ultra | ![screenshot](documentation/testing_images/reponsiveness/galaxys20.png) | Works as expected |
 
 ## Lighthouse Audit
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
+I've tested my deployed project using the Lighthouse Audit tool to check for any major issues. 
 
-Use this space to discuss testing the live/deployed site's Lighthouse Audit reports.
-Avoid testing the local version (especially if developing in Gitpod), as this can have knock-on effects of performance.
-
-If you don't have Lighthouse in your Developer Tools,
-it can be added as an [extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk).
-
-Don't just test the home page (unless it's a single-page application).
-Make sure to test the Lighthouse Audit results for all of your pages.
-
-**IMPORTANT**: You must provide screenshots of the results, to "prove" that you've actually tested them.
-
-Sample Lighthouse testing documentation:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
-
-| Page | Mobile | Desktop | Notes |
+Desktop
+| Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Some minor warnings |
-| About | ![screenshot](documentation/lighthouse/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-about-desktop.png) | Some minor warnings |
-| Gallery | ![screenshot](documentation/lighthouse/lighthouse-gallery-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-gallery-desktop.png) | Slow response time due to large images |
-| x | x | x | repeat for any other tested pages/sizes |
+| Home | Desktop | ![screenshot](documentation/testing_images/lighthouse/homedesk.png) | Few warnings |
+| All Products | Desktop | ![screenshot](documentation/testing_images/lighthouse/alldesk.png) | Few warnings |
+| Radiator | Desktop | ![screenshot](documentation/testing_images/lighthouse/homerad.png) | Worked as expected |
+| Led Lights | Desktop | ![screenshot](documentation/testing_images/lighthouse/leddesk.png) | Worked as expected |
+| Insulation | Desktop | ![screenshot](documentation/testing_images/lighthouse/insuldesk.png) | Worked as expected |
+| Contact Us | Desktop | ![screenshot](documentation/testing_images/lighthouse/contactdesk.png) | Worked as expected |
+| Newsletter | Desktop | ![screenshot](documentation/testing_images/lighthouse/newsdesk.png) | Worked as expected |
+| Tips and Tricks | Desktop | ![screenshot](documentation/testing_images/lighthouse/tipsdesk.png) | Worked as expected |
+| FAQ | Desktop | ![screenshot](documentation/testing_images/lighthouse/faqdesk.png) | Average performance due to number of images and size |
+| Register | Desktop | ![screenshot](documentation/testing_images/lighthouse/regdesk.png) | Good overall though average accessibility |
+| Product Management | Desktop | ![screenshot](documentation/testing_images/lighthouse/productdesk.png) | Worked as expected  |
+| Shopping Bag | Desktop | ![screenshot](documentation/testing_images/lighthouse/shopdesk.png) | Good overall although accessibility |
+
+Mobile
+| Page | Size | Screenshot | Notes |
+| --- | --- | --- | --- |
+| Home | Mobile | ![screenshot](documentation/testing_images/lighthouse/homemob.png) | Slow performance. Compressed and using cloudinary to be more effective. |
+| All Products | Mobile | ![screenshot](documentation/testing_images/lighthouse/productmob.png) | Slow performance. Compressed and using cloudinary to be more effective|
+| Radiator | Desktop | ![screenshot](documentation/testing_images/lighthouse/radmob.png | Slow performance. Compressed and using cloudinary to be more effective |
+| Led Lights | Desktop | ![screenshot](documentation/testing_images/lighthouse/ledmob.png) | Slow performance. Compressed and using cloudinary to be more effective |
+| Insulation | Desktop | ![screenshot](documentation/testing_images/lighthouse/insulmob.png) |  Average performance. Everything else is operating as expected|
+| Contact Us | Desktop | ![screenshot](documentation/testing_images/lighthouse/contactmob.png) | Average performance. Everything else is operating as expected|
+| Newsletter | Desktop | ![screenshot](documentation/testing_images/lighthouse/newsmob.png) | Average performance. Everything else is operating as expected |
+| Tips and Tricks | Desktop | ![screenshot](documentation/testing_images/lighthouse/tipsmob.png) | Slow performance. Compressed and using cloudinary to be more effective |
+| FAQ | Desktop | ![screenshot](documentation/testing_images/lighthouse/faqmob.png) | Slow performance. Everything else is operating as expected|
+| Register| Desktop | ![screenshot](documentation/testing_images/lighthouse/regmob.png) | Slow performance. Compressed and using cloudinary to be more effective |
+| Product Maangement | Desktop | ![screenshot](documentation/testing_images/lighthouse/manmob.png) | Average performance. Everything else is operating as expected |
+| Shopping Bag | Desktop | ![screenshot](documentation/testing_images/lighthouse/bagmob.png) | Slow performance. Compressed and using cloudinary to be more effective |
+
 
 ## Defensive Programming
 
