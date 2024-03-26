@@ -254,127 +254,84 @@ Mobile
 
 ## Defensive Programming
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Defensive programming (defensive design) is extremely important!
-
-When building projects that accept user inputs or forms, you should always test the level of security for each.
-Examples of this could include (not limited to):
-
-Forms:
-- Users cannot submit an empty form
-- Users must enter valid email addresses
-
-PP3 (Python-only):
-- Users must enter a valid letter/word/string when prompted
-- Users must choose from a specific list only
-
-MS3 (Flask) | MS4/PP4/PP5 (Django):
-- Users cannot brute-force a URL to navigate to a restricted page
-- Users cannot perform CRUD functionality while logged-out
-- User-A should not be able to manipulate data belonging to User-B, or vice versa
-- Non-Authenticated users should not be able to access pages that require authentication
-- Standard users should not be able to access pages intended for superusers
-
-You'll want to test all functionality on your application, whether it's a standard form,
-or uses CRUD functionality for data manipulation on a database.
-Make sure to include the `required` attribute on any form-fields that should be mandatory.
-Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser).
-
-You should include any manual tests performed, and the expected results/outcome.
-
-Testing should be replicable.
-Ideally, tests cases should focus on each individual section of every page on the website.
-Each test case should be specific, objective, and step-wise replicable.
-
-Instead of adding a general overview saying that everything works fine,
-consider documenting tests on each element of the page
-(ie. button clicks, input box validation, navigation links, etc.) by testing them in their happy flow,
-and also the bad/exception flow, mentioning the expected and observed results,
-and drawing a parallel between them where applicable.
-
-Consider using the following format for manual test cases:
-
-Expected Outcome / Test Performed / Result Received / Fixes Implemented
-
-- **Expected**: "Feature is expected to do X when the user does Y."
-- **Testing**: "Tested the feature by doing Y."
-- (either) **Result**: "The feature behaved as expected, and it did Y."
-- (or) **Result**: "The feature did not respond to A, B, or C."
-- **Fix**: "I did Z to the code because something was missing."
-
-Use the table below as a basic start, and expand on it using the logic above.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 Defensive programming was manually tested with the below user acceptance testing:
-
-| Page | Expectation | Test | Result | Fix | Screenshot |
-| --- | --- | --- | --- | --- | --- |
-| Home | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature01.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature02.png) |
-| About | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature03.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature04.png) |
-| Gallery | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature05.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature06.png) |
-| Contact | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature07.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature08.png) |
-| repeat for all remaining pages | x | x | x | x | x |
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Another way of performing defensive testing is a simple Pass/Fail for each test.
-The assessors prefer the above method, with the full test explained, but this is also acceptable in most cases.
-
-When in doubt, use the above method instead, and delete the table below.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 | Page | User Action | Expected Result | Pass/Fail | Comments |
 | --- | --- | --- | --- | --- |
-| Home | | | | |
-| | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| Contact | | | | |
-| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
+| Home Page | | | | |
+| | Click on Logo Name | Redirection to Home page | Pass | |
+| | Search on search bar | Redirection to chosen product | Pass | |
+| | Brute forcing the URL to get to the page for loggin users only  |  User redirected to sign up page | Pass |  |
+| All Products Page | | | | |
+| | Click on All Products link in navbar | Redirection to All products page | Pass | |
+| | Click on image | redirection to larger image of product | Pass | |
+| | Change sort by method | Products arranged in the order chosen | Pass | |
+| | Brute forcing the URL to get to another user's profile | Redirects user back to own profile | Pass | |
+| Radiator Page | | | | |
+| | Click on All Products link in navbar | Redirection to All products page | Pass | |
+| | Click on image | redirection to larger image of product | Pass | |
+| | Change sort by method | Products arranged in the order chosen | Pass | |
+| | Brute forcing the URL to get to another user's profile | Redirects user back to own profile | Pass | |
+| Led Lights Page | | | | |
+| | Click on All Products link in navbar | Redirection to All products page | Pass | |
+| | Click on image | redirection to larger image of product | Pass | |
+| | Change sort by method | Products arranged in the order chosen | Pass | |
+| | Brute forcing the URL to get to another user's profile | Redirects user back to own profile | Pass | |
+| Insulation Page | | | | |
+| | Click on All Products link in navbar | Redirection to All products page | Pass | |
+| | Click on image | redirection to larger image of product | Pass | |
+| | Change sort by method | Products arranged in the order chosen | Pass | |
+| | Brute forcing the URL to get to another user's profile | Redirects user back to own profile | Pass | |
+| Contact us Page | | | | |
+| | Enter name | Field will accept freeform text | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
+| | Select subject from the drop-down menu | User can only choose from the three available choices| Pass | |
 | | Enter message in textarea | Field will accept freeform text | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
-| Sign Up | | | | |
-| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
+| | No message in textareas | error message appears stating this field is required | Pass | |
+| | Click the Submit button | Message pops up informing them their message as been successful | Pass |  |
+| | Click on the Cancel button | User will be redirected to the Home page  | Pass | |
+| Newsletter Page | | | | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password (twice) | Field will only accept password format | Pass | |
-| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
-| | Confirm email | Redirects user to blank Sign In page | Pass | |
-| Log In | | | | |
-| | Click on the Login link | Redirection to Login page | Pass | |
+| | If the user has already registered their email a message will come up saying so and highlighted in red.| |
+| | Click the Submit button | Send the email and displays a message saying it was successful | Pass |  |
+| | Click on the Cancel button | User will be redirected to the Home page  | Pass | |
+| | Brute forcing the URL to get to another user's profile | User will not be allowed access | Pass | Redirects user back to own profile |
+| Tips and Tricks Page | | | | |
+| | Click on the Add tip or trick button | Redirection to Add tip and trick page | Pass | |
+| | Enter Title | Field will accept freeform text | Pass | |
+| | Enter Content | Field will accept freeform text | Pass | |
+| | Click on Choose Image button |  Choose your image you want to upload| Pass | |
+| | Click the Submit button | Redirects user to the tips and tricks page  | Pass |  |
+| | Click on edit button | User will be redirected to the update post page | Pass | |
+| | Click the Delete button | Redirects user to tips and tricks  | Pass | checks if its ok to delete |
+| | Brute forcing the URL to get to another user's profile | Redirects user back to own profile | Pass | |
+| FAQ Page | | | | |
+| | Click frequently asked questions | directed to the FAQ page | Pass | |
+| | Brute forcing the URL to get to another user's profile | Redirects user back to own profile | Pass | |
+| Register Page | | | | |
+| | Click on the register Button | Redirection to register page | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password | Field will only accept password format | Pass | |
-| | Click Login button | Redirects user to home page | Pass | |
+| | password | Field will only accept valid password format | Pass | |
+| | Click the sign up button | Redirects user to the home page  | Pass |  |
+| | Click on the back to login button | User will be redirected to the login page  | Pass | |
+| | Brute forcing the URL to get to another user's profile | Redirects user back to own profile | Pass | |
+| Product Management Page | | | | |
+| | Select category from the drop-down menu | User can only choose from the seven available choices| Pass | |
+| | Enter Content | Field will accept freeform text | Pass | |
+| | Click on Choose Image button |  Choose your image you want to upload| Pass | |
+| | Click on the Add product Button | Redirection to products page | Pass | |
+| | Click on the Cancel button | User will be redirected to the products page  | Pass | |
+| | Brute forcing the URL to get to another user's profile | Redirects user back to own profile | Pass | |
+| Shopping Bag Page | | | | |
+| | Click on the qty button | changes the quantity of the item purchased | Pass | Confirms delete first|
+| | Click on update button | updates the qty of the item the user has changed | Pass | |
+| | Click the remove button | removes the product selected | Pass | |
+| | Click on the keep shopping button | User will be redirected to the prod page  | Pass | |
+| | Click on the secure checkout button | User will be redirected to the checkout page  | Pass | |
+| | Brute forcing the URL to get to another user's profile | Redirects user back to own profile | Pass | |
 | Log Out | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Profile | | | | |
-| | Click on Profile button | User will be redirected to the Profile page | Pass | |
-| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
-| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
-| repeat for all remaining pages | x | x | x | x |
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+| | Click sign out button | Redirects user to sign out page | Pass | Confirms logout first |
+| | Click on the Cancel button | User will be redirected to the home page  | Pass | |
 
 ## User Story Testing
 

@@ -19,3 +19,4 @@ def newsletter_view(request):
         messages.error(request, 'Error please try again!')
     context = {'form': form}
     return render(request, 'newsletter.html', context)
+    
