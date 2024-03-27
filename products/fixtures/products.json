@@ -1,296 +1,352 @@
 [
-  {
-    "pk": 1,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp50016004288",
-      "name": "EcoCalm Radiator Fan Booster 3.0",
-      "description": "EcoCalm Radiator Fan Booster 3.0 for Home Single Set, Smart Radiator Ventilator Increase The Heating Efficiency and Save Energy, Suitable for Radiators Such as TYP21, TYP22, TYP32",
-      "price": 49.99,
-      "category": 1,
-      "rating": 4.6,
-      "image_url": "https://res.cloudinary.com/dtqjcm9e6/image/upload/v1709632452/static/images/fan_joe26e.png",
-      "image": "fan"
+    {
+        "model": "products.category",
+        "pk": 1,
+        "fields": {
+            "name": "fans",
+            "friendly_name": "Fans"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 2,
+        "fields": {
+            "name": "shelves",
+            "friendly_name": "Shelves"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 3,
+        "fields": {
+            "name": "thermostats",
+            "friendly_name": "Thermostats"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 4,
+        "fields": {
+            "name": "indoor lights",
+            "friendly_name": "Indoor Lights"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 5,
+        "fields": {
+            "name": "outdoor lights",
+            "friendly_name": "Outdoor Lights"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 6,
+        "fields": {
+            "name": "loft",
+            "friendly_name": "Loft"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 7,
+        "fields": {
+            "name": "doors windows",
+            "friendly_name": "Doors Windows"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 1,
+        "fields": {
+            "category": 1,
+            "sku": "pp50016004288",
+            "name": "EcoCalm Radiator Fan Booster 3.0",
+            "description": "EcoCalm Radiator Fan Booster 3.0 for Home Single Set, Smart Radiator Ventilator Increase The Heating Efficiency and Save Energy, Suitable for Radiators Such as TYP21, TYP22, TYP32",
+            "price": "49.99",
+            "rating": "4.60",
+            "image_url": "https://res.cloudinary.com/dtqjcm9e6/image/upload/v1709632452/static/images/fan_joe26e.png",
+            "image": "media/fan_ykpx1o"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 2,
+        "fields": {
+            "category": 1,
+            "sku": "pp5001600425",
+            "name": "SpeedComfort Starter Set Duo",
+            "description": "Smart Air Boost Radiator Fan - Long-life heater booster for underheaters and radiators - to save energy and heating costs",
+            "price": "99.95",
+            "rating": "4.60",
+            "image_url": null,
+            "image": "media/fan2_a029kd"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 4,
+        "fields": {
+            "category": 2,
+            "sku": "pp5001890157",
+            "name": "White Rounded Radiator 1 Shelf 48x6 inch 120x15x1.8cm",
+            "description": "Color White Rounded edge Radiator Shelf, Very good quality Radiator Shelf, Size 1200x150x18mm. Color Satin White., Helps deflect the heat back into the room, No Drilling to the wall Required with Easy to Fit brackets. Energy Saver.",
+            "price": "23.99",
+            "rating": "3.00",
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0716201503423610M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "media/shelf1_idzxmf"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 5,
+        "fields": {
+            "category": 2,
+            "sku": "pp5002111605",
+            "name": "light Oak laminated Radiator Shelf (24x6 inc) 60x15x1.8cm",
+            "description": "This Oak Laminated radiator shelf kit is great for giving a decorative finish and helps utilize the space above your radiator, perfect for photo frames or picturesque ornaments. Also can be used to block heat from rising to your wall mounted tv. These are easy to fit radiator shelves by just screwing brackets into shelf and slot behind radiator (brackets & screws included.) Comes in sizes: 600x150x18mm 900x150x18mm 1200x150x18mm TIP: The gap behind the radiator should not be more than 90mm.",
+            "price": "33.25",
+            "rating": "5.00",
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP1115201210371197C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "media/shelf2_ypaybg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 7,
+        "fields": {
+            "category": 2,
+            "sku": "pp5002440521",
+            "name": "Youyijia Radiator Shelf 120x15x1.8cm Radiator Cover Radiator Heater Shelves Cabinet Top Shelf Slatted White Painted Rounded Edges Modern Design Radiator Shelf for Home Radiator",
+            "description": "Made of high quality material, stain resistance and easy to clean. Drillingless:no drilling to the wall Required with Easy to Fit brackets. Very good quality Radiator Shelf. you can display small items such as books,cactus,flowers on the shelf to make the room more luxurious. Rounded edge Radiator Shelf keeps you away from injured. simply fix brackets to shelf and slot behind the radiator.",
+            "price": "59.00",
+            "rating": "4.40",
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0226201317034754M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "media/shelf3_caycpc"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 8,
+        "fields": {
+            "category": 3,
+            "sku": "pp5002601115",
+            "name": "Thermostatic Radiator Head, 2 Pcs TRV M30x1.5 Smart Radiator Thermostat Radiator Valve Replacement Head, Thermostatic Radiator Valve Heating System Temperature Control Heads for Home Office",
+            "description": "This thermostatic radiator head is made of alloy and plastic material, which is not easily deformed or damaged. The thermostatic radiator valve heating system with anti-freeze protection and adjustment function, the zero setting ratio upper limit is 0, *, 1-5..",
+            "price": "8.50",
+            "rating": "4.50",
+            "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0926201317071162M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+            "image": "media/thermostat1_nvmssf"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 9,
+        "fields": {
+            "category": 3,
+            "sku": "pp5002690715",
+            "name": "Trintion 6PCS Thermostatic Radiator Head Radiator Thermostat Head M 30 x 1.5 Radiator Valve Replacement Head Head Heating Valve Tool for Heating Systems Heater Control for Home Office",
+            "description": "This thermostatic radiator valve affected by heating temperature and room temperature can sense changes in external temperature.Automatic frost protection at approx 8℃,With liquid sensor and zero position.Setting range can be limited and blocked by limiting elements.",
+            "price": "20.99",
+            "rating": "4.70",
+            "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP1020201517025390M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+            "image": "media/thermostat2_earhes"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 10,
+        "fields": {
+            "category": 3,
+            "sku": "pp5002701115",
+            "name": "TP-Link Kasa Smart Radiator Thermostat Add On, Smart Radiator Valve, Energy Saving, LED display, Smart Schedule, Works with Alexa & Google Home, Easy installation(KE100)",
+            "description": "Control from Anywhere – Control all your radiators in each room from your phone; No more guessing if you left the heating on; No more heating an empty room.",
+            "price": "33.99",
+            "rating": "4.40",
+            "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0418201317011949M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+            "image": "media/thermostat3_rl8fo7"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 12,
+        "fields": {
+            "category": 4,
+            "sku": "pp5002820069",
+            "name": "GY GU10 LED Bulbs Cool White 6500K 8W 800lm Energy Saving GU10 LED Light Bulbs 80W Halogen Light Bulb Equivalent,120° Wide Beam for Ceiling Pack of 12",
+            "description": "Replace 80W old GU10 halogen bulb with 8W LED GU10 bulb, saving 92% on electricity bill, and the long lifespan (up to 20,000 hours) will lower your ongoing maintenance costs by reducing re-lamp frequency.",
+            "price": "19.99",
+            "rating": "4.60",
+            "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0510201317010521M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+            "image": "media/indoor1_jvtqoe"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 16,
+        "fields": {
+            "category": 4,
+            "sku": "pp5003050248",
+            "name": "HiBay 4X 5W Dimmable Fire Rated GU10 LED Downlights Recessed Ceiling Lights Spotlight Brushed Chrome Warm White 240V",
+            "description": "Tests for 30,60,90 minutes fire proof and comes complete with terminal block.These lights come with an integrated intumescent material that expands when exposed to heat, preventing flames from spreading through the ceiling.",
+            "price": "35.99",
+            "rating": "4.40",
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0918201520303373C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "media/indoor2_ggi0l8"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 18,
+        "fields": {
+            "category": 4,
+            "sku": "pp5003090182",
+            "name": "YUANHENLIZ G9 LED Light Bulbs Dimmable, 5W LED Small Corn Bulb Warm White, 360° Beam Angle Energy Saving Light Bulbs for Home Lighting LED Lamp 10 Pack",
+            "description": "In the shape with g9 base, install it easily without any more tools. Warming up time is less than 0.5 seconds, no waiting time to warm up to full brightness. Using dimmer can adjust brightness you want. The g9 LED bulb recommends the LED dimmer etc. Do not use incandescent or halogen dimmer.",
+            "price": "9.99",
+            "rating": "4.80",
+            "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0807201317072274M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+            "image": "media/indoor3_aawuyz"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 19,
+        "fields": {
+            "category": 5,
+            "sku": "pp5003090186",
+            "name": "Outdoor Solar Lights, 238 LED Solar Security Lights and 3 Modes Motion Sensor 270° Wide Angle Solar Powered Lights IP65 Waterproof Solar Wall Light for Front Door, Yard, Garage, Garden (4 Pack)",
+            "description": "Never miss a detail with the supremely bright 238 leds solar lights outdoor lamp. Delight in the unparalled performance provided by the whooping 238 ultra-bright leds! Secure areas or use them as solar lights decorative LEDs. The choice is yours, but the superior brightness is guaranteed. Our reliable solar lights are good father day gifts from daughter or wife.",
+            "price": "19.99",
+            "rating": "5.00",
+            "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0807201317072924M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+            "image": "media/outdoor1_y2b7dm"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 20,
+        "fields": {
+            "category": 5,
+            "sku": "pp5003161326",
+            "name": "Outdoor String Lights 65.5ft Garden Festoon Light Mains Powered with 30+2 Shatterproof G40 LED Bulbs, Waterproof Hanging Patio Lighting for Indoor Outside Gazebo Pergola Backyard Balcony Cafe Party",
+            "description": "LED patio lights are suitable for indoor/outdoor lighting decoration. Outdoor garden lights can perfectly decorate your camping, balcony terrace, garden, porches, pergola, gazebo, wedding, party, and bedroom. And it is a perfect gift for birthdays, Christmas, celebrations and other occasions.",
+            "price": "20.99",
+            "rating": "4.70",
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0821201317103183M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "media/outdoor2_lld295"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 21,
+        "fields": {
+            "category": 5,
+            "sku": "pp5003230723",
+            "name": "2Pcs Security Lights Outdoor Motion Sensor - 30w Pir LED Floodlight Outside Light Mains Powered - External Flood & Spot Lighting Waterproof Exterior Spotlight Garden Garage Backyard Movement Detector",
+            "description": "This security floodlights is up to 3000LM luminous Flux, it emits a widely substantial amount of light, also, the energy can be saved up to 80%. so it can be compared to the traditional 300W halogen lights.",
+            "price": "18.99",
+            "rating": "4.30",
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/0900631B81D676AEM.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "media/outdoor3_srahph"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 22,
+        "fields": {
+            "category": 6,
+            "sku": "pp5003270936",
+            "name": "Modern Home Living Thermal Loft Insulation Roll - 5M x W370mm x T110mm",
+            "description": "Improve Home Energy Efficiency: Keep your home warm in the winter and cool in the summer with this premium thermal insulation roll, reducing your energy bills and carbon footprint.",
+            "price": "76.99",
+            "rating": "5.00",
+            "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0917201317033820M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+            "image": "media/loft1_rb2kqz"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 24,
+        "fields": {
+            "category": 6,
+            "sku": "pp5003440111",
+            "name": "Loft Flooring Legs 175mm Insulation Spacer - 12 Pack",
+            "description": "Pack quantity 12. Ideal to raise the loft floor by 175mm on top of ceiling joists. The Loftleg is a unique, design protected solution to avoid insulation compression when using your loft for storage.",
+            "price": "8.99",
+            "rating": "3.80",
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP1023201317051585M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "media/loft2_skrtvm"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 26,
+        "fields": {
+            "category": 6,
+            "sku": "pp5003560513",
+            "name": "ThermaWrap 600mm x 7.5m x 3.7mm Insulating Wrap Easy Install Bubble Foil Insulation.",
+            "description": "MULTIPLE APPLICATIONS- Insulate loft spaces, basements, garages, pool rooms, caravans, boats, sheds, summerhouses and other garden buildings",
+            "price": "15.99",
+            "rating": "4.40",
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0219201502115503C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "media/loft3_l7n8j2"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 27,
+        "fields": {
+            "category": 7,
+            "sku": "pp5003560948",
+            "name": "MEFENY Window Insulation Kit, 1.5m x 10m Indoor Fit Clear Rolled Insulating Shrink Film Draught Excluder",
+            "description": "This rolled window draft excluder includes one 1.5m x 10m sheet of crystal clear plastic film and three rolls of 1.5cm x 14m double-sided tape, big enough to insulate up to 10 windows or patio doors.",
+            "price": "12.99",
+            "rating": "5.00",
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0610201317080834M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "media/door1_coabhp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 28,
+        "fields": {
+            "category": 7,
+            "sku": "pp5003570628",
+            "name": "fowong Draught Excluder Tape,4.9 m(L) x9 mm(W) x 5mm(T) Door Brush Strip for Door Frame Insulation and Window Adhesive Brush Weather Stripping-Grey",
+            "description": "A small investment used on your windows & doors to improve energy efficiency by sealing gaps and leaks which allow outside air to enter, and inside conditioned air to escape",
+            "price": "9.99",
+            "rating": "4.30",
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/0900631B818ABCB9M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "media/door2_l1qwhx"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 29,
+        "fields": {
+            "category": 7,
+            "sku": "pp5003620308",
+            "name": "3m/118inch Grey Window Draft Excluder,Self-Adhesive Door Insulation Strip Sound Insulation",
+            "description": "This window seal is made of high quality and durable environmentally friendly material, the exterior is nylon cloth, non-toxic and odourless, waterproof and wear-resistant",
+            "price": "4.99",
+            "rating": "4.60",
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0422201517022488M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "media/door3_odycru"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 105,
+        "fields": {
+            "category": 1,
+            "sku": "pp5001730010",
+            "name": "Myhomeware Radiator Air Flow Adapter",
+            "description": "Heat Diverter Booster Radiator For Double (For 1200mm rads, 1150mm actual size)",
+            "price": "24.95",
+            "rating": "4.70",
+            "image_url": null,
+            "image": "media/fan3_rs5nye"
+        }
     }
-  },
-  {
-    "pk": 2,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5001600425",
-      "name": "SpeedComfort Starter Set Duo",
-      "description": "Smart Air Boost Radiator Fan - Long-life heater booster for underheaters and radiators - to save energy and heating costs",
-      "price": 99.95,
-      "category": 1,
-      "rating": 4.6,
-      "src_url": "{% static/images/fan_joe26e.png' %}",
-      "image": "fan2"
-    }
-  },
-  {
-    "pk": 3,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5001730010",
-      "name": "Myhomeware Radiator Air Flow Adapter",
-      "description": "Heat Diverter Booster Radiator For Double (For 1200mm rads, 1150mm actual size)",
-      "price": 24.95,
-      "category": 1,
-      "rating": 4.7,
-      "image_url": "https://res.cloudinary.com/dtqjcm9e6/image/upload/v1709632444/static/images/fan3_spunoq.png",
-      "image": "fan3"
-    }
-  },
-  {
-    "pk": 4,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5001890157",
-      "name": "White Rounded Radiator 1 Shelf 48x6 inch 120x15x1.8cm",
-      "description": "Color White Rounded edge Radiator Shelf, Very good quality Radiator Shelf, Size 1200x150x18mm. Color Satin White., Helps deflect the heat back into the room, No Drilling to the wall Required with Easy to Fit brackets. Energy Saver.",
-      "price": 23.99,
-      "category": 2,
-      "rating": 3,
-      "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0716201503423610M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-      "image": "shelf1"
-    }
-  },
-  {
-    "pk": 5,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5002111605",
-      "name": "light Oak laminated Radiator Shelf (24x6 inc) 60x15x1.8cm",
-      "description": " This Oak Laminated radiator shelf kit is great for giving a decorative finish and helps utilize the space above your radiator, perfect for photo frames or picturesque ornaments. Also can be used to block heat from rising to your wall mounted tv. These are easy to fit radiator shelves by just screwing brackets into shelf and slot behind radiator (brackets & screws included.) Comes in sizes: 600x150x18mm 900x150x18mm 1200x150x18mm TIP: The gap behind the radiator should not be more than 90mm. ",
-      "price": 33.25,
-      "category": 2,
-      "rating": 5,
-      "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP1115201210371197C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-      "image": "shelf2"
-    }
-  },
-  {
-    "pk": 7,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5002440521",
-      "name": "Youyijia Radiator Shelf 120x15x1.8cm Radiator Cover Radiator Heater Shelves Cabinet Top Shelf Slatted White Painted Rounded Edges Modern Design Radiator Shelf for Home Radiator",
-      "description": " Made of high quality material, stain resistance and easy to clean. Drillingless:no drilling to the wall Required with Easy to Fit brackets. Very good quality Radiator Shelf. you can display small items such as books,cactus,flowers on the shelf to make the room more luxurious. Rounded edge Radiator Shelf keeps you away from injured. simply fix brackets to shelf and slot behind the radiator. ",
-      "price": 59,
-      "category": 2,
-      "rating": 4.4,
-      "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0226201317034754M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-      "image": "shelf3"
-    }
-  },
-  {
-    "pk": 8,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5002601115",
-      "name": "Thermostatic Radiator Head, 2 Pcs TRV M30x1.5 Smart Radiator Thermostat Radiator Valve Replacement Head, Thermostatic Radiator Valve Heating System Temperature Control Heads for Home Office",
-      "description": " This thermostatic radiator head is made of alloy and plastic material, which is not easily deformed or damaged. The thermostatic radiator valve heating system with anti-freeze protection and adjustment function, the zero setting ratio upper limit is 0, *, 1-5..",
-      "price": 8.50,
-      "category": 3,
-      "rating": 4.5,
-      "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0926201317071162M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-      "image": "thermostat1"
-    }
-  },
-  {
-    "pk": 9,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5002690715",
-      "name": "Trintion 6PCS Thermostatic Radiator Head Radiator Thermostat Head M 30 x 1.5 Radiator Valve Replacement Head Head Heating Valve Tool for Heating Systems Heater Control for Home Office",
-      "description": "This thermostatic radiator valve affected by heating temperature and room temperature can sense changes in external temperature.Automatic frost protection at approx 8℃,With liquid sensor and zero position.Setting range can be limited and blocked by limiting elements.",
-      "price": 20.99,
-      "category": 3,
-      "rating": 4.7,
-      "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP1020201517025390M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-      "image": "thermostat2"
-    }
-  },
-  {
-    "pk": 10,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5002701115",
-      "name": "TP-Link Kasa Smart Radiator Thermostat Add On, Smart Radiator Valve, Energy Saving, LED display, Smart Schedule, Works with Alexa & Google Home, Easy installation(KE100)",
-      "description": " Control from Anywhere – Control all your radiators in each room from your phone; No more guessing if you left the heating on; No more heating an empty room.",
-      "price": 33.99,
-      "category": 3,
-      "rating": 4.4,
-      "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0418201317011949M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-      "image": "Thermostat3"
-    }
-  },
-  {
-    "pk": 12,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5002820069",
-      "name": "GY GU10 LED Bulbs Cool White 6500K 8W 800lm Energy Saving GU10 LED Light Bulbs 80W Halogen Light Bulb Equivalent,120° Wide Beam for Ceiling Pack of 12",
-      "description": "Replace 80W old GU10 halogen bulb with 8W LED GU10 bulb, saving 92% on electricity bill, and the long lifespan (up to 20,000 hours) will lower your ongoing maintenance costs by reducing re-lamp frequency.",
-      "price": 19.99,
-      "category": 4,
-      "rating": 4.6,
-      "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0510201317010521M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-      "image": "indoor1"
-    }
-  },
-  {
-    "pk": 16,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5003050248",
-      "name": "HiBay 4X 5W Dimmable Fire Rated GU10 LED Downlights Recessed Ceiling Lights Spotlight Brushed Chrome Warm White 240V",
-      "description": " Tests for 30,60,90 minutes fire proof and comes complete with terminal block.These lights come with an integrated intumescent material that expands when exposed to heat, preventing flames from spreading through the ceiling.",
-      "price": 35.99,
-      "category": 4,
-      "rating": 4.4,
-      "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0918201520303373C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-      "image": "indoor2"
-    }
-  },
-  {
-    "pk": 18,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5003090182",
-      "name": "YUANHENLIZ G9 LED Light Bulbs Dimmable, 5W LED Small Corn Bulb Warm White, 360° Beam Angle Energy Saving Light Bulbs for Home Lighting LED Lamp 10 Pack",
-      "description": "In the shape with g9 base, install it easily without any more tools. Warming up time is less than 0.5 seconds, no waiting time to warm up to full brightness. Using dimmer can adjust brightness you want. The g9 LED bulb recommends the LED dimmer etc. Do not use incandescent or halogen dimmer.",
-      "price": 9.99,
-      "category": 4,
-      "rating": 4.8,
-      "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0807201317072274M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-      "image": "indoor3"
-    }
-  },
-  {
-    "pk": 19,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5003090186",
-      "name": "Outdoor Solar Lights, 238 LED Solar Security Lights and 3 Modes Motion Sensor 270° Wide Angle Solar Powered Lights IP65 Waterproof Solar Wall Light for Front Door, Yard, Garage, Garden (4 Pack)",
-      "description": "Never miss a detail with the supremely bright 238 leds solar lights outdoor lamp. Delight in the unparalled performance provided by the whooping 238 ultra-bright leds! Secure areas or use them as solar lights decorative LEDs. The choice is yours, but the superior brightness is guaranteed. Our reliable solar lights are good father day gifts from daughter or wife.",
-      "price": 19.99,
-      "category": 5,
-      "rating": 5,
-      "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0807201317072924M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-      "image": "outdoor1"
-    }
-  },
-  {
-    "pk": 20,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5003161326",
-      "name": "Outdoor String Lights 65.5ft Garden Festoon Light Mains Powered with 30+2 Shatterproof G40 LED Bulbs, Waterproof Hanging Patio Lighting for Indoor Outside Gazebo Pergola Backyard Balcony Cafe Party",
-      "description": "LED patio lights are suitable for indoor/outdoor lighting decoration. Outdoor garden lights can perfectly decorate your camping, balcony terrace, garden, porches, pergola, gazebo, wedding, party, and bedroom. And it is a perfect gift for birthdays, Christmas, celebrations and other occasions. ",
-      "price": 20.99,
-      "category": 5,
-      "rating": 4.7,
-      "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0821201317103183M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-      "image": "outdoor2"
-    }
-  },
-  {
-    "pk": 21,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5003230723",
-      "name": "2Pcs Security Lights Outdoor Motion Sensor - 30w Pir LED Floodlight Outside Light Mains Powered - External Flood & Spot Lighting Waterproof Exterior Spotlight Garden Garage Backyard Movement Detector",
-      "description": "This security floodlights is up to 3000LM luminous Flux, it emits a widely substantial amount of light, also, the energy can be saved up to 80%. so it can be compared to the traditional 300W halogen lights. ",
-      "price": 18.99,
-      "category": 5,
-      "rating": 4.3,
-      "image_url": "http://s7d9.scene7.com/is/image/JCPenney/0900631B81D676AEM.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-      "image": "outdoor3"
-    }
-  },
-  {
-    "pk": 22,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5003270936",
-      "name": "Modern Home Living Thermal Loft Insulation Roll - 5M x W370mm x T110mm",
-      "description": "Improve Home Energy Efficiency: Keep your home warm in the winter and cool in the summer with this premium thermal insulation roll, reducing your energy bills and carbon footprint.",
-      "price": 76.99,
-      "category": 6,
-      "rating": 5,
-      "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0917201317033820M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-      "image": "loft1"
-    }
-  },
-  {
-    "pk": 24,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5003440111",
-      "name": "Loft Flooring Legs 175mm Insulation Spacer - 12 Pack",
-      "description": "Pack quantity 12. Ideal to raise the loft floor by 175mm on top of ceiling joists. The Loftleg is a unique, design protected solution to avoid insulation compression when using your loft for storage. ",
-      "price": 8.99,
-      "category": 6,
-      "rating": 3.8,
-      "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP1023201317051585M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-      "image": "loft2"
-    }
-  },
-  {
-    "pk": 26,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5003560513",
-      "name": "ThermaWrap 600mm x 7.5m x 3.7mm Insulating Wrap Easy Install Bubble Foil Insulation.",
-      "description": "MULTIPLE APPLICATIONS- Insulate loft spaces, basements, garages, pool rooms, caravans, boats, sheds, summerhouses and other garden buildings",
-      "price": 15.99,
-      "category": 6,
-      "rating": 4.4,
-      "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0219201502115503C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-      "image": "loft3"
-    }
-  },
-  {
-    "pk": 27,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5003560948",
-      "name": "MEFENY Window Insulation Kit, 1.5m x 10m Indoor Fit Clear Rolled Insulating Shrink Film Draught Excluder",
-      "description": "This rolled window draft excluder includes one 1.5m x 10m sheet of crystal clear plastic film and three rolls of 1.5cm x 14m double-sided tape, big enough to insulate up to 10 windows or patio doors. ",
-      "price": 12.99,
-      "category": 7,
-      "rating": 5,
-      "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0610201317080834M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-      "image": "door1"
-    }
-  },
-  {
-    "pk": 28,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5003570628",
-      "name": "fowong Draught Excluder Tape,4.9 m(L) x9 mm(W) x 5mm(T) Door Brush Strip for Door Frame Insulation and Window Adhesive Brush Weather Stripping-Grey",
-      "description": "A small investment used on your windows & doors to improve energy efficiency by sealing gaps and leaks which allow outside air to enter, and inside conditioned air to escape",
-      "price": 9.99,
-      "category": 7,
-      "rating": 4.3,
-      "image_url": "http://s7d9.scene7.com/is/image/JCPenney/0900631B818ABCB9M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-      "image": "door2"
-    }
-  },
-  {
-    "pk": 29,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5003620308",
-      "name": "3m/118inch Grey Window Draft Excluder,Self-Adhesive Door Insulation Strip Sound Insulation",
-      "description": "This window seal is made of high quality and durable environmentally friendly material, the exterior is nylon cloth, non-toxic and odourless, waterproof and wear-resistant",
-      "price": 4.99,
-      "category": 7,
-      "rating": 4.6,
-      "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0422201517022488M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-      "image": "door3"
-    }
-  } 
 ]
