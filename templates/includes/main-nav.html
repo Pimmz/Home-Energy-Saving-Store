@@ -35,9 +35,9 @@
                 LED lights
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="led-link">
-                <a href="{% url 'products' %}?category=indoor lights" class="dropdown-item">Indoor</a>
-                <a href="{% url 'products' %}?category=outdoor lights" class="dropdown-item">Outdoor</a>
-                <a href="{% url 'products' %}?category=indoor lights,outdoor lights" class="dropdown-item">All Light bulbs</a>
+                <a href="{% url 'products' %}?category=indoor_lights" class="dropdown-item">Indoor</a>
+                <a href="{% url 'products' %}?category=outdoor_lights" class="dropdown-item">Outdoor</a>
+                <a href="{% url 'products' %}?category=indoor_lights,outdoor_lights" class="dropdown-item">All Light bulbs</a>
             </div>
         </li>
 
@@ -47,8 +47,8 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="insulation-link">
                 <a href="{% url 'products' %}?category=loft" class="dropdown-item">Loft</a>
-                <a href="{% url 'products' %}?category=doors windows" class="dropdown-item">Doors & Windows</a>
-                <a href="{% url 'products' %}?category=loft,doors windows" class="dropdown-item">All Insulation</a>
+                <a href="{% url 'products' %}?category=doors_windows" class="dropdown-item">Doors & Windows</a>
+                <a href="{% url 'products' %}?category=loft,doors_windows" class="dropdown-item">All Insulation</a>
             </div>
         </li>
         <li class="nav-item">
@@ -57,12 +57,12 @@
             </a>  
         </li>
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5 text-md-lg" href="{% url 'newsletter' %}" id="newsletter-link">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 text-md-lg" href="{% url 'newsletter' %}" id="newsletter-mobile-link">
                 Newsletter
             </a>  
         </li>
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5 text-md-lg" href="{% if request.user.is_authenticated %}{% url 'tips_and_tricks' %}{% else %}{% url 'account_login' %}{% endif %}" id="home-link"{% if not request.user.is_authenticated %}onclick="alert('You can only view this page if you are signed in');"{% endif %}>
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 text-md-lg" href="{% if request.user.is_authenticated %}{% url 'tips_and_tricks' %}{% else %}{% url 'account_login' %}{% endif %}" id="tips-mobile-link" {% if not request.user.is_authenticated %}onclick="alert('You can only view this page if you are signed in');"{% endif %}>
                 Tips and Tricks
             </a>  
         </li>

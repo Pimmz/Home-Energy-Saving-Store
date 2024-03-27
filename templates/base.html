@@ -121,7 +121,7 @@
         <div id="delivery-banner" class="row text-center">
             <div class="col-md-6 bg-black text-white">
                 <h5 class="logo-font my-1">
-                    <a class="logo-font my-1 text-lg text-md text-sm text-white" href="{% url 'newsletter' %}" id="home-link"><strong>Subscribe For Exclusive Offers</strong></a>
+                    <a class="logo-font my-1 text-lg text-md text-sm text-white" href="{% url 'newsletter' %}" id="newsletter-link"><strong>Subscribe For Exclusive Offers</strong></a>
                 </h5>               
             </div>   
             <div class="col-md-6 bg-black text-white">
@@ -177,7 +177,7 @@
             <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">links</h5>
             <ul class="list-unstyled mb-0">
                 <li class="mb-1">
-                <a href="{% if request.user.is_authenticated %}{% url 'faq' %}{% else %}{% url 'account_login' %}{% endif %}" id="home-link"{% if not request.user.is_authenticated %}onclick="alert('You can only view this page if you are signed in');"{% endif %} style="color: #4f4f4f;">
+                <a href="{% if request.user.is_authenticated %}{% url 'faq' %}{% else %}{% url 'account_login' %}{% endif %}" id="faqs-link" {% if not request.user.is_authenticated %}onclick="alert('You can only view this page if you are signed in');"{% endif %} style="color: #4f4f4f;">
                 Frequently Asked Questions</a>  
                 </li>
                 <li class="mb-1">
@@ -187,7 +187,7 @@
                 <a href="{% url 'contact' %}" style="color: #4f4f4f;">Contact Us</a>
                 </li>
                 <li>
-                <a href="{% if request.user.is_authenticated %}{% url 'tips_and_tricks' %}{% else %}{% url 'account_login' %}{% endif %}" id="home-link"{% if not request.user.is_authenticated %}onclick="alert('You can only view this page if you are signed in');"{% endif %} style="color: #4f4f4f;">
+                <a href="{% if request.user.is_authenticated %}{% url 'tips_and_tricks' %}{% else %}{% url 'account_login' %}{% endif %}" id="tips-link"{% if not request.user.is_authenticated %}onclick="alert('You can only view this page if you are signed in');"{% endif %} style="color: #4f4f4f;">
                 Tips and Tricks</a> 
                 </li>
             </ul>
@@ -217,9 +217,7 @@
     </footer>
   
 </div>
-<!-- End of .container -->
 
-<!--Javascript to choose how long the messages display for-->
 <script src="{% static 'javascript/base.js' %}"></script>
 {% block js %} {% endblock js %}
 
