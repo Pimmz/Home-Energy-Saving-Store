@@ -4,6 +4,10 @@ from django.shortcuts import (
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
@@ -12,15 +16,12 @@ from products.models import Product
 from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
 from bag.contexts import bag_contents
-from django.contrib.auth.decorators import login_required
-from django.utils.decorators import method_decorator
 
 import stripe
 import json
 
 
 @require_POST
-@method_decorator(login_required, name='dispatch')
 def cache_checkout_data(request):
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
@@ -152,7 +153,6 @@ def checkout(request):
     return render(request, template, context)
 
 
-@method_decorator(login_required, name='dispatch')
 def checkout_success(request, order_number):
     """
     Handle successful checkouts
@@ -180,6 +180,21 @@ def checkout_success(request, order_number):
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
+
+    cust_email = order.email
+    subject = render_to_string(
+        'checkout/confirmation_emails/confirmation_email_subject.txt',
+        {'order': order})
+    body = render_to_string(
+        'checkout/confirmation_emails/confirmation_email_body.txt',
+        {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
+    
+    send_mail(
+        subject,
+        body,
+        settings.DEFAULT_FROM_EMAIL,
+        [cust_email]
+    )        
 
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
