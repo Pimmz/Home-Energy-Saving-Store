@@ -33,9 +33,9 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | templates | 403.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | templates | 404.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | templates | 500.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| tips_and_tricks | add_post.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| tips_and_tricks | tips_and_tricks.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| tips_and_tricks | update_post.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| tips_and_tricks | add_post.html | ![screenshot](documentation/testing_images/w3c/addtip.png) | Info: Trailing slash on void elements. Searched all code and couldnt find any trailing slash on faq or other code. but would remove as best practice, although it dosent affect the operation|
+| tips_and_tricks | tips_and_tricks.html | ![screenshot](documentation/testing_images/w3c/tips.png) | Info: Trailing slash on void elements. Searched all code and couldnt find any trailing slash on faq or other code. but would remove as best practice, although it dosent affect the operation|
+| tips_and_tricks | update_post.html | ![screenshot](documentation/testing_images/w3c/update.png) | |
 
 ### CSS
 
@@ -43,10 +43,10 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| checkout | checkout.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| home | error.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| profiles | profile.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| static | base.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | checkout.css | ![screenshot](documentation/testing_images/w3c/checkoutcss.png) | Pass: No Errors|
+| home | error.css | ![screenshot](documentation/testing_images/w3c/homecss.png) | Pass: No Errors|
+| profiles | profile.css | ![screenshot](documentation/testing_images/w3c/profilecss.png) |Pass: No Errors |
+| static | base.css | ![screenshot](documentation/testing_images/w3c/basecss.png) | Pass: No Errors|
 
 ### JavaScript
 
