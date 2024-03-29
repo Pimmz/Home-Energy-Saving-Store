@@ -346,7 +346,7 @@ class TipsAndTricks(models.Model):
             self.slug = slugify(self.title)
         super().save(*args, **kwargs)
 ```
-- Using Markdown formatting to represent an ERD table the Tips and model above would look like this:
+- Using Markdown formatting to represent an ERD table the Tips and Tricks model above would look like this:
 
 - Table: **Tips and Tricks**
 
@@ -360,13 +360,7 @@ class TipsAndTricks(models.Model):
     | **PK** | is_approved | BooleanField | Approval status|
     | **PK** | created_at | DateTimeField | Creation Timestamp |
     | **PK** | slug | SlugField | Uniques slug for url |
-    
 
-- To help organise the remaining models required I used [Lucidchart](https://lucid.app/lucidchart/0a00742c-aa55-4964-8626-cff679e4ba5b/edit?viewport_loc=-476%2C20%2C3384%2C1572%2C0_0&invitationId=inv_85e6fc15-610f-42fe-b2bf-59e51136a95c)
-
-![screenshot](documentation/readme_images/erd.png)
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 I have used `pygraphviz` and `django-extensions` to auto-generate an ERD.
 
@@ -388,7 +382,7 @@ INSTALLED_APPS = [
 - removed `'django_extensions',` from my `INSTALLED_APPS`
 - finally, in the terminal: `pip3 uninstall django-extensions pygraphviz -y`
 
-![erd](documentation/erd.png)
+![erd](documentation/testing_images/automated/)
 source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to-visualize-the-database-diagram-in-django-application-c5fa7e710e16)
 
 

@@ -1,6 +1,5 @@
 # Testing
 
-> [!NOTE]  
 > Return back to the [README.md](README.md) file.
 
 ## Code Validation
@@ -181,7 +180,7 @@ Desktop
 | --- | --- | --- | --- |
 | Home | Desktop | ![screenshot](documentation/testing_images/lighthouse/homedesk.png) | Few warnings |
 | All Products | Desktop | ![screenshot](documentation/testing_images/lighthouse/alldesk.png) | Few warnings |
-| Radiator | Desktop | ![screenshot](documentation/testing_images/lighthouse/homerad.png) | Worked as expected |
+| Radiator | Desktop |  ![screenshot](documentation/testing_images/lighthouse/homerad.png) | Worked as expected |
 | Led Lights | Desktop | ![screenshot](documentation/testing_images/lighthouse/leddesk.png) | Worked as expected |
 | Insulation | Desktop | ![screenshot](documentation/testing_images/lighthouse/insuldesk.png) | Worked as expected |
 | Contact Us | Desktop | ![screenshot](documentation/testing_images/lighthouse/contactdesk.png) | Worked as expected |
@@ -309,7 +308,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | As a Shopper I can Easily recover my password in case I forget it so that I can recover access to my account | ![screenshot](documentation/readme_images/password.png) |
 | As a Site User I can easily login or log out so that I can access my personal account information | ![screenshot](documentation/readme_images/password.png) |
 | As a Site user I can easily register for an account so that I can have a personal account and be able to view my profile | ![screenshot](documentation/readme_images/register.png) |
-| EPIC | Sorting and Searching |
+| EPIC Sorting and Searching |
 | As a Shopper I can Search for a product by name or description so that I can find a specific product I'd like to purchase | ![screenshot](documentation/readme_images/search.png) |
 | As a Shopper I can sort multiple categories of products simultaneously so that I can find the best price or best rated products across a broad categories | ![screenshot](documentation/readme_images/cat.png) |
 | As a Shopper I can sort a specific category of product so that I can find the best priced or best rated product in a specific category or sort the product in that 	 
