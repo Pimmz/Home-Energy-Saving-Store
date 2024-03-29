@@ -12,22 +12,22 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
 | bag | bag-total.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| bag | bag.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | bag.html | ![screenshot](documentation/testing_images/w3c/bag.png) | Warning: The type attribute is unnecessary for JavaScript resources. Removed type="text/javascript"> from script which resolved the issue|
 | bag | checkout-buttons.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | bag | product-image.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | bag | product-info.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | bag | quantity-form.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| checkout | checkout.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| checkout | checkout_success.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| contact | contact.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| faq | faq.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| home | index.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| newsletter | newsletter.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | add_product.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | checkout.html | ![screenshot](documentation/testing_images/w3c/checkout.png) | Pass: No Errors |
+| checkout | checkout_success.html | ![screenshot](documentation/testing_images/w3c/success.png) |Pass: No Errors  |
+| contact | contact.html | ![screenshot](documentation/testing_images/w3c/contact.png) | Pass: No Errors |
+| faq | faq.html | ![screenshot](documentation/testing_images/w3c/faq.png) | Info: Trailing slash on void elements. Searched all code and couldnt find any trailing slash on faq or other code. but would remove as best practice, although it dosent affect the operation |
+| home | index.html | ![screenshot](documentation/testing_images/w3c/home.png) |Pass: No Errors |
+| newsletter | newsletter.html | ![screenshot](documentation/testing_images/w3c/news.png) |Pass: No Errors |
+| products | add_product.html | ![screenshot](documentation/testing_images/w3c/add.png) | Info: Trailing slash on void elements. Searched all code and couldnt find any trailing slash on faq or other code. but would remove as best practice, although it dosent affect the operation|
 | products | custom_clearable_file_input.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | edit_product.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | edit_product.html | ![screenshot](documentation/testing_images/w3c/edit.png) |Info: Trailing slash on void elements. Searched all code and couldnt find any trailing slash on faq or other code. but would remove as best practice, although it dosent affect the operation |
 | products | product_detail.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | products.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | products.html | ![screenshot](documentation/testing_images/w3c/products.png) |Pass: No Errors |
 | profiles | profile.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | templates | 400.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | templates | 403.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
