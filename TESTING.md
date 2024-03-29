@@ -11,9 +11,9 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| bag | bag-total.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | bag-total.html | ![screenshot](documentation/testing_images/w3c/bagtotal.png) |Pass: No Errors  |
 | bag | bag.html | ![screenshot](documentation/testing_images/w3c/bag.png) | Warning: The type attribute is unnecessary for JavaScript resources. Removed type="text/javascript"> from script which resolved the issue|
-| bag | checkout-buttons.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| bag | checkout-buttons.html | ![screenshot](documentation/validation/path-to-screenshot.png) |Error: Bad value ( url 'products' ) for attribute href on element a: Illegal character in path segment: space is not allowed. From line 7, column 1; to line 7, column 76 d>↩<body>↩<a href="( url 'products' )" class="btn btn-outline-black rounded-0 btn-lg">↩    < Error: Bad value {% url 'checkout' %} for attribute href on element a: Illegal character in path segment: pan>↩</a>↩<a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">↩    < |
 | bag | product-image.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | bag | product-info.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | bag | quantity-form.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
@@ -303,9 +303,9 @@ Defensive programming was manually tested with the below user acceptance testing
 | As a Shopper I can view a specific category of products so that I can quickly find products I'm interested in without having to search through all the products | ![screenshot](documentation/readme_images/cat.png) |
 | As a shopper I can view a list of products so that I can select some to purchase | ![screenshot](documentation/readme_images/all.png) |
 | EPIC Registration and User Accounts |
-### As a Site user I can have a personalised user profile so that I can view my personal order history and order confirmations and save my payment information | ![screenshot](documentation/features/feature01.png) |
+|As a Site user I can have a personalised user profile so that I can view my personal order history and order confirmations and save my payment information | ![screenshot](documentation/testing_images/userstory/history.png) |
 | As a Shopper I can Subscribe to to get exclusive offers and News so that I can stay upto date with new and exciting energy saving products as well as exclusive offers and discounts | ![screenshot](documentation/readme_images/newsletter.png) |
-### As a Site user I can receive an email confirmation after registering so that I can verify that my account registration was successful | ![screenshot](documentation/features/feature01.png) |
+|As a Site user I can receive an email confirmation after registering so that I can verify that my account registration was successful | ![screenshot](documentation/testing_images/userstory/verify.png) |
 | As a Shopper I can Easily recover my password in case I forget it so that I can recover access to my account | ![screenshot](documentation/readme_images/password.png) |
 | As a Site User I can easily login or log out so that I can access my personal account information | ![screenshot](documentation/readme_images/password.png) |
 | As a Site user I can easily register for an account so that I can have a personal account and be able to view my profile | ![screenshot](documentation/readme_images/register.png) |
@@ -316,9 +316,9 @@ Defensive programming was manually tested with the below user acceptance testing
 category by name | ![screenshot](documentation/readme_images/sort.png) |
 | As a Shopper I can sort the list of available products so that I can easily identify the best rated best priced and categorically sorted products | ![screenshot](documentation/readme_images/sort.png) |
 | EPIC Purchasing and Checkout |
-### As a Shopper I can receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my record | ![screenshot](documentation/features/feature01.png) |
-### As a Shopper I can view an order confirmation after checkout so that I can verify that I haven't made any mistakes | ![screenshot](documentation/features/feature01.png) |
-### As a Shopper I can Feel my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase | ![screenshot](documentation/features/feature01.png) |
+|As a Shopper I can receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my record | ![screenshot](documentation/testing_images/userstory/checkout.png) |
+|As a Shopper I can view an order confirmation after checkout so that I can verify that I haven't made any mistakes | ![screenshot](documentation/testing_images/userstory/confirm.png) |
+|As a Shopper I can Feel my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase | ![screenshot](documentation/readme_images/basket.png) |
 | As a Shopper I can easily enter my payment information so that I can check out quickly and with no hassles | ![screenshot](documentation/readme_images/checkout.png) |
 | As a Shopper I can Adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before checkout | ![screenshot](documentation/readme_images/basket.png) |
 | As a Shopper I can view items in my bag to be purchased so that I can identify the total cost of my purchase and all items I will receive | ![screenshot](documentation/readme_images/basket.png) |
