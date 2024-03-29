@@ -28,8 +28,8 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | products | edit_product.html | ![screenshot](documentation/testing_images/w3c/edit.png) |Info: Trailing slash on void elements. Searched all code and couldnt find any trailing slash on faq or other code. but would remove as best practice, although it dosent affect the operation |
 | products | product_detail.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | products | products.html | ![screenshot](documentation/testing_images/w3c/products.png) |Pass: No Errors |
-| profiles | profile.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | 400.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| profiles | profile.html | ![screenshot](documentation/testing_images/w3c/profile.png) | Page loads in live site but 500 error comes up when using w3c validator|
+| templates | 400.html | ![screenshot](documentation/testing_images/w3c/error.png) | error pages cant be checked via the validator|
 | templates | 403.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | templates | 404.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | templates | 500.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |

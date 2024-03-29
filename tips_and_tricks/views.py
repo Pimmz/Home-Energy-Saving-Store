@@ -8,8 +8,10 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.paginator import Paginator
 from django.utils.text import slugify
 from django.views.generic.edit import UpdateView, DeleteView
+from django.contib.auth.decorators import login_required
 
 
+@login_required
 class UpdatePostView(LoginRequiredMixin, UpdateView):
     model = TipsAndTricks
     form_class = PostForm
@@ -21,6 +23,7 @@ class UpdatePostView(LoginRequiredMixin, UpdateView):
         return super().form_valid(form)
 
 
+@login_required
 class DeletePostView(LoginRequiredMixin, DeleteView):
     model = TipsAndTricks
     success_url = reverse_lazy('tips_and_tricks')
@@ -47,6 +50,7 @@ class TipsAndTricksView(LoginRequiredMixin, View):
             return redirect('account_login')
 
 
+@login_required
 class AddPostView(LoginRequiredMixin, View):
     def get(self, request):
         form = PostForm()
