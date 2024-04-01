@@ -390,30 +390,31 @@ Below are the results from the various apps on my application that I've tested:
 
 ## Bugs
 
-- Page not found, error 404
+- Template Does Not Exist
+    - I fixed this by correcting the template name ```('add_post.html' )```
 
-    ![screenshot](documentation/testing_images/bug/bug01.png)
+    ![screenshot](documentation/testing_images/bugs/template.png)
 
-  - I fixed this, by ensuring the path was correct in the url.
+- FAQ is not defined
+     - To fix this, I imported faq.view ```(from .views import FAQView)``` in the views as I had forgotten to put it in.
+    ![screenshot](documentation/testing_images/bugs/faq.png)
 
-- Invalid cloudinary url scheme
+- Products and Categories not showing on website
+     - To fix this I had to ```python3 manage.py make migrations``` and ```python3 manage.py migrate``` followed by ```python3 manage.py loaddata products``` and ```python3 manage.py loaddata categories``` in my hast I forgotten to do them.
+    
+- ImproperlyConfigured at update_post
+     - To fix this I removed ```(fields = ['title', 'content', 'featured_image'])``` I had used code from a previous project which wasnt needed in this one.
+    ![screenshot](documentation/testing_images/bugs/update.png)
 
-    ![screenshot](documentation/testing_images/bug/bug02.png)
-
-  - To fix this, I corrected the url to 'cloudinary://'
-
-- Rehome not defined
-
-    ![screenshot](documentation/testing_images/bug/bug03.png)
-
-  - To fix this, I imported rehome in the views as I had forgotten to put it in.
-
+- Custom error pages not showing
+    - I eventually fixed this by moving the templates into the main template folder for home_energy_saving_store.
+    ![screenshot](documentation/testing_images/bugs/error.png)
 
 - Python `E501 line too long` (90 > 79 characters)
 
-    ![screenshot](documentation/testing_images/bug/bug04.png)
+    ![screenshot](documentation/testing_images/bugs/E501.png)
 
-  - To fix this, I split the line onto two lines ensuring it was split so it would nt cause any errors  
+  - To fix this, I split the line onto three lines ensuring it was split so it would not cause any errors  
 
 
 > [!NOTE]  
