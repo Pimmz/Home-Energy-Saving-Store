@@ -281,7 +281,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - A clear form for the user to check and fill in for their name, address if its has changed.
 - Update information if they wish to change there information
 
-
 ### Error Pages
 
 Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
@@ -297,8 +296,8 @@ Custom Error Pages were created to give the user more information on the error a
 
 The following user stories were scoped out of the project due to skill level It is intended that these user stories will be implemented at a later date when I have the sufficient skills to complete them.
 
-- For a user to be able to track where my delivery is so i know what time it will be arriving
-- A search engine that the user can put their information in and the best and most affordable energy deal comes up.
+- For a user to be able to track where my delivery is so i know what time it will be arriving.
+- Created fix for known bug if the user some how found out the order number of another user they could force the url to access their information.
 
 ## Tools & Technologies Used
 
