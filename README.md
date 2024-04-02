@@ -125,6 +125,13 @@ category by name
 
 <details>
 
+<summary>Newsletter Page</summary>
+
+![Tips and Tricks Page](documentation/wireframes/news.png)
+</details>
+
+<details>
+
 <summary>Tips and Tricks Page</summary>
 
 ![Tips and Tricks Page](documentation/wireframes/tips.png)
@@ -297,26 +304,19 @@ The following user stories were scoped out of the project due to skill level It 
 
 - [![Markdown Builder](https://img.shields.io/badge/Markdown_Builder-grey?logo=markdown&logoColor=000000)](https://tim.2bn.dev/markdown-builder) used to generate README and TESTING templates.
 - [![Git](https://img.shields.io/badge/Git-grey?logo=git&logoColor=F05032)](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
-- [![Git](https://img.shields.io/badge/GitHub-grey?logo=github&logoColor=181717)](https://github.com) used for secure online code storage.
+- [![Github](https://img.shields.io/badge/GitHub-grey?logo=github&logoColor=181717)](https://github.com) used for secure online code storage.
 - [![Codeanywhere](https://img.shields.io/badge/Codeanywhere-grey?logo=ebox&logoColor=7F3F98)](https://codeanywhere.com) used as a cloud-based IDE for development.
-- [![VSCode](https://img.shields.io/badge/VSCode-grey?logo=visualstudiocode&logoColor=007ACC)](https://code.visualstudio.com) used as my local IDE for development.
 - [![HTML](https://img.shields.io/badge/HTML-grey?logo=html5&logoColor=E34F26)](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [![CSS](https://img.shields.io/badge/CSS-grey?logo=css3&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
 - [![JavaScript](https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoColor=F7DF1E)](https://www.javascript.com) used for user interaction on the site.
 - [![jQuery](https://img.shields.io/badge/jQuery-grey?logo=jquery&logoColor=0769AD)](https://jquery.com) used for user interaction on the site.
 - [![Python](https://img.shields.io/badge/Python-grey?logo=python&logoColor=3776AB)](https://www.python.org) used as the back-end programming language.
-- [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-grey?logo=githubpages&logoColor=222222)](https://pages.github.com) used for hosting the deployed front-end site.
-- [![Colorcodes](https://img.shields.io/badge/Colorcodes-grey?logo=githubpages&logoColor=222222)](https://htmlcolorcodes.com) - used for the colours in the site.
-- [![lucidChart](https://img.shields.io/badge/Lucid_Chart-grey?logo=githubpages&logoColor=222222)](https://lucid.app/documents#/dashboard) - used to create the database schema design
+- [![Colorcodes](https://img.shields.io/badge/Colorcodes-grey?logo=rainmeter&logoColor=ff5733)](https://htmlcolorcodes.com) - used for the colours in the site.
+- [![lucidChart](https://img.shields.io/badge/Lucid_Chart-grey?logo=lucid&logoColor=f97b2c)](https://lucid.app/documents#/dashboard) - used to create the database schema design
 - [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) used for hosting the deployed back-end site.
 - [![Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [![Jest](https://img.shields.io/badge/Jest-grey?logo=jest&logoColor=c21325)](https://jestjs.io) used for automated JavaScript testing.
-- [![Flask](https://img.shields.io/badge/Flask-grey?logo=flask&logoColor=000000)](https://flask.palletsprojects.com) used as the Python framework for the site.
-- [![MongoDB](https://img.shields.io/badge/MongoDB-grey?logo=mongodb&logoColor=47A248)](https://www.mongodb.com) used as the non-relational database management with Flask.
-- [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-grey?logo=sqlalchemy&logoColor=D71F00)](https://www.sqlalchemy.org) used as the relational database management with Flask.
 - [![Django](https://img.shields.io/badge/Django-grey?logo=django&logoColor=092E20)](https://www.djangoproject.com) used as the Python framework for the site.
 - [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-grey?logo=postgresql&logoColor=4169E1)](https://www.postgresql.org) used as the relational database management.
-- [![PostgreSQL by Code Institute](https://img.shields.io/badge/PostgreSQL_by_Code_Institute-grey?logo=okta&logoColor=F05223)](https://dbs.ci-dbs.net) used as the Postgres database from Code Institute.
 - [![ElephantSQL](https://img.shields.io/badge/ElephantSQL-grey?logo=postgresql&logoColor=36A6E2)](https://www.elephantsql.com) used as the Postgres database.
 - [![Cloudinary](https://img.shields.io/badge/Cloudinary-grey?logo=cloudinary&logoColor=3448C5)](https://cloudinary.com) used for online static file storage.
 - [![WhiteNoise](https://img.shields.io/badge/WhiteNoise-grey?logo=python&logoColor=FFFFFF)](https://whitenoise.readthedocs.io) used for serving static files with Heroku.
@@ -382,7 +382,7 @@ INSTALLED_APPS = [
 - removed `'django_extensions',` from my `INSTALLED_APPS`
 - finally, in the terminal: `pip3 uninstall django-extensions pygraphviz -y`
 
-![erd](documentation/testing_images/automated/)
+![erd](documentation/testing_images/automated/erd.png)
 source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to-visualize-the-database-diagram-in-django-application-c5fa7e710e16)
 
 
@@ -571,133 +571,6 @@ To obtain your own Cloudinary API key, create an account and log in.
 - On your Cloudinary Dashboard, you can copy your **API Environment Variable**.
 - Be sure to remove the `CLOUDINARY_URL=` as part of the API **value**; this is the **key**.
 
-
-### Amazon AWS
-
-This project isnt using [AWS] but if it did you could uses it at (https://aws.amazon.com) to store media and static files online, due to the fact that Heroku doesn't persist this type of data.
-
-Once you've created an AWS account and logged-in, follow these series of steps to get your project connected.
-Make sure you're on the **AWS Management Console** page.
-
-#### S3 Bucket
-
-- Search for **S3**.
-- Create a new bucket, give it a name (matching your Heroku app name), and choose the region closest to you.
-- Uncheck **Block all public access**, and acknowledge that the bucket will be public (required for it to work on Heroku).
-- From **Object Ownership**, make sure to have **ACLs enabled**, and **Bucket owner preferred** selected.
-- From the **Properties** tab, turn on static website hosting, and type `index.html` and `error.html` in their respective fields, then click **Save**.
-- From the **Permissions** tab, paste in the following CORS configuration:
-
-	```shell
-	[
-		{
-			"AllowedHeaders": [
-				"Authorization"
-			],
-			"AllowedMethods": [
-				"GET"
-			],
-			"AllowedOrigins": [
-				"*"
-			],
-			"ExposeHeaders": []
-		}
-	]
-	```
-
-- Copy your **ARN** string.
-- From the **Bucket Policy** tab, select the **Policy Generator** link, and use the following steps:
-	- Policy Type: **S3 Bucket Policy**
-	- Effect: **Allow**
-	- Principal: `*`
-	- Actions: **GetObject**
-	- Amazon Resource Name (ARN): **paste-your-ARN-here**
-	- Click **Add Statement**
-	- Click **Generate Policy**
-	- Copy the entire Policy, and paste it into the **Bucket Policy Editor**
-
-		```shell
-		{
-			"Id": "Policy1234567890",
-			"Version": "2012-10-17",
-			"Statement": [
-				{
-					"Sid": "Stmt1234567890",
-					"Action": [
-						"s3:GetObject"
-					],
-					"Effect": "Allow",
-					"Resource": "arn:aws:s3:::your-bucket-name/*"
-					"Principal": "*",
-				}
-			]
-		}
-		```
-
-	- Before you click "Save", add `/*` to the end of the Resource key in the Bucket Policy Editor (like above).
-	- Click **Save**.
-- From the **Access Control List (ACL)** section, click "Edit" and enable **List** for **Everyone (public access)**, and accept the warning box.
-	- If the edit button is disabled, you need to change the **Object Ownership** section above to **ACLs enabled** (mentioned above).
-
-#### IAM
-
-Back on the AWS Services Menu, search for and open **IAM** (Identity and Access Management).
-Once on the IAM page, follow these steps:
-
-- From **User Groups**, click **Create New Group**.
-	- Suggested Name: `group-home-energy-saving-store` (group + the project name)
-- Tags are optional, but you must click it to get to the **review policy** page.
-- From **User Groups**, select your newly created group, and go to the **Permissions** tab.
-- Open the **Add Permissions** dropdown, and click **Attach Policies**.
-- Select the policy, then click **Add Permissions** at the bottom when finished.
-- From the **JSON** tab, select the **Import Managed Policy** link.
-	- Search for **S3**, select the `AmazonS3FullAccess` policy, and then **Import**.
-	- You'll need your ARN from the S3 Bucket copied again, which is pasted into "Resources" key on the Policy.
-
-		```shell
-		{
-			"Version": "2012-10-17",
-			"Statement": [
-				{
-					"Effect": "Allow",
-					"Action": "s3:*",
-					"Resource": [
-						"arn:aws:s3:::your-bucket-name",
-						"arn:aws:s3:::your-bucket-name/*"
-					]
-				}
-			]
-		}
-		```
-	
-	- Click **Review Policy**.
-	- Suggested Name: `policy-home-energy-saving-store` (policy + the project name)
-	- Provide a description:
-		- "Access to S3 Bucket for home-energy-saving-store static files."
-	- Click **Create Policy**.
-- From **User Groups**, click your "group-home-energy-saving-store".
-- Click **Attach Policy**.
-- Search for the policy you've just created ("policy-home-energy-saving-store") and select it, then **Attach Policy**.
-- From **User Groups**, click **Add User**.
-	- Suggested Name: `user-home-energy-saving-store` (user + the project name)
-- For "Select AWS Access Type", select **Programmatic Access**.
-- Select the group to add your new user to: `group-home-energy-saving-store`
-- Tags are optional, but you must click it to get to the **review user** page.
-- Click **Create User** once done.
-- You should see a button to **Download .csv**, so click it to save a copy on your system.
-	- **IMPORTANT**: once you pass this page, you cannot come back to download it again, so do it immediately!
-	- This contains the user's **Access key ID** and **Secret access key**.
-	- `AWS_ACCESS_KEY_ID` = **Access key ID**
-	- `AWS_SECRET_ACCESS_KEY` = **Secret access key**
-
-#### Final AWS Setup
-
-- If Heroku Config Vars has `DISABLE_COLLECTSTATIC` still, this can be removed now, so that AWS will handle the static files.
-- Back within **S3**, create a new folder called: `media`.
-- Select any existing media images for your project to prepare them for being uploaded into the new folder.
-- Under **Manage Public Permissions**, select **Grant public read access to this object(s)**.
-- No further settings are required, so click **Upload**.
-
 ### Stripe API
 
 This project uses [Stripe](https://stripe.com) to handle the ecommerce payments.
@@ -758,8 +631,6 @@ Deployment steps are as follows, after account setup:
 | --- | --- |
 | `CLOUDINARY_URL` | user's own value |
 | `DATABASE_URL` | user's own value |
-| `AWS_ACCESS_KEY_ID` | user's own value |
-| `AWS_SECRET_ACCESS_KEY` | user's own value |
 | `DATABASE_URL` | user's own value |
 | `DISABLE_COLLECTSTATIC` | 1 (*this is temporary, and can be removed for the final deployment*) |
 | `EMAIL_HOST_PASS` | user's own value |
@@ -768,7 +639,6 @@ Deployment steps are as follows, after account setup:
 | `STRIPE_PUBLIC_KEY` | user's own value |
 | `STRIPE_SECRET_KEY` | user's own value |
 | `STRIPE_WH_SECRET` | user's own value |
-| `USE_AWS` | True |
 
 Heroku needs three additional files in order to deploy properly.
 
@@ -828,8 +698,7 @@ Sample `env.py` file:
 ```python
 import os
 
-os.environ.setdefault("AWS_ACCESS_KEY_ID", "user's own value")
-os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "user's own value")
+os.environ.setdefault("CLOUDINARY_URL", "user's own value")
 os.environ.setdefault("DATABASE_URL", "user's own value")
 os.environ.setdefault("EMAIL_HOST_PASS", "user's own value")
 os.environ.setdefault("EMAIL_HOST_USER", "user's own value")

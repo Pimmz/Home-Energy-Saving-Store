@@ -56,8 +56,9 @@ I have used /* jshint esversion: 11, jquery: true */ at the top of the file so J
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| base.js | ![screenshot](documentation/testing_images/jshint.png) | Unused variables from external file|
-
+| base.js | ![screenshot](documentation/testing_images/automated/jshint.png) | Unused variables from external file|
+| countryfield.js | ![screenshot](documentation/testing_images/automated/country.png) | Unused variables from external file|
+| stripe_elements.js | ![screenshot](documentation/testing_images/automated/stripe.png) | Unused variables from external file|
 
 ### Python
 
@@ -327,19 +328,6 @@ category by name | ![screenshot](documentation/readme_images/sort.png) |
 | As a Store Owner I can edit/ update a product so that I can change product prices descriptions images and other product criteria | ![screenshot](documentation/readme_images/edit.png) |
 | As a Store Owner I can add a product so that I can add new items to my store | ![screenshot](documentation/readme_images/manage.png) |
 
-## Automated Testing
-
-I have conducted a series of automated tests on my application.
-
-I fully acknowledge and understand that, in a real-world scenario, an extensive set of additional tests would be more comprehensive.
-
-### JavaScript (Jest Testing)
-
-Due to only having 5 lines of javascript used as a timeout method for the pop up messages I was unable to test it with jest. If I had more javascript I would have used the [jestspyon method](https://jestjs.io/docs/jest-object#jestspyonobject-methodname)
-
-Although I have completed a manual test with a screen shot so you can see the pop up message that will then disappear in 4 secounds.
-
-![Confirmation](documentation/testing_images/automated/test.png)
 
 ### Python (Unit Testing)
 
@@ -415,6 +403,10 @@ Below are the results from the various apps on my application that I've tested:
     ![screenshot](documentation/testing_images/bugs/E501.png)
 
   - To fix this, I split the line onto three lines ensuring it was split so it would not cause any errors  
+
+### Unfixed Bugs
+
+- Known bug with defensive programming. If the user some how found out the order number of another user they could force the url to access their information.
 
 
 > [!NOTE]  
