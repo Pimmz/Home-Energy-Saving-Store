@@ -10,21 +10,24 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
+| signup | signup.html | ![screenshot](documentation/testing_images/w3c/signup.png) | Pass: No Errors |
+| login | login.html | ![screenshot](documentation/testing_images/w3c/login.png) | Pass: No Errors |
+| faq | faq.html | ![screenshot](documentation/testing_images/w3c/faq.png) | Pass: No Errors |
 | bag | bag-total.html | ![screenshot](documentation/testing_images/w3c/bagtotal.png) |Pass: No Errors  |
 | bag | bag.html | ![screenshot](documentation/testing_images/w3c/bag.png) | Warning: The type attribute is unnecessary for JavaScript resources. Removed type="text/javascript"> from script which resolved the issue|
-| bag | checkout-buttons.html | ![screenshot](documentation/validation/path-to-screenshot.png) |Error: Bad value ( url 'products' ) for attribute href on element a: Illegal character in path segment: space is not allowed. From line 7, column 1; to line 7, column 76 d>↩<body>↩<a href="( url 'products' )" class="btn btn-outline-black rounded-0 btn-lg">↩    < Error: Bad value {% url 'checkout' %} for attribute href on element a: Illegal character in path segment: pan>↩</a>↩<a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">↩    < |
-| bag | product-image.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| bag | product-info.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| bag | quantity-form.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | checkout | checkout.html | ![screenshot](documentation/testing_images/w3c/checkout.png) | Pass: No Errors |
 | checkout | checkout_success.html | ![screenshot](documentation/testing_images/w3c/success.png) |Pass: No Errors  |
 | contact | contact.html | ![screenshot](documentation/testing_images/w3c/contact.png) | Pass: No Errors |
-| faq | faq.html | ![screenshot](documentation/testing_images/w3c/faq.png) | Info: Trailing slash on void elements. Searched all code and couldnt find any trailing slash on faq or other code. but would remove as best practice, although it dosent affect the operation |
+| faq | faq.html | ![screenshot](documentation/testing_images/w3c/faq.png) | Pass: No Errors |
 | home | index.html | ![screenshot](documentation/testing_images/w3c/home.png) |Pass: No Errors |
 | newsletter | newsletter.html | ![screenshot](documentation/testing_images/w3c/news.png) |Pass: No Errors |
-| products | add_product.html | ![screenshot](documentation/testing_images/w3c/add.png) | Info: Trailing slash on void elements. Searched all code and couldnt find any trailing slash on faq or other code. but would remove as best practice, although it dosent affect the operation|
-| products | custom_clearable_file_input.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | edit_product.html | ![screenshot](documentation/testing_images/w3c/edit.png) |Info: Trailing slash on void elements. Searched all code and couldnt find any trailing slash on faq or other code. but would remove as best practice, although it dosent affect the operation |
+| products | add_product.html | ![screenshot](documentation/testing_images/w3c/add.png) | Pass: No Errors|
+| products | sort | ![screenshot](documentation/testing_images/w3c/sort.png) | Pass: No Errors|
+| products | rating | ![screenshot](documentation/testing_images/w3c/rating.png) | Pass: No Errors|
+| products | category | ![screenshot](documentation/testing_images/w3c/category.png) | Pass: No Errors|
+| products | fans | ![screenshot](documentation/testing_images/w3c/fans.png) | Pass: No Errors|
+| products | indoor | ![screenshot](documentation/testing_images/w3c/indoor.png) | Pass: No Errors|
+| products | edit_product.html | ![screenshot](documentation/testing_images/w3c/edit.png) |Pass: No Errors|
 | products | product_detail.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | products | products.html | ![screenshot](documentation/testing_images/w3c/products.png) |Pass: No Errors |
 | profiles | profile.html | ![screenshot](documentation/testing_images/w3c/profile.png) | Page loads in live site but 500 error comes up when using w3c validator|
@@ -32,8 +35,8 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | templates | 403.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | templates | 404.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | templates | 500.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| tips_and_tricks | add_post.html | ![screenshot](documentation/testing_images/w3c/addtip.png) | Info: Trailing slash on void elements. Searched all code and couldnt find any trailing slash on faq or other code. but would remove as best practice, although it dosent affect the operation|
-| tips_and_tricks | tips_and_tricks.html | ![screenshot](documentation/testing_images/w3c/tips.png) | Info: Trailing slash on void elements. Searched all code and couldnt find any trailing slash on faq or other code. but would remove as best practice, although it dosent affect the operation|
+| tips_and_tricks | add_post.html | ![screenshot](documentation/testing_images/w3c/addtip.png) | Pass: No Errors|
+| tips_and_tricks | tips_and_tricks.html | ![screenshot](documentation/testing_images/w3c/tips.png) | Pass: No Errors|
 | tips_and_tricks | update_post.html | ![screenshot](documentation/testing_images/w3c/update.png) | |
 
 ### CSS
@@ -195,18 +198,18 @@ Desktop
 Mobile
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | Mobile | ![screenshot](documentation/testing_images/lighthouse/homemob.png) | Slow performance. Compressed and using cloudinary to be more effective. |
-| All Products | Mobile | ![screenshot](documentation/testing_images/lighthouse/productmob.png) | Slow performance. Compressed and using cloudinary to be more effective|
-| Radiator | Desktop | ![screenshot](documentation/testing_images/lighthouse/radmob.png | Slow performance. Compressed and using cloudinary to be more effective |
-| Led Lights | Desktop | ![screenshot](documentation/testing_images/lighthouse/ledmob.png) | Slow performance. Compressed and using cloudinary to be more effective |
-| Insulation | Desktop | ![screenshot](documentation/testing_images/lighthouse/insulmob.png) |  Average performance. Everything else is operating as expected|
-| Contact Us | Desktop | ![screenshot](documentation/testing_images/lighthouse/contactmob.png) | Average performance. Everything else is operating as expected|
-| Newsletter | Desktop | ![screenshot](documentation/testing_images/lighthouse/newsmob.png) | Average performance. Everything else is operating as expected |
-| Tips and Tricks | Desktop | ![screenshot](documentation/testing_images/lighthouse/tipsmob.png) | Slow performance. Compressed and using cloudinary to be more effective |
-| FAQ | Desktop | ![screenshot](documentation/testing_images/lighthouse/faqmob.png) | Slow performance. Everything else is operating as expected|
-| Register| Desktop | ![screenshot](documentation/testing_images/lighthouse/regmob.png) | Slow performance. Compressed and using cloudinary to be more effective |
-| Product Maangement | Desktop | ![screenshot](documentation/testing_images/lighthouse/manmob.png) | Average performance. Everything else is operating as expected |
-| Shopping Bag | Desktop | ![screenshot](documentation/testing_images/lighthouse/bagmob.png) | Slow performance. Compressed and using cloudinary to be more effective |
+| Home | Mobile | ![screenshot](documentation/testing_images/lighthouse/homemob.png) | Average performance. Compressed and using cloudinary to be more effective. |
+| All Products | Mobile | ![screenshot](documentation/testing_images/lighthouse/productmob.png) | Average performance. Compressed and using cloudinary to be more effective|
+| Radiator | Mobile | ![screenshot](documentation/testing_images/lighthouse/radmob.png) | Average performance. Compressed and using cloudinary to be more effective |
+| Led Lights | Mobile | ![screenshot](documentation/testing_images/lighthouse/ledmob.png) | Average performance. Compressed and using cloudinary to be more effective |
+| Insulation | Mobile | ![screenshot](documentation/testing_images/lighthouse/insulmob.png) |  Average performance. Everything else is operating as expected|
+| Contact Us | Mobile | ![screenshot](documentation/testing_images/lighthouse/contactmob.png) | Average performance. Everything else is operating as expected|
+| Newsletter | Mobile | ![screenshot](documentation/testing_images/lighthouse/newsmob.png) | Average performance. Everything else is operating as expected |
+| Tips and Tricks | Mobile | ![screenshot](documentation/testing_images/lighthouse/tipsmob.png) | Average performance. Compressed and using cloudinary to be more effective |
+| FAQ | Mobile | ![screenshot](documentation/testing_images/lighthouse/faqmob.png) | Average performance. Everything else is operating as expected|
+| Register| Mobile | ![screenshot](documentation/testing_images/lighthouse/regmob.png) | Average performance. Compressed and using cloudinary to be more effective |
+| Product Maangement | Mobile | ![screenshot](documentation/testing_images/lighthouse/manmob.png) | Average performance. Everything else is operating as expected |
+| Shopping Bag | Mobile | ![screenshot](documentation/testing_images/lighthouse/bagmob.png) | Average performance. Compressed and using cloudinary to be more effective |
 
 
 ## Defensive Programming
