@@ -28,16 +28,14 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | products | fans | ![screenshot](documentation/testing_images/w3c/fans.png) | Pass: No Errors|
 | products | indoor | ![screenshot](documentation/testing_images/w3c/indoor.png) | Pass: No Errors|
 | products | edit_product.html | ![screenshot](documentation/testing_images/w3c/edit.png) |Pass: No Errors|
-### | products | product_detail.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | product_detail.html | ![screenshot](documentation/testing_images/w3c/detail.png) |Pass: No Errors |
 | products | products.html | ![screenshot](documentation/testing_images/w3c/products.png) |Pass: No Errors |
-| profiles | profile.html | ![screenshot](documentation/testing_images/w3c/profile.png) | |
+| profiles | profile.html | ![screenshot](documentation/testing_images/w3c/profile.png) | Pass: No Errors|
 | templates | 400.html | ![screenshot](documentation/testing_images/w3c/400.png) | Pass: No Errors|
-
 | templates | 404.html | ![screenshot](documentation/testing_images/w3c/404.png) | Pass: No Errors|
-
 | tips_and_tricks | add_post.html | ![screenshot](documentation/testing_images/w3c/addtip.png) | Pass: No Errors|
 | tips_and_tricks | tips_and_tricks.html | ![screenshot](documentation/testing_images/w3c/tips.png) | Pass: No Errors|
-| tips_and_tricks | update_post.html | ![screenshot](documentation/testing_images/w3c/update.png) | |
+| tips_and_tricks | update_post.html | ![screenshot](documentation/testing_images/w3c/update.png) | Pass: No Errors|
 
 ### CSS
 
@@ -127,14 +125,14 @@ For lines that have been too long I have shortened everything where possible how
 | profiles | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/forms.py) | ![screenshot](documentation/testing_images/linter/profiles_forms.png) |Pass: No Errors |
 | profiles | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/models.py) | ![screenshot](documentation/testing_images/linter/profiles_models.png) |Pass: No Errors |
 | profiles | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/urls.py) | ![screenshot](documentation/testing_images/linter/profiles_url.png) |Pass: No Errors |
-| profiles | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) |Pass: No Errors |
+| profiles | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/views.py) | ![screenshot](documentation/testing_images/linter/views.png) |Pass: No Errors |
 | tips_and_tricks | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/admin.py) | ![screenshot](documentation/testing_images/linter/tips_admin.png) |Pass: No Errors |
 | tips_and_tricks | apps.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/apps.py) | ![screenshot](documentation/testing_images/linter/tips_apps.png) |Pass: No Errors |
 | tips_and_tricks | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/forms.py) | ![screenshot](documentation/testing_images/linter/tips_forms.png) |Pass: No Errors |
 | tips_and_tricks | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/models.py) | ![screenshot](documentation/testing_images/linter/tips_models.png) |Pass: No Errors |
 | tips_and_tricks | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/urls.py) | ![screenshot](documentation/testing_images/linter/tips_urls.png) |Pass: No Errors |
 | tips_and_tricks | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/tips_and_tricks/views.py) | ![screenshot](documentation/testing_images/linter/tips_views.png) |Pass: No Errors |
-|  | manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/manage.py) | ![screenshot](documentation/testing_images/linter/manage.png) |Pass: No Errors |
+| tips_and_tricks | manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/manage.py) | ![screenshot](documentation/testing_images/linter/manage.png) |Pass: No Errors |
 
 ## Browser Compatibility
 
@@ -315,8 +313,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | EPIC Sorting and Searching |
 | As a Shopper I can Search for a product by name or description so that I can find a specific product I'd like to purchase | ![screenshot](documentation/readme_images/search.png) |
 | As a Shopper I can sort multiple categories of products simultaneously so that I can find the best price or best rated products across a broad categories | ![screenshot](documentation/readme_images/cat.png) |
-| As a Shopper I can sort a specific category of product so that I can find the best priced or best rated product in a specific category or sort the product in that 	 
-category by name | ![screenshot](documentation/readme_images/sort.png) |
+| As a Shopper I can sort a specific category of product so that I can find the best priced or best rated product in a specific category or sort the product in that category by name | ![screenshot](documentation/readme_images/sort.png) |
 | As a Shopper I can sort the list of available products so that I can easily identify the best rated best priced and categorically sorted products | ![screenshot](documentation/readme_images/sort.png) |
 | EPIC Purchasing and Checkout |
 |As a Shopper I can receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my record | ![screenshot](documentation/testing_images/userstory/checkout.png) |
