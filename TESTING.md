@@ -28,13 +28,13 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | products | fans | ![screenshot](documentation/testing_images/w3c/fans.png) | Pass: No Errors|
 | products | indoor | ![screenshot](documentation/testing_images/w3c/indoor.png) | Pass: No Errors|
 | products | edit_product.html | ![screenshot](documentation/testing_images/w3c/edit.png) |Pass: No Errors|
-| products | product_detail.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+### | products | product_detail.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | products | products.html | ![screenshot](documentation/testing_images/w3c/products.png) |Pass: No Errors |
-| profiles | profile.html | ![screenshot](documentation/testing_images/w3c/profile.png) | Page loads in live site but 500 error comes up when using w3c validator|
-| templates | 400.html | ![screenshot](documentation/testing_images/w3c/error.png) | error pages cant be checked via the validator|
-| templates | 403.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | 404.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | 500.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| profiles | profile.html | ![screenshot](documentation/testing_images/w3c/profile.png) | |
+| templates | 400.html | ![screenshot](documentation/testing_images/w3c/400.png) | Pass: No Errors|
+
+| templates | 404.html | ![screenshot](documentation/testing_images/w3c/404.png) | Pass: No Errors|
+
 | tips_and_tricks | add_post.html | ![screenshot](documentation/testing_images/w3c/addtip.png) | Pass: No Errors|
 | tips_and_tricks | tips_and_tricks.html | ![screenshot](documentation/testing_images/w3c/tips.png) | Pass: No Errors|
 | tips_and_tricks | update_post.html | ![screenshot](documentation/testing_images/w3c/update.png) | |
@@ -171,7 +171,7 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | Nest hub Max| ![screenshot](documentation/testing_images/reponsiveness/nesthubmax.png) | Works as expected |
 | Pixel 7 | ![screenshot](documentation/testing_images/reponsiveness/pixel7.png) | Works as expected |
 | Surface duo | ![screenshot](documentation/testing_images/reponsiveness/surfaceduo.png) | Works as expected |
-| Galaxy A51 / 71 | ![screenshot](documentation/testing_images/reponsiveness/a51.png) | Works as expected |
+| Galaxy A51 / 71 | ![screenshot](documentation/testing_images/reponsiveness/galaxya51.png) | Works as expected |
 | Galaxy S8 | ![screenshot](documentation/testing_images/reponsiveness/galaxys8.png) | Works as expected |
 | Galaxy S20 Ultra | ![screenshot](documentation/testing_images/reponsiveness/galaxys20.png) | Works as expected |
 
@@ -376,7 +376,6 @@ Below are the results from the various apps on my application that I've tested:
 | Profiles | test_models.py | 81% | ![screenshot](documentation/testing_images/automated/profiles.png) |
 | Profiles | test_urls.py | 100% | ![screenshot](documentation/testing_images/automated/profiles.png) |
 | Profiles | test_views.py | 29% | ![screenshot](documentation/testing_images/automated/profiles.png) |
-| x | x | x | repeat for all remaining tested apps/files |
 
 
 ## Bugs
