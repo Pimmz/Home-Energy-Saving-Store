@@ -65,7 +65,7 @@ I have used /* jshint esversion: 11, jquery: true */ at the top of the file so J
 
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
-For lines that have been too long I have shortened everything where possible however there was one section in settings.py that couldn't be shortened due to it affecting the functionality of the code so I have used `# noqa` at the end of those lines so it will ignore linting validation.
+For lines that have been too long I have shortened everything where possible however, there was one section in settings.py that couldn't be shortened due to it affecting the functionality of the code so I have used `# noqa` at the end of those lines so it will ignore linting validation.
 
 ![screenshot](documentation/testing_images/linter/hess_noqa.png)
 
@@ -196,18 +196,18 @@ Desktop
 Mobile
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | Mobile | ![screenshot](documentation/testing_images/lighthouse/homemob.png) | Average performance. Compressed and using cloudinary to be more effective. |
+| Home | Mobile | ![screenshot](documentation/testing_images/lighthouse/homemob.png) | Average performance. Compressed and using Cloudinary to be more effective. |
 | All Products | Mobile | ![screenshot](documentation/testing_images/lighthouse/productmob.png) | Average performance. Compressed and using cloudinary to be more effective|
-| Radiator | Mobile | ![screenshot](documentation/testing_images/lighthouse/radmob.png) | Average performance. Compressed and using cloudinary to be more effective |
-| Led Lights | Mobile | ![screenshot](documentation/testing_images/lighthouse/ledmob.png) | Average performance. Compressed and using cloudinary to be more effective |
+| Radiator | Mobile | ![screenshot](documentation/testing_images/lighthouse/radmob.png) | Average performance. Compressed and using Cloudinary to be more effective |
+| Led Lights | Mobile | ![screenshot](documentation/testing_images/lighthouse/ledmob.png) | Average performance. Compressed and using Cloudinary to be more effective |
 | Insulation | Mobile | ![screenshot](documentation/testing_images/lighthouse/insulmob.png) |  Average performance. Everything else is operating as expected|
 | Contact Us | Mobile | ![screenshot](documentation/testing_images/lighthouse/contactmob.png) | Average performance. Everything else is operating as expected|
 | Newsletter | Mobile | ![screenshot](documentation/testing_images/lighthouse/newsmob.png) | Average performance. Everything else is operating as expected |
-| Tips and Tricks | Mobile | ![screenshot](documentation/testing_images/lighthouse/tipsmob.png) | Average performance. Compressed and using cloudinary to be more effective |
+| Tips and Tricks | Mobile | ![screenshot](documentation/testing_images/lighthouse/tipsmob.png) | Average performance. Compressed and using Cloudinary to be more effective |
 | FAQ | Mobile | ![screenshot](documentation/testing_images/lighthouse/faqmob.png) | Average performance. Everything else is operating as expected|
-| Register| Mobile | ![screenshot](documentation/testing_images/lighthouse/regmob.png) | Average performance. Compressed and using cloudinary to be more effective |
+| Register| Mobile | ![screenshot](documentation/testing_images/lighthouse/regmob.png) | Average performance. Compressed and using Cloudinary to be more effective |
 | Product Maangement | Mobile | ![screenshot](documentation/testing_images/lighthouse/manmob.png) | Average performance. Everything else is operating as expected |
-| Shopping Bag | Mobile | ![screenshot](documentation/testing_images/lighthouse/bagmob.png) | Average performance. Compressed and using cloudinary to be more effective |
+| Shopping Bag | Mobile | ![screenshot](documentation/testing_images/lighthouse/bagmob.png) | Average performance. Compressed and using Cloudinary to be more effective |
 
 
 ## Defensive Programming
@@ -219,7 +219,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | Home Page | | | | |
 | | Click on Logo Name | Redirection to Home page | Pass | |
 | | Search on search bar | Redirection to chosen product | Pass | |
-| | Brute forcing the URL to get to the page for loggin users only  |  User redirected to sign up page | Pass |  |
+| | Brute forcing the URL to get to the page for logg in users only  |  User redirected to sign up page | Pass |  |
 | All Products Page | | | | |
 | | Click on All Products link in navbar | Redirection to All products page | Pass | |
 | | Click on image | redirection to larger image of product | Pass | |
@@ -244,14 +244,14 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Enter name | Field will accept freeform text | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
 | | Select subject from the drop-down menu | User can only choose from the three available choices| Pass | |
-| | Enter message in textarea | Field will accept freeform text | Pass | |
+| | Enter message in text area | Field will accept freeform text | Pass | |
 | | No message in textareas | error message appears stating this field is required | Pass | |
 | | Click the Submit button | Message pops up informing them their message as been successful | Pass |  |
 | | Click on the Cancel button | User will be redirected to the Home page  | Pass | |
 | Newsletter Page | | | | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
 | | If the user has already registered their email a message will come up saying so and highlighted in red.| |
-| | Click the Submit button | Send the email and displays a message saying it was successful | Pass |  |
+| | Click the Submit button | Send the email and display a message saying it was successful | Pass |  |
 | | Click on the Cancel button | User will be redirected to the Home page  | Pass | |
 | | Brute forcing the URL to get to another user's profile | User will not be allowed access | Pass | Redirects user back to own profile |
 | Tips and Tricks Page | | | | |
@@ -267,7 +267,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click frequently asked questions | directed to the FAQ page | Pass | |
 | | Brute forcing the URL to get to another user's profile | Redirects user back to own profile | Pass | |
 | Register Page | | | | |
-| | Click on the register Button | Redirection to register page | Pass | |
+| | Click on the register button | Redirection to register page | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
 | | password | Field will only accept valid password format | Pass | |
 | | Click the sign up button | Redirects user to the home page  | Pass |  |
@@ -297,23 +297,23 @@ Defensive programming was manually tested with the below user acceptance testing
 | --- | --- |
 |EPIC Viewing and Navigation |
 | As a shopper I can contact the store so that I can make a query about something or return a product | ![screenshot](documentation/readme_images/contact.png) |
-| As a Shopper I can view tips and tricks so that I can learn from other user what they have done to save money on my heating and electricity costs | ![screenshot](documentation/readme_images/tips.png) |
+| As a Shopper I can view tips and tricks so that I can learn from other users what they have done to save money on my heating and electricity costs | ![screenshot](documentation/readme_images/tips.png) |
 | As a Shopper I can find the store on Facebook so that I can easily find it and trust its authenticity | ![screenshot](documentation/readme_images/facebook.png) |
 | As a Shopper I can easily view the total of my purchases at any time so that I can avoid spending too much | ![screenshot](documentation/readme_images/basket.png) |
-| As a Shopper I can view individual products details so that I can identify the price, description, product rating, product image and available sizes | ![screenshot](documentation/readme_images/all.png) |
+| As a Shopper I can view individual product details so that I can identify the price, description, product rating, product image and available sizes | ![screenshot](documentation/readme_images/all.png) |
 | As a Shopper I can view a specific category of products so that I can quickly find products I'm interested in without having to search through all the products | ![screenshot](documentation/readme_images/cat.png) |
 | As a shopper I can view a list of products so that I can select some to purchase | ![screenshot](documentation/readme_images/all.png) |
 | EPIC Registration and User Accounts |
 |As a Site user I can have a personalised user profile so that I can view my personal order history and order confirmations and save my payment information | ![screenshot](documentation/testing_images/userstory/history.png) |
-| As a Shopper I can Subscribe to to get exclusive offers and News so that I can stay upto date with new and exciting energy saving products as well as exclusive offers and discounts | ![screenshot](documentation/readme_images/newsletter.png) |
+| As a Shopper I can Subscribe to to get exclusive offers and News so that I can stay up to date with new and exciting energy-saving products as well as exclusive offers and discounts | ![screenshot](documentation/readme_images/newsletter.png) |
 |As a Site user I can receive an email confirmation after registering so that I can verify that my account registration was successful | ![screenshot](documentation/testing_images/userstory/verify.png) |
 | As a Shopper I can Easily recover my password in case I forget it so that I can recover access to my account | ![screenshot](documentation/readme_images/password.png) |
-| As a Site User I can easily login or log out so that I can access my personal account information | ![screenshot](documentation/readme_images/password.png) |
+| As a Site User I can easily log in or log out so that I can access my personal account information | ![screenshot](documentation/readme_images/password.png) |
 | As a Site user I can easily register for an account so that I can have a personal account and be able to view my profile | ![screenshot](documentation/readme_images/register.png) |
 | EPIC Sorting and Searching |
 | As a Shopper I can Search for a product by name or description so that I can find a specific product I'd like to purchase | ![screenshot](documentation/readme_images/search.png) |
-| As a Shopper I can sort multiple categories of products simultaneously so that I can find the best price or best rated products across a broad categories | ![screenshot](documentation/readme_images/cat.png) |
-| As a Shopper I can sort a specific category of product so that I can find the best priced or best rated product in a specific category or sort the product in that category by name | ![screenshot](documentation/readme_images/sort.png) |
+| As a Shopper I can sort multiple categories of products simultaneously so that I can find the best price or best-rated products across a broad categories | ![screenshot](documentation/readme_images/cat.png) |
+| As a Shopper I can sort a specific category of product so that I can find the best-priced or best-rated product in a specific category or sort the product in that category by name | ![screenshot](documentation/readme_images/sort.png) |
 | As a Shopper I can sort the list of available products so that I can easily identify the best rated best priced and categorically sorted products | ![screenshot](documentation/readme_images/sort.png) |
 | EPIC Purchasing and Checkout |
 |As a Shopper I can receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my record | ![screenshot](documentation/testing_images/userstory/checkout.png) |
@@ -386,11 +386,11 @@ Below are the results from the various apps on my application that I've tested:
      - To fix this, I imported faq.view ```(from .views import FAQView)``` in the views as I had forgotten to put it in.
     ![screenshot](documentation/testing_images/bugs/faq.png)
 
-- Products and Categories not showing on website
+- Products and Categories not showing on the website
      - To fix this I had to ```python3 manage.py make migrations``` and ```python3 manage.py migrate``` followed by ```python3 manage.py loaddata products``` and ```python3 manage.py loaddata categories``` in my hast I forgotten to do them.
     
 - ImproperlyConfigured at update_post
-     - To fix this I removed ```(fields = ['title', 'content', 'featured_image'])``` I had used code from a previous project which wasnt needed in this one.
+     - To fix this I removed ```(fields = ['title', 'content', 'featured_image'])``` I had used code from a previous project which wasn't needed in this one.
     ![screenshot](documentation/testing_images/bugs/update.png)
 
 - Custom error pages not showing
@@ -401,7 +401,7 @@ Below are the results from the various apps on my application that I've tested:
 
     ![screenshot](documentation/testing_images/bugs/E501.png)
 
-  - To fix this, I split the line onto three lines ensuring it was split so it would not cause any errors  
+  - To fix this, I split the line on to three lines ensuring it was split so it would not cause any errors  
 
 ### Unfixed Bugs
 
