@@ -19,11 +19,11 @@ When I started the design of the Home Energy Saving Store I wanted to ensure the
 
 Strategy - So the user can discover, Learn, enjoy, interact and get assistance with all things to do with saving energy at home.
 
-Scope - Based on the information from the strategy, the features included emotive images. A Contact us section so that the users can contact the store about returning a product and item not being delivered ot anything else. Plus you have the ability to subcribe to the sight to get exculsives offers and news from the store. The Tips and Tricks page enables the user to post a picture of their ideas and suggestions on how to save money from ingenuitive ideas. The FAQ page or Frequesntly asked questions is another area designed to help the users of the site to understand whether certain tasks around the home are beneficial or not.
+Scope - Based on the information from the strategy, the features included emotive images. A Contact Us section so that the users can contact the store about returning a product an item not being delivered or anything else. Plus you can subscribe to the sight to get exclusive offers and news from the store. The Tips and Tricks page enables the user to post a picture of their ideas and suggestions on how to save money from innovative ideas. The FAQ page or frequently asked questions is another area designed to help the users of the site to understand whether certain tasks around the home are beneficial or not.
 
-Structure - This was designed around the user. After speaking with a number of energy saving people, to be about to contact the store. To be able to post their own ideas on how to save money with out having to pay for it. Plus an area to read the basics on saving energy for the newer users visting the site.
+Structure - This was designed around the user. After speaking with several energy-saving people, So they can contact the store. To be able to post their ideas on how to save money without having to pay for it. Plus an area to read the basics on saving energy for the newer users visiting the site.
 
-Skeleton - As before this was designed around the user which was gained from information supplied by a number of energy saving people. This dictated that it would be laid out simply. So that it can be used quickly and efficiently while delivering the most amount of information and receiving help depending on the user's needs.
+Skeleton - As before this was designed around the user which was gained from information supplied by several energy-saving people. This dictated that it would be laid out simply. So that it can be used quickly and efficiently while delivering the most amount of information and receiving help depending on the user's needs.
 
 Surface - I wanted the look of the Home Energy Saving Store to be informative, clear, and concise, with consistent typography and corresponding colours to help them stand out, to easily navigate with emotive pictures that helped to raise awareness about reducing pollution and greenhouse gases to help the environment and save the user money.
 
@@ -39,7 +39,7 @@ Then I sat down and roughly sketched out onto paper what the screens would look 
 
 The website primarily features a slick black `#000000` and white `#ffffff` colour scheme, particularly chosen to ensure a striking contrast between backgrounds and text. this deliberate contrast allows the images of the featured products to leap off the page, captivating users and enhancing their appeal, thereby bolstering sales.
 
-To enhance readability and use experience on error pages, contact us, tips and tricks and faq. I've opted for a subtle beige background `#f5f5dc` background paired with crisp black text `#000000` this deliberate contrast not only improves legibility but also contributes to a visual appealing design.
+To enhance readability and use experience on error pages, contact us, tips and tricks and faq. I've opted for a subtle beige background `#f5f5dc` background paired with crisp black text `#000000` this deliberate contrast not only improves legibility but also contributes to a visually appealing design.
 
 I've used [colorcodes](https://htmlcolorcodes.com) To source my colours.
 
@@ -66,18 +66,18 @@ I looked for fonts on Google Fonts, to help me decide as it gave a better visual
 
 #### EPIC | Registration and User Accounts
 - As a Site user I can have a personalised user profile so that I can view my personal order history and order confirmations and save my payment information
-- As a Shopper I can Subscribe to to get exclusive offers and News so that I can stay upto date with new and exciting energy saving products as well as exclusive offers and discounts
+- As a Shopper I can Subscribe to to get exclusive offers and News so that I can stay up to date with new and exciting energy saving products as well as exclusive offers and discounts
 - As a Site user I can receive an email confirmation after registering so that I can verify that my account registration was successful
 - As a Shopper I can Easily recover my password in case I forget it so that I can recover access to my account
-- As a Site User easily login or log out do so that I can access my personal account information
-- As a Site user I can easily registered for an account so that I can have a personal account and be able to view my profile
+- As a Site User easily log in or log out so that I can access my personal account information
+- As a Site user I can easily register for an account so that I can have a personal account and be able to view my profile
 
 #### EPIC | Sorting and Searching
 - As a Shopper I can Search for a product by name or description so that I can find a specific product I'd like to purchase
-- As a Shopper I can sort multiple categories of products simultaneously so that I can find the best price or best rated products across a broad categories
-- As a Shopper I can sort a specific category of product so that I can find the best priced or best rated product in a specific category or sort the product in that 	 
+- As a Shopper I can sort multiple categories of products simultaneously so that I can find the best price or best-rated products across a broad categories
+- As a Shopper I can sort a specific category of product so that I can find the best priced or best-rated product in a specific category or sort the product in that 	 
 category by name
-- As a Shopper I can sort the list of available products so that I can easily identify the best rated best priced and categorically sorted products
+- As a Shopper I can sort the list of available products so that I can easily identify the best rated, best priced and categorically sorted products
 
 #### EPIC | Purchasing and Checkout
 - As a Shopper I can receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my record
@@ -177,18 +177,18 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Title of the website to ensure users know exactly where they are.
 - Search facility so the user can find the products quickly that are sold on the site
 - My account section so the user can find their details, log out and if authorised, manage products.
-- The basket link so the user can see the amount they have put in their basket at a glance of a eye. Plus when clicked it opend up the basket with more detail.
+- The basket link so the user can see the amount they have put in their basket at a glance of an eye. Plus when clicked it opens up the basket with more detail.
 
 - **Navigation Bar**
 ![Navigation bar](documentation/readme_images/nav.png)
 
 - The navigation bar is present at the top of every page and includes all links to the various other pages.
-- The Tips and Tricks page as well as the FAQ will only open if you are signed in. If you are not a sign in message comes up asking you to sign in. 
+- The Tips and Tricks page as well as the FAQ will only open if you are signed in. If you are not a sign-in message comes up asking you to sign in. 
 
 - **Footer**
 ![Footer](documentation/readme_images/footer.png)
 
-- The about section to explain abit about Hess and why we operate
+- The About Us section to explain abit about Hess and why we operate
 - The footer section includes links to our Facebook page, FAQ, Tips and tricks and the contact page.
 - Clicking the links in the footer opens a separate browser tab to avoid pulling the user away from the site.
 
@@ -196,26 +196,26 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 ![Home Page](documentation/readme_images/home.png)
 
 - Description of our website and what we're about so users can decide if it's for them.
-- Eye catching background image to display a green eco friendly money saving theme.
+- Eye-catching background image to display a green eco-friendly money-saving theme.
 - Big Text displaying exciting message about New products with a shop now button to get the users to explore our products for sale.
-- Banner to draw attention for users to subscribe and get exculsive offers and a reminder that the the delivery fee is free for orders over £50
+- Banner to draw attention for users to subscribe and get exclusive offers and a reminder that the delivery fee is free for orders over £50
 
 - **All Products Page**
 ![All Products](documentation/readme_images/all.png)
 
 - Clear title explaining the section
-- All the products displayed for the user to look at and dedcide if they wish to buy it.
-- A sort facility so the user can sort how they look at the product.
-- A number count in the top left hand part of the screen to show how many products are for sale.
+- All the products are displayed for the user to look at and decide if they wish to buy it.
+- A sorting facility so the user can sort how they look at the product.
+- A number count in the top left-hand part of the screen to show how many products are for sale.
   
 - **Individual Category Pages**
 ![Category pages](documentation/readme_images/products.png)
 
 - Clear title explaining the section
 - Clear category title explaining the section
-- All the products displayed for the user to look at and dedcide if they wish to buy it.
-- A sort facility so the user can sort how they look at the product.
-- A number count in the top left hand part of the screen to show how many products are for sale.
+- All the products are displayed for the user to look at and decide if they wish to buy it.
+- A sorting facility so the user can sort how they look at the product.
+- A number count in the top left-hand part of the screen to show how many products are for sale.
 
 - **Contact Pages**
 ![Contact Page](documentation/readme_images/contact.png)
@@ -228,11 +228,11 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - **Newsletter Pages**
 ![Newsletter Page](documentation/readme_images/newsletter.png)
 
-- Clear heading and reasons why to sign up to the newsletter.
+- Clear heading and reasons why to sign up for the newsletter.
 - Submit button to send the application form onwards
 - Cancel button to redirect the user back if they have changed their mind.
 - Confirmation message that the form has been successfully submitted.
-- Error message pops up if the user has already subscribed.
+- An error message pops up if the user has already subscribed.
 
 - **Tips and Tricks Page**
 ![Tips and Tricks Page](documentation/readme_images/tips.png)
@@ -265,21 +265,21 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Clear concise area to show what the user is purchasing and how much it would cost.
 - A clear form for the user to fill in for their name, address and card details.
 - Adjust bag button to update the basket total if there is a need for change.
-- Complate Order button when they are ready to pay for their goods.
+- Complete Order button when they are ready to pay for their goods.
 
 - **Product management Page**
 ![Product management Page](documentation/readme_images/manage.png)
 
 - Area for the administrators to add additional products to their website.
-- A clear form to fill in for the prodcts details.
+- A clear form to fill in for the products details.
 - Cancel button to redirect them back if they have changed their mind.
 - Add product button when they are ready to add it to their website.
 
 - **My Profile Page**
 ![My Profile Page](documentation/readme_images/profile.png)
 
-- A clear form for the user to check and fill in for their name, address if its has changed.
-- Update information if they wish to change there information
+- A clear form for the user to check and fill in for their name, and address if it has changed.
+- Update information if they wish to change their information
 
 ### Error Pages
 
@@ -288,16 +288,16 @@ Custom Error Pages were created to give the user more information on the error a
 ![Error](documentation/readme_images/error.png)
 
 - 400 Bad Request - Oh No! Looks like you made a bad request.
-- 403 Page Forbidden - Sorry thats a Forbidden request.
-- 404 Page Not Found - Sorry! that page is Not Found.
-- 500 Server Error - Oh No! Sorry theres a Server Error
+- 403 Page Forbidden - Sorry that's a Forbidden request.
+- 404 Page Not Found - Sorry! That page is Not Found.
+- 500 Server Error - Oh No! Sorry there a Server Error
 
 ### Future Features
 
 The following user stories were scoped out of the project due to skill level It is intended that these user stories will be implemented at a later date when I have the sufficient skills to complete them.
 
 - For a user to be able to track where my delivery is so i know what time it will be arriving.
-- Created fix for known bug if the user some how found out the order number of another user they could force the url to access their information.
+- Create a fix for a known bug if the user somehow found out the order number of another user they could force the URL to access their information.
 
 ## Tools & Technologies Used
 
@@ -323,6 +323,8 @@ The following user stories were scoped out of the project due to skill level It 
 - [![Gmail API](https://img.shields.io/badge/Gmail_API-grey?logo=gmail&logoColor=EA4335)](https://mail.google.com) used for sending emails in my application.
 - [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes) used for creating wireframes.
 - [![Font Awesome](https://img.shields.io/badge/Font_Awesome-grey?logo=fontawesome&logoColor=528DD7)](https://fontawesome.com) used for the icons.
+- [![Favicon](https://img.shields.io/badge/Favicon-grey?logo=favicon&logoColor=528DD7)](https://favicon.io/) Used to create the favicon.
+- [![Grammerly](https://img.shields.io/badge/Grammerly-grey?logo=grammerly&logoColor=528DD7)](https://app.grammarly.com/) - used to proofread the README.md.
 
 ## Database Design
 
@@ -392,13 +394,13 @@ source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to
 [GitHub Projects](https://github.com/Pimmz/Home-Energy-Saving-Store/projects) served as an Agile tool for this project.
 It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
 
-Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
+Through it, user stories, issues, and milestone tasks were planned, and then tracked on a weekly basis using the basic Kanban board.
 
 ![screenshot](documentation/readme_images/agile.png)
 
 ### GitHub Issues
 
-[GitHub Issues](https://github.com/Pimmz/Home-Energy-Saving-Store/issues) served as an another Agile tool.
+[GitHub Issues](https://github.com/Pimmz/Home-Energy-Saving-Store/issues) served as another Agile tool.
 There, I used my own **User Story Template** to manage user stories.
 
 It also helped with milestone iterations on a weekly basis.
@@ -423,14 +425,14 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 
 ## Ecommerce Business Model
 
-This site sells goods to individual customers, and therefore follows a `Business to Customer` model.
+This site sells goods to individual customers, therefore follows a `Business to Customer` model.
 It is of the simplest **B2C** forms, as it focuses on individual transactions, and doesn't need anything
 such as monthly/annual subscriptions.
 
-It is still in its early development stages, although it already has a newsletter, and links for social media marketing.
+It is still in its early development stages, although it already has a newsletter and links for social media marketing.
 
 Social media can potentially build a community of users around the business, and boost site visitor numbers,
-especially when using larger platforms such a Facebook.
+especially when using larger platforms such as Facebook.
 
 A newsletter list can be used by the business to send regular messages to site users.
 For example, what items are on special offer, new items in stock,
@@ -440,7 +442,7 @@ updates to business hours, notifications of events, and much more!
 
 ### Keywords
 
-I've identified some appropriate keywords to align with my site, that should help users
+I've identified some appropriate keywords to align with my site, which should help users
 when searching online to find my page easily from a search engine.
 This included a series of the following keyword types
 
@@ -484,13 +486,13 @@ I've created a mockup Facebook business account using the
 [Balsamiq template](https://code-institute-org.github.io/5P-Assessments-Handbook/files/Facebook_Mockups.zip)
 provided by Code Institute.
 
-Ive created my Facebook Business Page. Here is the link link - [Facebook](https://www.facebook.com/profile.php?id=61554298768912) 
+I've created my Facebook Business Page. Here is the link link - [Facebook](https://www.facebook.com/profile.php?id=61554298768912) 
 
-Ive also included a screenshot in case Facebook take down my business page![Facebook](documentation/readme_images/facebook.png)
+I've also included a screenshot in case Facebook take down my business page![Facebook](documentation/readme_images/facebook.png)
 
 ### Newsletter Marketing
 
-I have incorporate a newsletter sign-up form on my application, to allow users to supply their
+I have incorporated a newsletter sign-up form on my application, to allow users to supply their
 email address if they are interested in learning more. 
 
 ![Newsletter Page](documentation/readme_images/newsletter.png)
@@ -500,7 +502,7 @@ email address if they are interested in learning more.
 ### User Authentication
 
 - Django's @method_decorator is used to make sure that any requests to access secure pages by non-authenticated users are redirected to the signup page.
-- I have also used Django's LoginRequiredMixin to highlight the use of both for class based views. Which is used to make sure that any requests to access secure pages by non-authenticated users are redirected to the signup page.
+- I have also used Django's LoginRequiredMixin to highlight the use of both for class-based views. Which is used to make sure that any requests to access secure pages by non-authenticated users are redirected to the signup page.
 - Django's conditional statement {% if user.is_authenticated %} was also used to ensure certain pages were only accessible to logged-in users.
 
 ### Form Validation
@@ -518,9 +520,9 @@ email address if they are interested in learning more.
 - Custom Error Pages were created to give the user more information on the error and to provide them with buttons to guide them back to the site.
 
 - 400 Bad Request - Error 400 "Bad Request" Oh No! Looks like you made a bad request.
-- 403 Page Forbidden - Error 403 "Forbidden Request" Sorry thats a Forbidden request.
-- 404 Page Not Found - Error 404 "Not Found" Yikes! that page is Not Found.
-- 500 Server Error - Error 500 "Internal Server Error" Oh No! Dont worry its me! not you!
+- 403 Page Forbidden - Error 403 "Forbidden Request" Sorry that's a Forbidden request.
+- 404 Page Not Found - Error 404 "Not Found" Yikes! That page is Not Found.
+- 500 Server Error - Error 500 "Internal Server Error" Oh No! Don't worry its me! not you!
 
 ## Testing
   
@@ -574,14 +576,14 @@ To obtain your own Cloudinary API key, create an account and log in.
 
 This project uses [Stripe](https://stripe.com) to handle the ecommerce payments.
 
-Once you've created a Stripe account and logged-in, follow these series of steps to get your project connected.
+Once you've created a Stripe account and logged in, follow these series of steps to get your project connected.
 
 - From your Stripe dashboard, click to expand the "Get your test API keys".
 - You'll have two keys here:
 	- `STRIPE_PUBLIC_KEY` = Publishable Key (starts with **pk**)
 	- `STRIPE_SECRET_KEY` = Secret Key (starts with **sk**)
 
-As a backup, in case users prematurely close the purchase-order page during payment, we can include Stripe Webhooks.
+As a backup, in case users prematurely close the purchase order page during payment, we can include Stripe Webhooks.
 
 - From your Stripe dashboard, click **Developers**, and select **Webhooks**.
 - From there, click **Add Endpoint**.
@@ -595,7 +597,7 @@ As a backup, in case users prematurely close the purchase-order page during paym
 
 This project uses [Gmail](https://mail.google.com) to handle sending emails to users for account verification and purchase order confirmations.
 
-Once you've created a Gmail (Google) account and logged-in, follow these series of steps to get your project connected.
+Once you've created a Gmail (Google) account and logged in, follow these series of steps to get your project connected.
 
 - Click on the **Account Settings** (cog icon) in the top-right corner of Gmail.
 - Click on the **Accounts and Import** tab.
