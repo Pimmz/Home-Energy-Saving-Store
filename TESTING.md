@@ -93,14 +93,14 @@ For lines that have been too long I have shortened everything where possible how
 | contact | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/contact/models.py) | ![screenshot](documentation/testing_images/linter/contact_models.png) |Pass: No Errors |
 | contact | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/contact/urls.py) | ![screenshot](documentation/testing_images/linter/contact_urls.png) |Pass: No Errors |
 | contact | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/contact/views.py) | ![screenshot](documentation/testing_images/linter/contact_views.png) |Pass: No Errors |
-| faq | admin.py | [PEP8 CI] |Not Used|
+| faq | admin.py | [PEP8 CI]() | |Not Used|
 | faq | apps.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/faq/apps.py) | ![screenshot](documentation/testing_images/linter/faq_app.png) |Pass: No Errors |
 | faq | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/faq/models.py) | ![screenshot](documentation/testing_images/linter/faq_models.png) |Pass: No Errors |
 | faq | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/faq/urls.py) | ![screenshot](documentation/testing_images/linter/faq.urls.png) |Pass: No Errors |
 | faq | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/faq/views.py) | ![screenshot](documentation/testing_images/linter/faq_views.png) |Pass: No Errors |
-| home | admin.py | [PEP8 CI] | Not used|
+| home | admin.py | [PEP8 CI]() | | Not used|
 | home | apps.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home/apps.py) | ![screenshot](documentation/testing_images/linter/home_apps.png) | Pass: No Errors|
-| home | models.py | [PEP8 CI] | Not used|
+| home | models.py | [PEP8 CI]() | | Not used|
 | home | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home/urls.py) | ![screenshot](documentation/testing_images/linter/home_urls.png) | Pass: No Errors|
 | home | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home/views.py) | ![screenshot](documentation/testing_images/linter/home_views.png) |Pass: No Errors |
 | home_energy_saving_store | asgi.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/home_energy_saving_store/asgi.py) | ![screenshot](documentation/testing_images/linter/hess_asgi.png) |Pass: No Errors |
@@ -120,7 +120,7 @@ For lines that have been too long I have shortened everything where possible how
 | products | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/urls.py) | ![screenshot](documentation/testing_images/linter/product_urls.png) |Pass: No Errors |
 | products | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/views.py) | ![screenshot](documentation/testing_images/linter/product_views.png) |Pass: No Errors |
 | products | widgets.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/products/widgets.py) | ![screenshot](documentation/testing_images/linter/product_widgets.png) |Pass: No Errors |
-| profiles | admin.py | [PEP8 CI] |Not Used |
+| profiles | admin.py | [PEP8 CI]() | |Not Used |
 | profiles | apps.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/apps.py) | ![screenshot](documentation/testing_images/linter/profiles_apps.png) |Pass: No Errors |
 | profiles | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/forms.py) | ![screenshot](documentation/testing_images/linter/profiles_forms.png) |Pass: No Errors |
 | profiles | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Home-Energy-Saving-Store/main/profiles/models.py) | ![screenshot](documentation/testing_images/linter/profiles_models.png) |Pass: No Errors |
